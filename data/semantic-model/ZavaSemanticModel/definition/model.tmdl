@@ -1,0 +1,15 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+
+ref table Calendar
+ref table 'Product Lines'
+ref table Products
+ref table Facilities
+ref table Stores
+ref table Customers
+ref table Sales
+ref table Inventory
+ref table Orders
+ref table 'Order Items'

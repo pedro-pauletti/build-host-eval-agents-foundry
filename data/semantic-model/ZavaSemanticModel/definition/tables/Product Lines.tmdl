@@ -1,0 +1,33 @@
+/// ZavaCore Field product-line tiers (Core, Pro, Premium, Elite).
+table 'Product Lines'
+
+	column 'Line Code'
+		dataType: string
+		isKey
+		isHidden
+		summarizeBy: none
+		sourceColumn: line_code
+
+	column 'Product Line'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: product_line
+
+	/// 1=Core .. 4=Elite.
+	column 'Tier Rank'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: tier_rank
+
+	column Channel
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: channel
+
+	partition 'Product Lines' = entity
+		mode: directLake
+		source
+			entityName: product_lines
+			expressionSource: DL_Zava

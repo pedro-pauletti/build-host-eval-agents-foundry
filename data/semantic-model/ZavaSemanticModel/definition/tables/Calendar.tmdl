@@ -1,0 +1,61 @@
+/// Contiguous daily calendar (date dimension) derived from sales and order dates. Named 'Calendar' to avoid the DAX reserved word 'Date'.
+table Calendar
+
+	/// Calendar date (grain of the table).
+	column Date
+		dataType: dateTime
+		isKey
+		summarizeBy: none
+		sourceColumn: date
+
+	column Year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year
+
+	column Quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: quarter
+
+	column Month
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: month
+
+	column 'Month Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: Month
+
+	column 'Year Month'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: year_month
+
+	column Day
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: day
+
+	column 'Day Of Week'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+	column 'Day Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: day_name
+
+	column 'Is Weekend'
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+	partition Calendar = entity
+		mode: directLake
+		source
+			entityName: dim_date
+			expressionSource: DL_Zava

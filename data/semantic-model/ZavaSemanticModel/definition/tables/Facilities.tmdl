@@ -1,0 +1,34 @@
+/// Distribution centres that hold inventory and ship orders.
+table Facilities
+
+	column 'Facility Code'
+		dataType: string
+		isKey
+		summarizeBy: none
+		sourceColumn: facility_code
+
+	column 'Facility Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: name
+
+	column City
+		dataType: string
+		summarizeBy: none
+		sourceColumn: city
+
+	column State
+		dataType: string
+		summarizeBy: none
+		sourceColumn: state
+
+	column Type
+		dataType: string
+		summarizeBy: none
+		sourceColumn: type
+
+	partition Facilities = entity
+		mode: directLake
+		source
+			entityName: facilities
+			expressionSource: DL_Zava

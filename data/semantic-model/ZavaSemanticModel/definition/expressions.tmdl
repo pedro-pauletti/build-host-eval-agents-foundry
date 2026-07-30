@@ -1,0 +1,6 @@
+/// Direct Lake on OneLake connection to the ZavaLakehouse Tables area.
+expression DL_Zava =
+	let
+        Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/<FABRIC_WORKSPACE_ID>/<FABRIC_LAKEHOUSE_ID>", [HierarchicalNavigation=true])
+	in
+		Source

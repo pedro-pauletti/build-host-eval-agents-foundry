@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-23T19:16:49.187935+00:00",
+  "as_of_date": "2026-02-15",
+  "kpis": {
+    "product_lines": 4,
+    "total_skus": 576,
+    "facilities": 7,
+    "retail_stores": 3
+  },
+  "hero_skus": [
+    {
+      "sku": "ZCPTM-SS-S-B0",
+      "why": "Featured Premium top for live cross-facility stock lookups"
+    },
+    {
+      "sku": "ZCPTM-LS-L-RR",
+      "why": "Premium LS Top that is CRITICAL at Charlotte (15 units, reorder 80, ~3 days to stockout)"
+    }
+  ],
+  "hero_critical_alert": {
+    "facility": "FC-CLT",
+    "facility_name": "Zava Charlotte Distribution Center",
+    "sku": "ZCPTM-LS-L-RR",
+    "product": "ZavaCore Field Premium LS Top (Large, Deep Red/Red)",
+    "on_hand": 15,
+    "reorder_point": 80,
+    "projected_stockout_days": 3,
+    "status": "critical"
+  },
+  "hero_orders": [
+    {
+      "order_id": 23518,
+      "status_label": "Delayed - Weather",
+      "recipient": "Jane Smith",
+      "scenario": "Weather delay; held at Memphis DC; no action required"
+    },
+    {
+      "order_id": 23544,
+      "status_label": "Delayed - Customs",
+      "recipient": "Marcus Lee",
+      "scenario": "Customs hold; import documents; follow-up (memory)"
+    },
+    {
+      "order_id": 23561,
+      "status_label": "Out for Delivery",
+      "recipient": "Priya Nair",
+      "scenario": "Happy path; arriving today"
+    },
+    {
+      "order_id": 23575,
+      "status_label": "Exception - Address",
+      "recipient": "Diego Santos",
+      "scenario": "Address exception; customer action needed"
+    },
+    {
+      "order_id": 23590,
+      "status_label": "Delivered",
+      "recipient": "Sara Kim",
+      "scenario": "Delivered and signed for"
+    }
+  ],
+  "personas": {
+    "inventory": [
+      "Maya Alvarez (Inventory Operations Manager)",
+      "Tom Becker (DC Lead, Charlotte)"
+    ],
+    "delivery": [
+      "Jane Smith",
+      "Priya Nair",
+      "Diego Santos",
+      "Marcus Lee"
+    ]
+  },
+  "sample_questions": {
+    "inventory_agent": [
+      "What are my most critical stock issues right now?",
+      "How many units of ZCPTM-SS-S-B0 do we have across facilities?",
+      "Which SKUs are critical at Charlotte?",
+      "What's the total on-hand units for the Premium line?",
+      "What's our return policy for worn or opened apparel?",
+      "How did Elite line sales this month compare to last month?"
+    ],
+    "delivery_support_agent": [
+      "Hey, what's the status of order 23518?",
+      "Why is order 23544 delayed? When will it arrive?",
+      "My order 23575 says exception - what do I do?"
+    ]
+  }
+}

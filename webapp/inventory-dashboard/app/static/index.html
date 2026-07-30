@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zava Console &mdash; Agents (text + voice)</title>
+  <link rel="stylesheet" href="/static/styles.css?v=3">
+  <link rel="stylesheet" href="/static/evals.css?v=3">
+</head>
+<body>
+  <main class="shell" id="shell">
+    <aside class="chat-panel">
+      <header class="chat-header">
+        <div class="logo"><span>Z</span>ava</div>
+        <div class="mode-icons">
+          <button class="round voice" id="voiceBtn" aria-label="Voice Live (toggle)" title="Start / stop Voice Live">
+            <span class="ring"></span><span class="ring r2"></span>
+            <span class="vico" id="voiceIcon"></span>
+          </button>
+          <button class="round ghost" id="clearChat" aria-label="Clear conversation" title="Clear conversation"></button>
+        </div>
+      </header>
+
+      <div class="agent-switch" role="tablist" aria-label="Choose agent">
+        <button role="tab" class="active" data-view="inventory" data-icon="box">Inventory</button>
+        <button role="tab" data-view="delivery" data-icon="truck">Delivery</button>
+        <button role="tab" data-view="orchestration" data-icon="workflow">Incident</button>
+        <button role="tab" data-view="evals" data-icon="shield">Evaluations</button>
+      </div>
+
+      <section class="messages" id="messages" aria-live="polite"></section>
+
+      <div class="voice-status" id="voiceStatus" hidden></div>
+
+      <div class="suggestions" id="suggestions"></div>
+
+      <form class="chat-input" id="chatForm">
+        <input id="chatMessage" type="text" autocomplete="off" placeholder="Ask about inventory&hellip;" aria-label="Chat input">
+        <button type="submit" id="sendBtn" aria-label="Send"></button>
+      </form>
+    </aside>
+
+    <section class="dashboard-panel">
+      <header class="dashboard-title">
+        <h1 id="viewTitle">Inventory Dashboard</h1>
+        <button class="tglTraces" id="toggleTraces" title="Show / hide traces"></button>
+      </header>
+
+      <!-- Inventory view -->
+      <div class="dashboard-scroll view" id="view-inventory">
+        <section class="kpis" id="kpis"></section>
+        <section class="lines" id="lines"><div class="loading">Loading live inventory&hellip;</div></section>
+      </div>
+
+      <!-- Delivery / Order Tracking view -->
+      <div class="dashboard-scroll view" id="view-delivery" hidden>
+        <div class="order-wrap" id="orderCard">
+          <div class="order-empty">Ask about an order (e.g. <strong>&ldquo;What&rsquo;s the status of order 23518?&rdquo;</strong>) &mdash; the tracking card appears here.</div>
+        </div>
+        <section class="memory-panel" id="memoryPanel" hidden>
+          <header class="mem-head">
+            <button class="mem-toggle" id="memToggle" title="Show / hide remembered facts" aria-expanded="false"></button>
+            <span class="mem-title" id="memIcon"></span>
+            <span class="mem-sub" id="memSub"></span>
+            <button class="mem-clear" id="clearMemory" title="Forget everything for this customer (demo reset)"></button>
+          </header>
+          <div class="mem-list" id="memList" hidden></div>
+        </section>
+      </div>
+
+      <!-- Incident Response / Orchestration view -->
+      <div class="dashboard-scroll view" id="view-orchestration" hidden>
+        <section class="orch-flow" id="orchFlow"></section>
+        <section class="orch-agents" id="orchAgents"></section>
+        <section class="orch-detail" id="orchDetail"></section>
+      </div>
+
+      <!-- Evaluations view -->
+      <div class="dashboard-scroll view" id="view-evals" hidden>
+        <section class="eval-toolbar">
+          <div class="eval-legend">
+            <span class="ev-kind builtin">built-in</span>
+            <span class="ev-kind custom">custom</span>
+            <span class="ev-kind rubric">rubric</span>
+          </div>
+          <button class="eval-refresh" id="evalRefresh" type="button">Refresh</button>
+        </section>
+        <section class="eval-list" id="evalList"><div class="loading">Loading evaluations from Foundry&hellip;</div></section>
+        <section class="eval-detail" id="evalDetail"></section>
+      </div>
+    </section>
+
+    <aside class="traces-panel" id="tracesPanel">
+      <header class="traces-header">
+        <div class="th-title"><span id="tracesIcon"></span> Traces <b class="tcount" id="traceCount">0</b></div>
+        <button class="tbtn" id="clearTraces" title="Clear traces"></button>
+      </header>
+      <div class="traces-sub" id="tracesSub">Live view of what runs behind each answer &mdash; models, toolboxes, tool calls, knowledge-base retrievals and citations.</div>
+      <div class="traces-list" id="tracesList"></div>
+    </aside>
+  </main>
+  <script src="/static/icons.js?v=3"></script>
+  <script src="/static/app.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/// Physical Zava retail stores (in-store sales channel).
+table Stores
+
+	column 'Store Code'
+		dataType: string
+		isKey
+		summarizeBy: none
+		sourceColumn: store_code
+
+	column 'Store Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: name
+
+	column City
+		dataType: string
+		summarizeBy: none
+		sourceColumn: city
+
+	column State
+		dataType: string
+		summarizeBy: none
+		sourceColumn: state
+
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	partition Stores = entity
+		mode: directLake
+		source
+			entityName: stores
+			expressionSource: DL_Zava

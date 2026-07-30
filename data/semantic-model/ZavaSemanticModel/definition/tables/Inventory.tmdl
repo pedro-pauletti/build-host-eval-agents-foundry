@@ -1,0 +1,83 @@
+/// On-hand inventory fact by SKU x facility. Grain = one SKU at one facility.
+table Inventory
+
+	/// Total on-hand units.
+	measure 'Total On-Hand' = SUM(Inventory[On Hand])
+		formatString: #,##0
+
+	measure 'Total Available' = SUM(Inventory[Available])
+		formatString: #,##0
+
+	measure 'Total Reserved' = SUM(Inventory[Reserved])
+		formatString: #,##0
+
+	/// Average projected days-to-stockout across SKU/facility rows.
+	measure 'Avg Days-to-Stockout' = AVERAGE(Inventory[Projected Stockout Days])
+		formatString: #,##0.0
+
+	/// Distinct SKUs in critical or low-stock status.
+	measure 'Critical or Low SKU Count' = CALCULATE(DISTINCTCOUNT(Inventory[SKU]), Inventory[Status] IN {"critical", "low stock"})
+		formatString: #,##0
+
+	measure 'SKUs Below Reorder Point' = CALCULATE(COUNTROWS(Inventory), FILTER(Inventory, Inventory[Available] < Inventory[Reorder Point]))
+		formatString: #,##0
+
+	column SKU
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: sku
+
+	column 'Facility Code'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: facility_code
+
+	column 'On Hand'
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: on_hand
+
+	column Reserved
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: reserved
+
+	column Available
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: available
+
+	column 'Reorder Point'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: reorder_point
+
+	column 'Safety Stock'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: safety_stock
+
+	/// Estimated days until this SKU stocks out at this facility.
+	column 'Projected Stockout Days'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: projected_stockout_days
+
+	/// in stock | low stock | critical.
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+
+	column 'Bin Location'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: bin_location
+
+	partition Inventory = entity
+		mode: directLake
+		source
+			entityName: inventory
+			expressionSource: DL_Zava

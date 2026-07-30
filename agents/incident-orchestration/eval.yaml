@@ -1,0 +1,47 @@
+# Evaluation suite for the Zava incident-response orchestration (multi-framework pipeline).
+#
+# Executed as a **cloud evaluation** by agents/incident-orchestration/run_eval.py — results land in the
+# Foundry project (portal -> Evaluations) and in the web app's Evaluations tab.
+#
+#   .venv\Scripts\python.exe agents/incident-orchestration/run_eval.py
+#   .venv\Scripts\python.exe agents/incident-orchestration/run_eval.py --from-run
+name: incident-orchestration-quality
+
+agent:
+  name: IncidentResponseOrchestrator
+  target: dataset             # rows are completed pipeline transcripts (fast + repeatable in CI)
+
+dataset:
+  local_uri: evals/incident_eval.jsonl
+  fields: [incident_id, query, response, expected_severity, expected_category, expected_component, expected_decision]
+
+# The pipeline emits structured JSON hand-offs, so deterministic code-based evaluators are the
+# primary measure; built-ins and a rubric cover the narrative quality.
+evaluators:
+  custom:
+    - name: zava_triage_match          # severity / category / component vs. ground truth
+      type: code
+      pass_threshold: 0.99
+    - name: zava_fix_verified          # a file changed AND the suite went green
+      type: code
+      pass_threshold: 1.0
+    - name: zava_compliance_decision   # verdict matches ground truth AND fails closed on red tests
+      type: code
+      pass_threshold: 0.99
+  builtin:
+    - builtin.task_adherence
+    - builtin.coherence
+  rubric:
+    - name: zava_incident_rubric
+      pass_threshold: 0.6
+      dimensions:
+        - triage_correctness   # weight 9
+        - fix_quality          # weight 8
+        - policy_enforcement   # weight 7
+        - handoff_integrity    # weight 5
+        - operator_summary     # weight 4
+        - general_quality      # weight 5, always applicable
+
+options:
+  eval_model: gpt-4.1
+  results: .foundry/results/eval_result.json

@@ -1,0 +1,8 @@
+--pre
+fastapi
+uvicorn[standard]
+websockets
+azure-identity
+azure-ai-projects
+httpx
+python-dotenv

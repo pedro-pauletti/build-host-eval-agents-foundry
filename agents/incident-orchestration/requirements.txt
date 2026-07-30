@@ -1,0 +1,17 @@
+agent-framework==1.12.1
+agent-framework-foundry==1.10.3
+agent-framework-foundry-hosting==1.0.0b260722
+agent-framework-github-copilot==1.0.0rc4
+agent-framework-orchestrations==1.0.1
+github-copilot-sdk==1.0.2
+langgraph==1.2.9
+azure-ai-projects==2.3.0
+azure-identity==1.25.3
+# Harness capability: OpenTelemetry export to Application Insights (setup_observability()).
+# The three AzureMonitor*Exporter classes live here, not in the azure-monitor-opentelemetry distro.
+azure-monitor-opentelemetry-exporter==1.0.0b55
+openai==2.47.0
+python-dotenv==1.2.2
+httpx==0.28.1
+pydantic==2.12.5
+pytest==8.4.2

@@ -1,0 +1,100 @@
+/// Sales transaction fact (online + in-store). Grain = one sale line.
+table Sales
+
+	/// Total sales revenue (net of discount).
+	measure 'Total Revenue' = SUM(Sales[Revenue])
+		formatString: \$#,##0.00
+
+	/// Total units sold.
+	measure 'Total Units' = SUM(Sales[Quantity])
+		formatString: #,##0
+
+	measure 'Number of Sales' = COUNTROWS(Sales)
+		formatString: #,##0
+
+	measure 'Distinct SKUs Sold' = DISTINCTCOUNT(Sales[SKU])
+		formatString: #,##0
+
+	/// Average discount fraction across sale lines.
+	measure 'Avg Discount %' = AVERAGE(Sales[Discount Pct])
+		formatString: 0.0%
+
+	measure 'Avg Selling Price' = DIVIDE([Total Revenue], [Total Units])
+		formatString: \$#,##0.00
+
+	column 'Sale ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: sale_id
+
+	column 'Sale Date'
+		dataType: dateTime
+		isHidden
+		summarizeBy: none
+		sourceColumn: sale_date
+
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	column 'Store Code'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: store_code
+
+	column SKU
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: sku
+
+	column 'Product Line'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: product_line
+
+	column Garment
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: garment
+
+	column Gender
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: gender
+
+	column Quantity
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: quantity
+
+	column 'Unit Price'
+		dataType: decimal
+		summarizeBy: none
+		sourceColumn: unit_price
+		formatString: \$#,##0.00
+
+	/// Discount fraction (0.10 = 10%).
+	column 'Discount Pct'
+		dataType: decimal
+		summarizeBy: none
+		sourceColumn: discount_pct
+		formatString: 0.0%
+
+	column Revenue
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: revenue
+		formatString: \$#,##0.00
+
+	partition Sales = entity
+		mode: directLake
+		source
+			entityName: sales
+			expressionSource: DL_Zava

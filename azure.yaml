@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: zava-foundry-demos
+metadata:
+    template: zava-foundry-demos@0.1.0
+services:
+    delivery-support-agent:
+        project: ./agents/delivery-support-agent
+        host: azure.ai.agent
+        language: python
+        uses:
+            - zava-project
+        codeConfiguration:
+            dependencyResolution: remote_build
+            entryPoint: main.py
+            runtime: python_3_14
+        container:
+            resources:
+                cpu: "1.0"
+                memory: 2Gi
+        description: Zava order tracking and delivery support agent.
+        environmentVariables:
+            - name: AZURE_AI_PROJECT_ENDPOINT
+              value: ${AZURE_AI_PROJECT_ENDPOINT}
+            - name: AZURE_AI_ACCOUNT_ENDPOINT
+              value: ${AZURE_AI_ACCOUNT_ENDPOINT}
+            - name: MODEL_ROUTER_DEPLOYMENT_NAME
+              value: ${MODEL_ROUTER_DEPLOYMENT_NAME}
+            - name: ZAVA_API_BASE_URL
+              value: ${ZAVA_API_BASE_URL}
+        kind: hosted
+        name: DeliverySupport
+        protocols:
+            - protocol: responses
+              version: 2.0.0
+    incident-orchestration:
+        project: ./agents/incident-orchestration
+        host: azure.ai.agent
+        language: python
+        uses:
+            - zava-project
+        codeConfiguration:
+            dependencyResolution: remote_build
+            entryPoint: main.py
+            runtime: python_3_14
+        container:
+            resources:
+                cpu: "2.0"
+                memory: 4Gi
+        description: Zava incident-response orchestration - Triage (LangGraph) -> Code Fix (GitHub Copilot SDK) -> Compliance (Foundry prompt agent), wired with a common MAF Agent Harness.
+        environmentVariables:
+            - name: AZURE_AI_PROJECT_ENDPOINT
+              value: ${AZURE_AI_PROJECT_ENDPOINT}
+            - name: AZURE_AI_ACCOUNT_ENDPOINT
+              value: ${AZURE_AI_ACCOUNT_ENDPOINT}
+            - name: MODEL_ROUTER_DEPLOYMENT_NAME
+              value: ${MODEL_ROUTER_DEPLOYMENT_NAME}
+            - name: TRIAGE_MODEL
+              value: ${TRIAGE_MODEL}
+            - name: COMPLIANCE_MODEL
+              value: ${COMPLIANCE_MODEL}
+            - name: COMPLIANCE_AGENT_NAME
+              value: ${COMPLIANCE_AGENT_NAME}
+            - name: ORCHESTRATION_AGENT_NAME
+              value: ${ORCHESTRATION_AGENT_NAME}
+            - name: CODE_FIX_MODEL
+              value: ${CODE_FIX_MODEL}
+            - name: GITHUB_TOKEN
+              value: ${GITHUB_TOKEN}
+            - name: APPLICATIONINSIGHTS_CONNECTION_STRING
+              value: ${APPLICATIONINSIGHTS_CONNECTION_STRING}
+            - name: OTEL_SENSITIVE_DATA
+              value: ${OTEL_SENSITIVE_DATA}
+        kind: hosted
+        name: IncidentOrchestrator
+        protocols:
+            - protocol: responses
+              version: 2.0.0
+    inventory-webapp:
+        project: ./webapp/inventory-dashboard
+        host: containerapp
+        language: python
+    zava-api:
+        project: ./services/zava-api
+        host: containerapp
+        language: python
+    zava-mcp:
+        project: ./services/zava-mcp
+        host: containerapp
+        language: python
+    zava-project:
+        host: azure.ai.project
+        endpoint: https://zava-foundry-cvm43wkpxaiyg.services.ai.azure.com/api/projects/zava-project
+infra:
+    provider: bicep
+    path: infra
+    module: main

@@ -1,0 +1,9 @@
+{"query": "Hey, what's the status of order 23518?", "expected_behavior": "Calls lookup_order(23518); reports status 'Delayed - Weather', carrier Zava Express, ETA Feb 17 2026, held at the Memphis distribution center, and that no action is required. Does not invent data."}
+{"query": "Why is order 23544 delayed?", "expected_behavior": "Calls lookup_order(23544); explains it is 'Delayed - Customs' (held at customs pending import documentation) and that Zava Global support will contact the customer; gives ETA Feb 20 2026."}
+{"query": "My order 23575 says exception - what do I do?", "expected_behavior": "Calls lookup_order(23575); explains the 'Exception - Address' (address could not be verified) and tells the customer to confirm their shipping address or contact support to release the package."}
+{"query": "Is order 23590 delivered?", "expected_behavior": "Calls lookup_order(23590); confirms it was Delivered (and signed for) in Chicago on Feb 13."}
+{"query": "Where is order 23561?", "expected_behavior": "Calls lookup_order(23561); reports 'Out for Delivery' in Austin, arriving today."}
+{"query": "Track shipment ZVX-7489201374829.", "expected_behavior": "Calls track_shipment with the tracking number; returns the same order (23518) shipment status: Delayed - Weather, Memphis, ETA Feb 17."}
+{"query": "What's the status of order 99999?", "expected_behavior": "Calls lookup_order(99999); the API returns not found; the agent politely says the order/tracking number couldn't be found and asks the customer to double-check it. Does not fabricate a status."}
+{"query": "My package is late, can you help?", "expected_behavior": "Asks the customer for their order ID or tracking number before looking anything up; does not guess an order."}
+{"query": "When will my order arrive?", "expected_behavior": "If no order was discussed yet, asks for the order ID; if an order is in session memory, answers with that order's ETA without re-asking."}

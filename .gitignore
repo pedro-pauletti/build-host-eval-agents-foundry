@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.venv-fabric/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# azd / Azure
+.azure/
+azure.yaml.lock
+.azd-agent-init-scratch/
+
+# Foundry local cache (keep metadata, ignore heavy caches)
+**/.foundry/results/
+**/.foundry/datasets/*.jsonl
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build artifacts
+*.log
+*.tmp
+tmp/

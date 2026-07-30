@@ -1,0 +1,48 @@
+/// Fulfilment order line fact. Grain = one order line (order x SKU).
+table 'Order Items'
+
+	measure 'Order Line Units' = SUM('Order Items'[Quantity])
+		formatString: #,##0
+
+	measure 'Order Line Value' = SUM('Order Items'[Line Total])
+		formatString: \$#,##0.00
+
+	column 'Order ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column SKU
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: sku
+
+	column 'Product Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: name
+
+	column Quantity
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: quantity
+
+	column 'Unit Price'
+		dataType: decimal
+		summarizeBy: none
+		sourceColumn: unit_price
+		formatString: \$#,##0.00
+
+	column 'Line Total'
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: line_total
+		formatString: \$#,##0.00
+
+	partition 'Order Items' = entity
+		mode: directLake
+		source
+			entityName: order_items
+			expressionSource: DL_Zava

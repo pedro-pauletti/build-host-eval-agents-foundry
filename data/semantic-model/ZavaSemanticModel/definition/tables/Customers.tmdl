@@ -1,0 +1,44 @@
+/// Customers who place fulfilment orders.
+table Customers
+
+	column 'Customer ID'
+		dataType: string
+		isKey
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'First Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: first_name
+
+	column 'Last Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: last_name
+
+	column Email
+		dataType: string
+		summarizeBy: none
+		sourceColumn: email
+
+	column City
+		dataType: string
+		summarizeBy: none
+		sourceColumn: city
+
+	column State
+		dataType: string
+		summarizeBy: none
+		sourceColumn: state
+
+	column Zip
+		dataType: string
+		summarizeBy: none
+		sourceColumn: zip
+
+	partition Customers = entity
+		mode: directLake
+		source
+			entityName: customers
+			expressionSource: DL_Zava

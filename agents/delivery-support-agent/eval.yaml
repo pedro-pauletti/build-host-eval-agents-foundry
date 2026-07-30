@@ -1,0 +1,17 @@
+name: DeliverySupport
+agent:
+    name: DeliverySupport
+    kind: hosted
+    version: "2"
+dataset:
+    name: DeliverySupport
+    version: "1.0"
+    local_uri: datasets\DeliverySupport
+evaluators:
+    - name: DeliverySupport
+      version: "1"
+      local_uri: evaluators\DeliverySupport\rubric_dimensions.json
+options:
+    eval_model: model-router
+max_samples: 15
+trace_days: 7

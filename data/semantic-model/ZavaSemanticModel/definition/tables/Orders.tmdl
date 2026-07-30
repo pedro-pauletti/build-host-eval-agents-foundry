@@ -1,0 +1,130 @@
+/// Fulfilment order header fact. Grain = one order. One side of Order Items.
+table Orders
+
+	measure 'Total Orders' = DISTINCTCOUNT(Orders[Order ID])
+		formatString: #,##0
+
+	measure 'Total Order Value' = SUM(Orders[Order Total])
+		formatString: \$#,##0.00
+
+	measure 'Avg Order Value' = DIVIDE([Total Order Value], [Total Orders])
+		formatString: \$#,##0.00
+
+	measure 'Delayed Orders' = CALCULATE([Total Orders], Orders[Status] = "delayed")
+		formatString: #,##0
+
+	measure 'Delivered Orders' = CALCULATE([Total Orders], Orders[Status] = "delivered")
+		formatString: #,##0
+
+	column 'Order ID'
+		dataType: string
+		isKey
+		isHidden
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'Recipient Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: recipient_name
+
+	column 'Order Date'
+		dataType: dateTime
+		isHidden
+		summarizeBy: none
+		sourceColumn: order_date
+
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	column 'Ship From Facility'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: ship_from_facility
+
+	column Carrier
+		dataType: string
+		summarizeBy: none
+		sourceColumn: carrier
+
+	column 'Tracking Number'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: tracking_number
+
+	/// processing|in_transit|out_for_delivery|delivered|delayed|exception.
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+
+	column 'Status Label'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status_label
+
+	column 'Estimated Delivery'
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: estimated_delivery
+
+	column 'Last Location'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: last_location
+
+	column 'Deliver City'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: deliver_city
+
+	column 'Deliver State'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: deliver_state
+
+	column 'Deliver Zip'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: deliver_zip
+
+	column 'Delay Reason'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: delay_reason
+
+	column Notes
+		dataType: string
+		summarizeBy: none
+		sourceColumn: notes
+
+	column 'Last Updated'
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: last_updated
+
+	column 'Order Total'
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: order_total
+		formatString: \$#,##0.00
+
+	column 'Item Count'
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: item_count
+
+	partition Orders = entity
+		mode: directLake
+		source
+			entityName: orders
+			expressionSource: DL_Zava

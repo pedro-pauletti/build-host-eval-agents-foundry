@@ -1,0 +1,577 @@
+sku,product_line,line_code,garment,gender,cut,size,size_label,color_code,color_name,name,channel,unit_cost,unit_price,active
+ZCCTM-SS-S-B0,ZavaCore Field Core,C,Top,Mens,SS,S,Small,B0,Black/Orange,Core Mens SS Top Small Black/Orange,B2C,14.19,33.79,true
+ZCCTM-SS-S-CS,ZavaCore Field Core,C,Top,Mens,SS,S,Small,CS,Charcoal/Silver,Core Mens SS Top Small Charcoal/Silver,B2C,15.78,37.58,true
+ZCCTM-LS-S-RR,ZavaCore Field Core,C,Top,Mens,LS,S,Small,RR,Deep Red/Red,Core Mens LS Top Small Deep Red/Red,B2C,15.65,37.27,true
+ZCCTM-LS-S-T0,ZavaCore Field Core,C,Top,Mens,LS,S,Small,T0,Teal/Orange,Core Mens LS Top Small Teal/Orange,B2C,15.15,36.08,true
+ZCCTM-SS-M-B0,ZavaCore Field Core,C,Top,Mens,SS,M,Medium,B0,Black/Orange,Core Mens SS Top Medium Black/Orange,B2C,15.46,36.81,true
+ZCCTM-SS-M-CS,ZavaCore Field Core,C,Top,Mens,SS,M,Medium,CS,Charcoal/Silver,Core Mens SS Top Medium Charcoal/Silver,B2C,15.57,37.08,true
+ZCCTM-LS-M-RR,ZavaCore Field Core,C,Top,Mens,LS,M,Medium,RR,Deep Red/Red,Core Mens LS Top Medium Deep Red/Red,B2C,15.4,36.67,true
+ZCCTM-LS-M-T0,ZavaCore Field Core,C,Top,Mens,LS,M,Medium,T0,Teal/Orange,Core Mens LS Top Medium Teal/Orange,B2C,14.81,35.26,true
+ZCCTM-SS-L-B0,ZavaCore Field Core,C,Top,Mens,SS,L,Large,B0,Black/Orange,Core Mens SS Top Large Black/Orange,B2C,15.14,36.04,true
+ZCCTM-SS-L-CS,ZavaCore Field Core,C,Top,Mens,SS,L,Large,CS,Charcoal/Silver,Core Mens SS Top Large Charcoal/Silver,B2C,14.52,34.56,true
+ZCCTM-LS-L-RR,ZavaCore Field Core,C,Top,Mens,LS,L,Large,RR,Deep Red/Red,Core Mens LS Top Large Deep Red/Red,B2C,14.83,35.3,true
+ZCCTM-LS-L-T0,ZavaCore Field Core,C,Top,Mens,LS,L,Large,T0,Teal/Orange,Core Mens LS Top Large Teal/Orange,B2C,15.26,36.34,true
+ZCCTM-SS-XL-B0,ZavaCore Field Core,C,Top,Mens,SS,XL,XL,B0,Black/Orange,Core Mens SS Top XL Black/Orange,B2C,14.73,35.06,true
+ZCCTM-SS-XL-CS,ZavaCore Field Core,C,Top,Mens,SS,XL,XL,CS,Charcoal/Silver,Core Mens SS Top XL Charcoal/Silver,B2C,15.84,37.71,true
+ZCCTM-LS-XL-RR,ZavaCore Field Core,C,Top,Mens,LS,XL,XL,RR,Deep Red/Red,Core Mens LS Top XL Deep Red/Red,B2C,15.5,36.91,true
+ZCCTM-LS-XL-T0,ZavaCore Field Core,C,Top,Mens,LS,XL,XL,T0,Teal/Orange,Core Mens LS Top XL Teal/Orange,B2C,15.18,36.15,true
+ZCCTW-SS-S-B0,ZavaCore Field Core,C,Top,Womens,SS,S,Small,B0,Black/Orange,Core Womens SS Top Small Black/Orange,B2C,14.14,33.66,true
+ZCCTW-SS-S-CS,ZavaCore Field Core,C,Top,Womens,SS,S,Small,CS,Charcoal/Silver,Core Womens SS Top Small Charcoal/Silver,B2C,14.52,34.58,true
+ZCCTW-LS-S-RR,ZavaCore Field Core,C,Top,Womens,LS,S,Small,RR,Deep Red/Red,Core Womens LS Top Small Deep Red/Red,B2C,14.23,33.89,true
+ZCCTW-LS-S-T0,ZavaCore Field Core,C,Top,Womens,LS,S,Small,T0,Teal/Orange,Core Womens LS Top Small Teal/Orange,B2C,14.56,34.66,true
+ZCCTW-SS-M-B0,ZavaCore Field Core,C,Top,Womens,SS,M,Medium,B0,Black/Orange,Core Womens SS Top Medium Black/Orange,B2C,14.66,34.9,true
+ZCCTW-SS-M-CS,ZavaCore Field Core,C,Top,Womens,SS,M,Medium,CS,Charcoal/Silver,Core Womens SS Top Medium Charcoal/Silver,B2C,14.14,33.66,true
+ZCCTW-LS-M-RR,ZavaCore Field Core,C,Top,Womens,LS,M,Medium,RR,Deep Red/Red,Core Womens LS Top Medium Deep Red/Red,B2C,15.02,35.77,true
+ZCCTW-LS-M-T0,ZavaCore Field Core,C,Top,Womens,LS,M,Medium,T0,Teal/Orange,Core Womens LS Top Medium Teal/Orange,B2C,14.78,35.19,true
+ZCCTW-SS-L-B0,ZavaCore Field Core,C,Top,Womens,SS,L,Large,B0,Black/Orange,Core Womens SS Top Large Black/Orange,B2C,15.64,37.23,true
+ZCCTW-SS-L-CS,ZavaCore Field Core,C,Top,Womens,SS,L,Large,CS,Charcoal/Silver,Core Womens SS Top Large Charcoal/Silver,B2C,15.72,37.42,true
+ZCCTW-LS-L-RR,ZavaCore Field Core,C,Top,Womens,LS,L,Large,RR,Deep Red/Red,Core Womens LS Top Large Deep Red/Red,B2C,15.58,37.09,true
+ZCCTW-LS-L-T0,ZavaCore Field Core,C,Top,Womens,LS,L,Large,T0,Teal/Orange,Core Womens LS Top Large Teal/Orange,B2C,15.73,37.46,true
+ZCCTW-SS-XL-B0,ZavaCore Field Core,C,Top,Womens,SS,XL,XL,B0,Black/Orange,Core Womens SS Top XL Black/Orange,B2C,14.94,35.58,true
+ZCCTW-SS-XL-CS,ZavaCore Field Core,C,Top,Womens,SS,XL,XL,CS,Charcoal/Silver,Core Womens SS Top XL Charcoal/Silver,B2C,15.07,35.87,true
+ZCCTW-LS-XL-RR,ZavaCore Field Core,C,Top,Womens,LS,XL,XL,RR,Deep Red/Red,Core Womens LS Top XL Deep Red/Red,B2C,15.53,36.97,true
+ZCCTW-LS-XL-T0,ZavaCore Field Core,C,Top,Womens,LS,XL,XL,T0,Teal/Orange,Core Womens LS Top XL Teal/Orange,B2C,15.66,37.29,true
+ZCCTY-SS-S-B0,ZavaCore Field Core,C,Top,Youth,SS,S,Small,B0,Black/Orange,Core Youth SS Top Small Black/Orange,B2C,13.04,31.04,true
+ZCCTY-SS-S-CS,ZavaCore Field Core,C,Top,Youth,SS,S,Small,CS,Charcoal/Silver,Core Youth SS Top Small Charcoal/Silver,B2C,12.63,30.08,true
+ZCCTY-LS-S-RR,ZavaCore Field Core,C,Top,Youth,LS,S,Small,RR,Deep Red/Red,Core Youth LS Top Small Deep Red/Red,B2C,13.31,31.68,true
+ZCCTY-LS-S-T0,ZavaCore Field Core,C,Top,Youth,LS,S,Small,T0,Teal/Orange,Core Youth LS Top Small Teal/Orange,B2C,12.89,30.69,true
+ZCCTY-SS-M-B0,ZavaCore Field Core,C,Top,Youth,SS,M,Medium,B0,Black/Orange,Core Youth SS Top Medium Black/Orange,B2C,12.97,30.87,true
+ZCCTY-SS-M-CS,ZavaCore Field Core,C,Top,Youth,SS,M,Medium,CS,Charcoal/Silver,Core Youth SS Top Medium Charcoal/Silver,B2C,12.28,29.23,true
+ZCCTY-LS-M-RR,ZavaCore Field Core,C,Top,Youth,LS,M,Medium,RR,Deep Red/Red,Core Youth LS Top Medium Deep Red/Red,B2C,12.96,30.85,true
+ZCCTY-LS-M-T0,ZavaCore Field Core,C,Top,Youth,LS,M,Medium,T0,Teal/Orange,Core Youth LS Top Medium Teal/Orange,B2C,12.76,30.38,true
+ZCCTY-SS-L-B0,ZavaCore Field Core,C,Top,Youth,SS,L,Large,B0,Black/Orange,Core Youth SS Top Large Black/Orange,B2C,13.0,30.96,true
+ZCCTY-SS-L-CS,ZavaCore Field Core,C,Top,Youth,SS,L,Large,CS,Charcoal/Silver,Core Youth SS Top Large Charcoal/Silver,B2C,12.57,29.94,true
+ZCCTY-LS-L-RR,ZavaCore Field Core,C,Top,Youth,LS,L,Large,RR,Deep Red/Red,Core Youth LS Top Large Deep Red/Red,B2C,13.22,31.48,true
+ZCCTY-LS-L-T0,ZavaCore Field Core,C,Top,Youth,LS,L,Large,T0,Teal/Orange,Core Youth LS Top Large Teal/Orange,B2C,11.92,28.39,true
+ZCCTY-SS-XL-B0,ZavaCore Field Core,C,Top,Youth,SS,XL,XL,B0,Black/Orange,Core Youth SS Top XL Black/Orange,B2C,13.43,31.98,true
+ZCCTY-SS-XL-CS,ZavaCore Field Core,C,Top,Youth,SS,XL,XL,CS,Charcoal/Silver,Core Youth SS Top XL Charcoal/Silver,B2C,13.38,31.85,true
+ZCCTY-LS-XL-RR,ZavaCore Field Core,C,Top,Youth,LS,XL,XL,RR,Deep Red/Red,Core Youth LS Top XL Deep Red/Red,B2C,13.37,31.83,true
+ZCCTY-LS-XL-T0,ZavaCore Field Core,C,Top,Youth,LS,XL,XL,T0,Teal/Orange,Core Youth LS Top XL Teal/Orange,B2C,12.99,30.94,true
+ZCCSM-AS-S-B0,ZavaCore Field Core,C,Shorts,Mens,AS,S,Small,B0,Black/Orange,Core Mens Shorts Small Black/Orange,B2C,12.81,30.49,true
+ZCCSM-AS-S-CS,ZavaCore Field Core,C,Shorts,Mens,AS,S,Small,CS,Charcoal/Silver,Core Mens Shorts Small Charcoal/Silver,B2C,13.29,31.65,true
+ZCCSM-AS-S-RR,ZavaCore Field Core,C,Shorts,Mens,AS,S,Small,RR,Deep Red/Red,Core Mens Shorts Small Deep Red/Red,B2C,13.06,31.09,true
+ZCCSM-AS-S-T0,ZavaCore Field Core,C,Shorts,Mens,AS,S,Small,T0,Teal/Orange,Core Mens Shorts Small Teal/Orange,B2C,13.33,31.74,true
+ZCCSM-AS-M-B0,ZavaCore Field Core,C,Shorts,Mens,AS,M,Medium,B0,Black/Orange,Core Mens Shorts Medium Black/Orange,B2C,12.72,30.28,true
+ZCCSM-AS-M-CS,ZavaCore Field Core,C,Shorts,Mens,AS,M,Medium,CS,Charcoal/Silver,Core Mens Shorts Medium Charcoal/Silver,B2C,12.69,30.21,true
+ZCCSM-AS-M-RR,ZavaCore Field Core,C,Shorts,Mens,AS,M,Medium,RR,Deep Red/Red,Core Mens Shorts Medium Deep Red/Red,B2C,12.39,29.51,true
+ZCCSM-AS-M-T0,ZavaCore Field Core,C,Shorts,Mens,AS,M,Medium,T0,Teal/Orange,Core Mens Shorts Medium Teal/Orange,B2C,13.55,32.27,true
+ZCCSM-AS-L-B0,ZavaCore Field Core,C,Shorts,Mens,AS,L,Large,B0,Black/Orange,Core Mens Shorts Large Black/Orange,B2C,13.51,32.17,true
+ZCCSM-AS-L-CS,ZavaCore Field Core,C,Shorts,Mens,AS,L,Large,CS,Charcoal/Silver,Core Mens Shorts Large Charcoal/Silver,B2C,13.45,32.02,true
+ZCCSM-AS-L-RR,ZavaCore Field Core,C,Shorts,Mens,AS,L,Large,RR,Deep Red/Red,Core Mens Shorts Large Deep Red/Red,B2C,12.13,28.88,true
+ZCCSM-AS-L-T0,ZavaCore Field Core,C,Shorts,Mens,AS,L,Large,T0,Teal/Orange,Core Mens Shorts Large Teal/Orange,B2C,12.21,29.07,true
+ZCCSM-AS-XL-B0,ZavaCore Field Core,C,Shorts,Mens,AS,XL,XL,B0,Black/Orange,Core Mens Shorts XL Black/Orange,B2C,12.12,28.86,true
+ZCCSM-AS-XL-CS,ZavaCore Field Core,C,Shorts,Mens,AS,XL,XL,CS,Charcoal/Silver,Core Mens Shorts XL Charcoal/Silver,B2C,12.92,30.76,true
+ZCCSM-AS-XL-RR,ZavaCore Field Core,C,Shorts,Mens,AS,XL,XL,RR,Deep Red/Red,Core Mens Shorts XL Deep Red/Red,B2C,12.97,30.88,true
+ZCCSM-AS-XL-T0,ZavaCore Field Core,C,Shorts,Mens,AS,XL,XL,T0,Teal/Orange,Core Mens Shorts XL Teal/Orange,B2C,12.38,29.47,true
+ZCCSW-AS-S-B0,ZavaCore Field Core,C,Shorts,Womens,AS,S,Small,B0,Black/Orange,Core Womens Shorts Small Black/Orange,B2C,12.04,28.67,true
+ZCCSW-AS-S-CS,ZavaCore Field Core,C,Shorts,Womens,AS,S,Small,CS,Charcoal/Silver,Core Womens Shorts Small Charcoal/Silver,B2C,13.54,32.23,true
+ZCCSW-AS-S-RR,ZavaCore Field Core,C,Shorts,Womens,AS,S,Small,RR,Deep Red/Red,Core Womens Shorts Small Deep Red/Red,B2C,12.22,29.1,true
+ZCCSW-AS-S-T0,ZavaCore Field Core,C,Shorts,Womens,AS,S,Small,T0,Teal/Orange,Core Womens Shorts Small Teal/Orange,B2C,13.06,31.09,true
+ZCCSW-AS-M-B0,ZavaCore Field Core,C,Shorts,Womens,AS,M,Medium,B0,Black/Orange,Core Womens Shorts Medium Black/Orange,B2C,13.23,31.5,true
+ZCCSW-AS-M-CS,ZavaCore Field Core,C,Shorts,Womens,AS,M,Medium,CS,Charcoal/Silver,Core Womens Shorts Medium Charcoal/Silver,B2C,13.1,31.19,true
+ZCCSW-AS-M-RR,ZavaCore Field Core,C,Shorts,Womens,AS,M,Medium,RR,Deep Red/Red,Core Womens Shorts Medium Deep Red/Red,B2C,12.86,30.63,true
+ZCCSW-AS-M-T0,ZavaCore Field Core,C,Shorts,Womens,AS,M,Medium,T0,Teal/Orange,Core Womens Shorts Medium Teal/Orange,B2C,12.93,30.79,true
+ZCCSW-AS-L-B0,ZavaCore Field Core,C,Shorts,Womens,AS,L,Large,B0,Black/Orange,Core Womens Shorts Large Black/Orange,B2C,13.41,31.92,true
+ZCCSW-AS-L-CS,ZavaCore Field Core,C,Shorts,Womens,AS,L,Large,CS,Charcoal/Silver,Core Womens Shorts Large Charcoal/Silver,B2C,12.44,29.63,true
+ZCCSW-AS-L-RR,ZavaCore Field Core,C,Shorts,Womens,AS,L,Large,RR,Deep Red/Red,Core Womens Shorts Large Deep Red/Red,B2C,13.07,31.11,true
+ZCCSW-AS-L-T0,ZavaCore Field Core,C,Shorts,Womens,AS,L,Large,T0,Teal/Orange,Core Womens Shorts Large Teal/Orange,B2C,13.26,31.56,true
+ZCCSW-AS-XL-B0,ZavaCore Field Core,C,Shorts,Womens,AS,XL,XL,B0,Black/Orange,Core Womens Shorts XL Black/Orange,B2C,12.47,29.69,true
+ZCCSW-AS-XL-CS,ZavaCore Field Core,C,Shorts,Womens,AS,XL,XL,CS,Charcoal/Silver,Core Womens Shorts XL Charcoal/Silver,B2C,12.61,30.02,true
+ZCCSW-AS-XL-RR,ZavaCore Field Core,C,Shorts,Womens,AS,XL,XL,RR,Deep Red/Red,Core Womens Shorts XL Deep Red/Red,B2C,12.82,30.53,true
+ZCCSW-AS-XL-T0,ZavaCore Field Core,C,Shorts,Womens,AS,XL,XL,T0,Teal/Orange,Core Womens Shorts XL Teal/Orange,B2C,12.59,29.97,true
+ZCCSY-AS-S-B0,ZavaCore Field Core,C,Shorts,Youth,AS,S,Small,B0,Black/Orange,Core Youth Shorts Small Black/Orange,B2C,10.72,25.52,true
+ZCCSY-AS-S-CS,ZavaCore Field Core,C,Shorts,Youth,AS,S,Small,CS,Charcoal/Silver,Core Youth Shorts Small Charcoal/Silver,B2C,10.25,24.4,true
+ZCCSY-AS-S-RR,ZavaCore Field Core,C,Shorts,Youth,AS,S,Small,RR,Deep Red/Red,Core Youth Shorts Small Deep Red/Red,B2C,11.08,26.37,true
+ZCCSY-AS-S-T0,ZavaCore Field Core,C,Shorts,Youth,AS,S,Small,T0,Teal/Orange,Core Youth Shorts Small Teal/Orange,B2C,10.21,24.31,true
+ZCCSY-AS-M-B0,ZavaCore Field Core,C,Shorts,Youth,AS,M,Medium,B0,Black/Orange,Core Youth Shorts Medium Black/Orange,B2C,10.63,25.31,true
+ZCCSY-AS-M-CS,ZavaCore Field Core,C,Shorts,Youth,AS,M,Medium,CS,Charcoal/Silver,Core Youth Shorts Medium Charcoal/Silver,B2C,10.8,25.72,true
+ZCCSY-AS-M-RR,ZavaCore Field Core,C,Shorts,Youth,AS,M,Medium,RR,Deep Red/Red,Core Youth Shorts Medium Deep Red/Red,B2C,10.87,25.87,true
+ZCCSY-AS-M-T0,ZavaCore Field Core,C,Shorts,Youth,AS,M,Medium,T0,Teal/Orange,Core Youth Shorts Medium Teal/Orange,B2C,10.97,26.12,true
+ZCCSY-AS-L-B0,ZavaCore Field Core,C,Shorts,Youth,AS,L,Large,B0,Black/Orange,Core Youth Shorts Large Black/Orange,B2C,10.39,24.74,true
+ZCCSY-AS-L-CS,ZavaCore Field Core,C,Shorts,Youth,AS,L,Large,CS,Charcoal/Silver,Core Youth Shorts Large Charcoal/Silver,B2C,10.46,24.91,true
+ZCCSY-AS-L-RR,ZavaCore Field Core,C,Shorts,Youth,AS,L,Large,RR,Deep Red/Red,Core Youth Shorts Large Deep Red/Red,B2C,10.64,25.34,true
+ZCCSY-AS-L-T0,ZavaCore Field Core,C,Shorts,Youth,AS,L,Large,T0,Teal/Orange,Core Youth Shorts Large Teal/Orange,B2C,10.5,25.0,true
+ZCCSY-AS-XL-B0,ZavaCore Field Core,C,Shorts,Youth,AS,XL,XL,B0,Black/Orange,Core Youth Shorts XL Black/Orange,B2C,10.94,26.04,true
+ZCCSY-AS-XL-CS,ZavaCore Field Core,C,Shorts,Youth,AS,XL,XL,CS,Charcoal/Silver,Core Youth Shorts XL Charcoal/Silver,B2C,10.45,24.87,true
+ZCCSY-AS-XL-RR,ZavaCore Field Core,C,Shorts,Youth,AS,XL,XL,RR,Deep Red/Red,Core Youth Shorts XL Deep Red/Red,B2C,10.24,24.37,true
+ZCCSY-AS-XL-T0,ZavaCore Field Core,C,Shorts,Youth,AS,XL,XL,T0,Teal/Orange,Core Youth Shorts XL Teal/Orange,B2C,11.47,27.31,true
+ZCCPM-AP-S-B0,ZavaCore Field Core,C,Pants,Mens,AP,S,Small,B0,Black/Orange,Core Mens Pants Small Black/Orange,B2C,19.06,45.39,true
+ZCCPM-AP-S-CS,ZavaCore Field Core,C,Pants,Mens,AP,S,Small,CS,Charcoal/Silver,Core Mens Pants Small Charcoal/Silver,B2C,19.14,45.58,true
+ZCCPM-AP-S-RR,ZavaCore Field Core,C,Pants,Mens,AP,S,Small,RR,Deep Red/Red,Core Mens Pants Small Deep Red/Red,B2C,18.27,43.51,true
+ZCCPM-AP-S-T0,ZavaCore Field Core,C,Pants,Mens,AP,S,Small,T0,Teal/Orange,Core Mens Pants Small Teal/Orange,B2C,18.49,44.03,true
+ZCCPM-AP-M-B0,ZavaCore Field Core,C,Pants,Mens,AP,M,Medium,B0,Black/Orange,Core Mens Pants Medium Black/Orange,B2C,20.15,47.98,true
+ZCCPM-AP-M-CS,ZavaCore Field Core,C,Pants,Mens,AP,M,Medium,CS,Charcoal/Silver,Core Mens Pants Medium Charcoal/Silver,B2C,18.35,43.69,true
+ZCCPM-AP-M-RR,ZavaCore Field Core,C,Pants,Mens,AP,M,Medium,RR,Deep Red/Red,Core Mens Pants Medium Deep Red/Red,B2C,18.91,45.03,true
+ZCCPM-AP-M-T0,ZavaCore Field Core,C,Pants,Mens,AP,M,Medium,T0,Teal/Orange,Core Mens Pants Medium Teal/Orange,B2C,19.27,45.87,true
+ZCCPM-AP-L-B0,ZavaCore Field Core,C,Pants,Mens,AP,L,Large,B0,Black/Orange,Core Mens Pants Large Black/Orange,B2C,18.9,44.99,true
+ZCCPM-AP-L-CS,ZavaCore Field Core,C,Pants,Mens,AP,L,Large,CS,Charcoal/Silver,Core Mens Pants Large Charcoal/Silver,B2C,18.8,44.76,true
+ZCCPM-AP-L-RR,ZavaCore Field Core,C,Pants,Mens,AP,L,Large,RR,Deep Red/Red,Core Mens Pants Large Deep Red/Red,B2C,19.09,45.46,true
+ZCCPM-AP-L-T0,ZavaCore Field Core,C,Pants,Mens,AP,L,Large,T0,Teal/Orange,Core Mens Pants Large Teal/Orange,B2C,18.66,44.43,true
+ZCCPM-AP-XL-B0,ZavaCore Field Core,C,Pants,Mens,AP,XL,XL,B0,Black/Orange,Core Mens Pants XL Black/Orange,B2C,18.76,44.66,true
+ZCCPM-AP-XL-CS,ZavaCore Field Core,C,Pants,Mens,AP,XL,XL,CS,Charcoal/Silver,Core Mens Pants XL Charcoal/Silver,B2C,19.05,45.35,true
+ZCCPM-AP-XL-RR,ZavaCore Field Core,C,Pants,Mens,AP,XL,XL,RR,Deep Red/Red,Core Mens Pants XL Deep Red/Red,B2C,19.91,47.41,true
+ZCCPM-AP-XL-T0,ZavaCore Field Core,C,Pants,Mens,AP,XL,XL,T0,Teal/Orange,Core Mens Pants XL Teal/Orange,B2C,19.96,47.52,true
+ZCCPW-AP-S-B0,ZavaCore Field Core,C,Pants,Womens,AP,S,Small,B0,Black/Orange,Core Womens Pants Small Black/Orange,B2C,18.52,44.1,true
+ZCCPW-AP-S-CS,ZavaCore Field Core,C,Pants,Womens,AP,S,Small,CS,Charcoal/Silver,Core Womens Pants Small Charcoal/Silver,B2C,20.11,47.89,true
+ZCCPW-AP-S-RR,ZavaCore Field Core,C,Pants,Womens,AP,S,Small,RR,Deep Red/Red,Core Womens Pants Small Deep Red/Red,B2C,18.96,45.14,true
+ZCCPW-AP-S-T0,ZavaCore Field Core,C,Pants,Womens,AP,S,Small,T0,Teal/Orange,Core Womens Pants Small Teal/Orange,B2C,20.32,48.37,true
+ZCCPW-AP-M-B0,ZavaCore Field Core,C,Pants,Womens,AP,M,Medium,B0,Black/Orange,Core Womens Pants Medium Black/Orange,B2C,20.03,47.7,true
+ZCCPW-AP-M-CS,ZavaCore Field Core,C,Pants,Womens,AP,M,Medium,CS,Charcoal/Silver,Core Womens Pants Medium Charcoal/Silver,B2C,19.34,46.04,true
+ZCCPW-AP-M-RR,ZavaCore Field Core,C,Pants,Womens,AP,M,Medium,RR,Deep Red/Red,Core Womens Pants Medium Deep Red/Red,B2C,19.9,47.38,true
+ZCCPW-AP-M-T0,ZavaCore Field Core,C,Pants,Womens,AP,M,Medium,T0,Teal/Orange,Core Womens Pants Medium Teal/Orange,B2C,18.22,43.39,true
+ZCCPW-AP-L-B0,ZavaCore Field Core,C,Pants,Womens,AP,L,Large,B0,Black/Orange,Core Womens Pants Large Black/Orange,B2C,19.32,46.0,true
+ZCCPW-AP-L-CS,ZavaCore Field Core,C,Pants,Womens,AP,L,Large,CS,Charcoal/Silver,Core Womens Pants Large Charcoal/Silver,B2C,19.75,47.03,true
+ZCCPW-AP-L-RR,ZavaCore Field Core,C,Pants,Womens,AP,L,Large,RR,Deep Red/Red,Core Womens Pants Large Deep Red/Red,B2C,18.68,44.47,true
+ZCCPW-AP-L-T0,ZavaCore Field Core,C,Pants,Womens,AP,L,Large,T0,Teal/Orange,Core Womens Pants Large Teal/Orange,B2C,19.6,46.67,true
+ZCCPW-AP-XL-B0,ZavaCore Field Core,C,Pants,Womens,AP,XL,XL,B0,Black/Orange,Core Womens Pants XL Black/Orange,B2C,18.2,43.34,true
+ZCCPW-AP-XL-CS,ZavaCore Field Core,C,Pants,Womens,AP,XL,XL,CS,Charcoal/Silver,Core Womens Pants XL Charcoal/Silver,B2C,18.19,43.31,true
+ZCCPW-AP-XL-RR,ZavaCore Field Core,C,Pants,Womens,AP,XL,XL,RR,Deep Red/Red,Core Womens Pants XL Deep Red/Red,B2C,18.38,43.75,true
+ZCCPW-AP-XL-T0,ZavaCore Field Core,C,Pants,Womens,AP,XL,XL,T0,Teal/Orange,Core Womens Pants XL Teal/Orange,B2C,19.82,47.19,true
+ZCCPY-AP-S-B0,ZavaCore Field Core,C,Pants,Youth,AP,S,Small,B0,Black/Orange,Core Youth Pants Small Black/Orange,B2C,16.61,39.55,true
+ZCCPY-AP-S-CS,ZavaCore Field Core,C,Pants,Youth,AP,S,Small,CS,Charcoal/Silver,Core Youth Pants Small Charcoal/Silver,B2C,16.32,38.86,true
+ZCCPY-AP-S-RR,ZavaCore Field Core,C,Pants,Youth,AP,S,Small,RR,Deep Red/Red,Core Youth Pants Small Deep Red/Red,B2C,16.49,39.26,true
+ZCCPY-AP-S-T0,ZavaCore Field Core,C,Pants,Youth,AP,S,Small,T0,Teal/Orange,Core Youth Pants Small Teal/Orange,B2C,15.87,37.78,true
+ZCCPY-AP-M-B0,ZavaCore Field Core,C,Pants,Youth,AP,M,Medium,B0,Black/Orange,Core Youth Pants Medium Black/Orange,B2C,15.6,37.14,true
+ZCCPY-AP-M-CS,ZavaCore Field Core,C,Pants,Youth,AP,M,Medium,CS,Charcoal/Silver,Core Youth Pants Medium Charcoal/Silver,B2C,15.39,36.65,true
+ZCCPY-AP-M-RR,ZavaCore Field Core,C,Pants,Youth,AP,M,Medium,RR,Deep Red/Red,Core Youth Pants Medium Deep Red/Red,B2C,17.07,40.65,true
+ZCCPY-AP-M-T0,ZavaCore Field Core,C,Pants,Youth,AP,M,Medium,T0,Teal/Orange,Core Youth Pants Medium Teal/Orange,B2C,16.13,38.4,true
+ZCCPY-AP-L-B0,ZavaCore Field Core,C,Pants,Youth,AP,L,Large,B0,Black/Orange,Core Youth Pants Large Black/Orange,B2C,15.38,36.62,true
+ZCCPY-AP-L-CS,ZavaCore Field Core,C,Pants,Youth,AP,L,Large,CS,Charcoal/Silver,Core Youth Pants Large Charcoal/Silver,B2C,15.31,36.45,true
+ZCCPY-AP-L-RR,ZavaCore Field Core,C,Pants,Youth,AP,L,Large,RR,Deep Red/Red,Core Youth Pants Large Deep Red/Red,B2C,15.46,36.8,true
+ZCCPY-AP-L-T0,ZavaCore Field Core,C,Pants,Youth,AP,L,Large,T0,Teal/Orange,Core Youth Pants Large Teal/Orange,B2C,16.46,39.2,true
+ZCCPY-AP-XL-B0,ZavaCore Field Core,C,Pants,Youth,AP,XL,XL,B0,Black/Orange,Core Youth Pants XL Black/Orange,B2C,15.92,37.9,true
+ZCCPY-AP-XL-CS,ZavaCore Field Core,C,Pants,Youth,AP,XL,XL,CS,Charcoal/Silver,Core Youth Pants XL Charcoal/Silver,B2C,16.53,39.36,true
+ZCCPY-AP-XL-RR,ZavaCore Field Core,C,Pants,Youth,AP,XL,XL,RR,Deep Red/Red,Core Youth Pants XL Deep Red/Red,B2C,15.34,36.53,true
+ZCCPY-AP-XL-T0,ZavaCore Field Core,C,Pants,Youth,AP,XL,XL,T0,Teal/Orange,Core Youth Pants XL Teal/Orange,B2C,15.92,37.91,true
+ZCRTM-SS-S-B0,ZavaCore Field Pro,R,Top,Mens,SS,S,Small,B0,Black/Orange,Pro Mens SS Top Small Black/Orange,B2C,19.63,46.74,true
+ZCRTM-SS-S-CS,ZavaCore Field Pro,R,Top,Mens,SS,S,Small,CS,Charcoal/Silver,Pro Mens SS Top Small Charcoal/Silver,B2C,20.59,49.02,true
+ZCRTM-LS-S-RR,ZavaCore Field Pro,R,Top,Mens,LS,S,Small,RR,Deep Red/Red,Pro Mens LS Top Small Deep Red/Red,B2C,19.86,47.29,true
+ZCRTM-LS-S-T0,ZavaCore Field Pro,R,Top,Mens,LS,S,Small,T0,Teal/Orange,Pro Mens LS Top Small Teal/Orange,B2C,19.85,47.26,true
+ZCRTM-SS-M-B0,ZavaCore Field Pro,R,Top,Mens,SS,M,Medium,B0,Black/Orange,Pro Mens SS Top Medium Black/Orange,B2C,19.12,45.53,true
+ZCRTM-SS-M-CS,ZavaCore Field Pro,R,Top,Mens,SS,M,Medium,CS,Charcoal/Silver,Pro Mens SS Top Medium Charcoal/Silver,B2C,18.3,43.57,true
+ZCRTM-LS-M-RR,ZavaCore Field Pro,R,Top,Mens,LS,M,Medium,RR,Deep Red/Red,Pro Mens LS Top Medium Deep Red/Red,B2C,20.34,48.42,true
+ZCRTM-LS-M-T0,ZavaCore Field Pro,R,Top,Mens,LS,M,Medium,T0,Teal/Orange,Pro Mens LS Top Medium Teal/Orange,B2C,19.88,47.34,true
+ZCRTM-SS-L-B0,ZavaCore Field Pro,R,Top,Mens,SS,L,Large,B0,Black/Orange,Pro Mens SS Top Large Black/Orange,B2C,19.96,47.53,true
+ZCRTM-SS-L-CS,ZavaCore Field Pro,R,Top,Mens,SS,L,Large,CS,Charcoal/Silver,Pro Mens SS Top Large Charcoal/Silver,B2C,18.89,44.98,true
+ZCRTM-LS-L-RR,ZavaCore Field Pro,R,Top,Mens,LS,L,Large,RR,Deep Red/Red,Pro Mens LS Top Large Deep Red/Red,B2C,18.95,45.11,true
+ZCRTM-LS-L-T0,ZavaCore Field Pro,R,Top,Mens,LS,L,Large,T0,Teal/Orange,Pro Mens LS Top Large Teal/Orange,B2C,19.5,46.43,true
+ZCRTM-SS-XL-B0,ZavaCore Field Pro,R,Top,Mens,SS,XL,XL,B0,Black/Orange,Pro Mens SS Top XL Black/Orange,B2C,18.64,44.39,true
+ZCRTM-SS-XL-CS,ZavaCore Field Pro,R,Top,Mens,SS,XL,XL,CS,Charcoal/Silver,Pro Mens SS Top XL Charcoal/Silver,B2C,19.95,47.49,true
+ZCRTM-LS-XL-RR,ZavaCore Field Pro,R,Top,Mens,LS,XL,XL,RR,Deep Red/Red,Pro Mens LS Top XL Deep Red/Red,B2C,18.56,44.18,true
+ZCRTM-LS-XL-T0,ZavaCore Field Pro,R,Top,Mens,LS,XL,XL,T0,Teal/Orange,Pro Mens LS Top XL Teal/Orange,B2C,18.45,43.92,true
+ZCRTW-SS-S-B0,ZavaCore Field Pro,R,Top,Womens,SS,S,Small,B0,Black/Orange,Pro Womens SS Top Small Black/Orange,B2C,19.45,46.32,true
+ZCRTW-SS-S-CS,ZavaCore Field Pro,R,Top,Womens,SS,S,Small,CS,Charcoal/Silver,Pro Womens SS Top Small Charcoal/Silver,B2C,19.77,47.06,true
+ZCRTW-LS-S-RR,ZavaCore Field Pro,R,Top,Womens,LS,S,Small,RR,Deep Red/Red,Pro Womens LS Top Small Deep Red/Red,B2C,18.23,43.4,true
+ZCRTW-LS-S-T0,ZavaCore Field Pro,R,Top,Womens,LS,S,Small,T0,Teal/Orange,Pro Womens LS Top Small Teal/Orange,B2C,18.47,43.97,true
+ZCRTW-SS-M-B0,ZavaCore Field Pro,R,Top,Womens,SS,M,Medium,B0,Black/Orange,Pro Womens SS Top Medium Black/Orange,B2C,19.11,45.5,true
+ZCRTW-SS-M-CS,ZavaCore Field Pro,R,Top,Womens,SS,M,Medium,CS,Charcoal/Silver,Pro Womens SS Top Medium Charcoal/Silver,B2C,20.08,47.82,true
+ZCRTW-LS-M-RR,ZavaCore Field Pro,R,Top,Womens,LS,M,Medium,RR,Deep Red/Red,Pro Womens LS Top Medium Deep Red/Red,B2C,20.08,47.81,true
+ZCRTW-LS-M-T0,ZavaCore Field Pro,R,Top,Womens,LS,M,Medium,T0,Teal/Orange,Pro Womens LS Top Medium Teal/Orange,B2C,19.5,46.44,true
+ZCRTW-SS-L-B0,ZavaCore Field Pro,R,Top,Womens,SS,L,Large,B0,Black/Orange,Pro Womens SS Top Large Black/Orange,B2C,19.85,47.27,true
+ZCRTW-SS-L-CS,ZavaCore Field Pro,R,Top,Womens,SS,L,Large,CS,Charcoal/Silver,Pro Womens SS Top Large Charcoal/Silver,B2C,20.36,48.48,true
+ZCRTW-LS-L-RR,ZavaCore Field Pro,R,Top,Womens,LS,L,Large,RR,Deep Red/Red,Pro Womens LS Top Large Deep Red/Red,B2C,18.72,44.58,true
+ZCRTW-LS-L-T0,ZavaCore Field Pro,R,Top,Womens,LS,L,Large,T0,Teal/Orange,Pro Womens LS Top Large Teal/Orange,B2C,18.84,44.86,true
+ZCRTW-SS-XL-B0,ZavaCore Field Pro,R,Top,Womens,SS,XL,XL,B0,Black/Orange,Pro Womens SS Top XL Black/Orange,B2C,19.19,45.7,true
+ZCRTW-SS-XL-CS,ZavaCore Field Pro,R,Top,Womens,SS,XL,XL,CS,Charcoal/Silver,Pro Womens SS Top XL Charcoal/Silver,B2C,18.5,44.05,true
+ZCRTW-LS-XL-RR,ZavaCore Field Pro,R,Top,Womens,LS,XL,XL,RR,Deep Red/Red,Pro Womens LS Top XL Deep Red/Red,B2C,18.38,43.75,true
+ZCRTW-LS-XL-T0,ZavaCore Field Pro,R,Top,Womens,LS,XL,XL,T0,Teal/Orange,Pro Womens LS Top XL Teal/Orange,B2C,19.53,46.5,true
+ZCRTY-SS-S-B0,ZavaCore Field Pro,R,Top,Youth,SS,S,Small,B0,Black/Orange,Pro Youth SS Top Small Black/Orange,B2C,17.16,40.86,true
+ZCRTY-SS-S-CS,ZavaCore Field Pro,R,Top,Youth,SS,S,Small,CS,Charcoal/Silver,Pro Youth SS Top Small Charcoal/Silver,B2C,16.77,39.92,true
+ZCRTY-LS-S-RR,ZavaCore Field Pro,R,Top,Youth,LS,S,Small,RR,Deep Red/Red,Pro Youth LS Top Small Deep Red/Red,B2C,15.55,37.02,true
+ZCRTY-LS-S-T0,ZavaCore Field Pro,R,Top,Youth,LS,S,Small,T0,Teal/Orange,Pro Youth LS Top Small Teal/Orange,B2C,16.76,39.9,true
+ZCRTY-SS-M-B0,ZavaCore Field Pro,R,Top,Youth,SS,M,Medium,B0,Black/Orange,Pro Youth SS Top Medium Black/Orange,B2C,16.43,39.11,true
+ZCRTY-SS-M-CS,ZavaCore Field Pro,R,Top,Youth,SS,M,Medium,CS,Charcoal/Silver,Pro Youth SS Top Medium Charcoal/Silver,B2C,16.87,40.16,true
+ZCRTY-LS-M-RR,ZavaCore Field Pro,R,Top,Youth,LS,M,Medium,RR,Deep Red/Red,Pro Youth LS Top Medium Deep Red/Red,B2C,17.39,41.4,true
+ZCRTY-LS-M-T0,ZavaCore Field Pro,R,Top,Youth,LS,M,Medium,T0,Teal/Orange,Pro Youth LS Top Medium Teal/Orange,B2C,16.93,40.3,true
+ZCRTY-SS-L-B0,ZavaCore Field Pro,R,Top,Youth,SS,L,Large,B0,Black/Orange,Pro Youth SS Top Large Black/Orange,B2C,17.44,41.52,true
+ZCRTY-SS-L-CS,ZavaCore Field Pro,R,Top,Youth,SS,L,Large,CS,Charcoal/Silver,Pro Youth SS Top Large Charcoal/Silver,B2C,16.62,39.56,true
+ZCRTY-LS-L-RR,ZavaCore Field Pro,R,Top,Youth,LS,L,Large,RR,Deep Red/Red,Pro Youth LS Top Large Deep Red/Red,B2C,16.16,38.47,true
+ZCRTY-LS-L-T0,ZavaCore Field Pro,R,Top,Youth,LS,L,Large,T0,Teal/Orange,Pro Youth LS Top Large Teal/Orange,B2C,16.22,38.63,true
+ZCRTY-SS-XL-B0,ZavaCore Field Pro,R,Top,Youth,SS,XL,XL,B0,Black/Orange,Pro Youth SS Top XL Black/Orange,B2C,16.77,39.94,true
+ZCRTY-SS-XL-CS,ZavaCore Field Pro,R,Top,Youth,SS,XL,XL,CS,Charcoal/Silver,Pro Youth SS Top XL Charcoal/Silver,B2C,17.14,40.82,true
+ZCRTY-LS-XL-RR,ZavaCore Field Pro,R,Top,Youth,LS,XL,XL,RR,Deep Red/Red,Pro Youth LS Top XL Deep Red/Red,B2C,16.09,38.31,true
+ZCRTY-LS-XL-T0,ZavaCore Field Pro,R,Top,Youth,LS,XL,XL,T0,Teal/Orange,Pro Youth LS Top XL Teal/Orange,B2C,16.76,39.9,true
+ZCRSM-AS-S-B0,ZavaCore Field Pro,R,Shorts,Mens,AS,S,Small,B0,Black/Orange,Pro Mens Shorts Small Black/Orange,B2C,16.59,39.51,true
+ZCRSM-AS-S-CS,ZavaCore Field Pro,R,Shorts,Mens,AS,S,Small,CS,Charcoal/Silver,Pro Mens Shorts Small Charcoal/Silver,B2C,17.59,41.87,true
+ZCRSM-AS-S-RR,ZavaCore Field Pro,R,Shorts,Mens,AS,S,Small,RR,Deep Red/Red,Pro Mens Shorts Small Deep Red/Red,B2C,17.06,40.61,true
+ZCRSM-AS-S-T0,ZavaCore Field Pro,R,Shorts,Mens,AS,S,Small,T0,Teal/Orange,Pro Mens Shorts Small Teal/Orange,B2C,16.92,40.29,true
+ZCRSM-AS-M-B0,ZavaCore Field Pro,R,Shorts,Mens,AS,M,Medium,B0,Black/Orange,Pro Mens Shorts Medium Black/Orange,B2C,16.2,38.57,true
+ZCRSM-AS-M-CS,ZavaCore Field Pro,R,Shorts,Mens,AS,M,Medium,CS,Charcoal/Silver,Pro Mens Shorts Medium Charcoal/Silver,B2C,17.12,40.76,true
+ZCRSM-AS-M-RR,ZavaCore Field Pro,R,Shorts,Mens,AS,M,Medium,RR,Deep Red/Red,Pro Mens Shorts Medium Deep Red/Red,B2C,17.08,40.67,true
+ZCRSM-AS-M-T0,ZavaCore Field Pro,R,Shorts,Mens,AS,M,Medium,T0,Teal/Orange,Pro Mens Shorts Medium Teal/Orange,B2C,17.69,42.11,true
+ZCRSM-AS-L-B0,ZavaCore Field Pro,R,Shorts,Mens,AS,L,Large,B0,Black/Orange,Pro Mens Shorts Large Black/Orange,B2C,16.7,39.75,true
+ZCRSM-AS-L-CS,ZavaCore Field Pro,R,Shorts,Mens,AS,L,Large,CS,Charcoal/Silver,Pro Mens Shorts Large Charcoal/Silver,B2C,16.22,38.61,true
+ZCRSM-AS-L-RR,ZavaCore Field Pro,R,Shorts,Mens,AS,L,Large,RR,Deep Red/Red,Pro Mens Shorts Large Deep Red/Red,B2C,17.59,41.89,true
+ZCRSM-AS-L-T0,ZavaCore Field Pro,R,Shorts,Mens,AS,L,Large,T0,Teal/Orange,Pro Mens Shorts Large Teal/Orange,B2C,16.71,39.78,true
+ZCRSM-AS-XL-B0,ZavaCore Field Pro,R,Shorts,Mens,AS,XL,XL,B0,Black/Orange,Pro Mens Shorts XL Black/Orange,B2C,17.29,41.17,true
+ZCRSM-AS-XL-CS,ZavaCore Field Pro,R,Shorts,Mens,AS,XL,XL,CS,Charcoal/Silver,Pro Mens Shorts XL Charcoal/Silver,B2C,17.61,41.94,true
+ZCRSM-AS-XL-RR,ZavaCore Field Pro,R,Shorts,Mens,AS,XL,XL,RR,Deep Red/Red,Pro Mens Shorts XL Deep Red/Red,B2C,15.74,37.48,true
+ZCRSM-AS-XL-T0,ZavaCore Field Pro,R,Shorts,Mens,AS,XL,XL,T0,Teal/Orange,Pro Mens Shorts XL Teal/Orange,B2C,16.27,38.74,true
+ZCRSW-AS-S-B0,ZavaCore Field Pro,R,Shorts,Womens,AS,S,Small,B0,Black/Orange,Pro Womens Shorts Small Black/Orange,B2C,16.22,38.62,true
+ZCRSW-AS-S-CS,ZavaCore Field Pro,R,Shorts,Womens,AS,S,Small,CS,Charcoal/Silver,Pro Womens Shorts Small Charcoal/Silver,B2C,16.97,40.41,true
+ZCRSW-AS-S-RR,ZavaCore Field Pro,R,Shorts,Womens,AS,S,Small,RR,Deep Red/Red,Pro Womens Shorts Small Deep Red/Red,B2C,15.91,37.87,true
+ZCRSW-AS-S-T0,ZavaCore Field Pro,R,Shorts,Womens,AS,S,Small,T0,Teal/Orange,Pro Womens Shorts Small Teal/Orange,B2C,16.19,38.55,true
+ZCRSW-AS-M-B0,ZavaCore Field Pro,R,Shorts,Womens,AS,M,Medium,B0,Black/Orange,Pro Womens Shorts Medium Black/Orange,B2C,16.32,38.86,true
+ZCRSW-AS-M-CS,ZavaCore Field Pro,R,Shorts,Womens,AS,M,Medium,CS,Charcoal/Silver,Pro Womens Shorts Medium Charcoal/Silver,B2C,15.96,38.01,true
+ZCRSW-AS-M-RR,ZavaCore Field Pro,R,Shorts,Womens,AS,M,Medium,RR,Deep Red/Red,Pro Womens Shorts Medium Deep Red/Red,B2C,17.37,41.35,true
+ZCRSW-AS-M-T0,ZavaCore Field Pro,R,Shorts,Womens,AS,M,Medium,T0,Teal/Orange,Pro Womens Shorts Medium Teal/Orange,B2C,17.56,41.81,true
+ZCRSW-AS-L-B0,ZavaCore Field Pro,R,Shorts,Womens,AS,L,Large,B0,Black/Orange,Pro Womens Shorts Large Black/Orange,B2C,17.29,41.17,true
+ZCRSW-AS-L-CS,ZavaCore Field Pro,R,Shorts,Womens,AS,L,Large,CS,Charcoal/Silver,Pro Womens Shorts Large Charcoal/Silver,B2C,15.93,37.92,true
+ZCRSW-AS-L-RR,ZavaCore Field Pro,R,Shorts,Womens,AS,L,Large,RR,Deep Red/Red,Pro Womens Shorts Large Deep Red/Red,B2C,15.62,37.2,true
+ZCRSW-AS-L-T0,ZavaCore Field Pro,R,Shorts,Womens,AS,L,Large,T0,Teal/Orange,Pro Womens Shorts Large Teal/Orange,B2C,16.71,39.78,true
+ZCRSW-AS-XL-B0,ZavaCore Field Pro,R,Shorts,Womens,AS,XL,XL,B0,Black/Orange,Pro Womens Shorts XL Black/Orange,B2C,15.62,37.19,true
+ZCRSW-AS-XL-CS,ZavaCore Field Pro,R,Shorts,Womens,AS,XL,XL,CS,Charcoal/Silver,Pro Womens Shorts XL Charcoal/Silver,B2C,16.66,39.66,true
+ZCRSW-AS-XL-RR,ZavaCore Field Pro,R,Shorts,Womens,AS,XL,XL,RR,Deep Red/Red,Pro Womens Shorts XL Deep Red/Red,B2C,17.35,41.32,true
+ZCRSW-AS-XL-T0,ZavaCore Field Pro,R,Shorts,Womens,AS,XL,XL,T0,Teal/Orange,Pro Womens Shorts XL Teal/Orange,B2C,16.35,38.92,true
+ZCRSY-AS-S-B0,ZavaCore Field Pro,R,Shorts,Youth,AS,S,Small,B0,Black/Orange,Pro Youth Shorts Small Black/Orange,B2C,14.19,33.79,true
+ZCRSY-AS-S-CS,ZavaCore Field Pro,R,Shorts,Youth,AS,S,Small,CS,Charcoal/Silver,Pro Youth Shorts Small Charcoal/Silver,B2C,14.33,34.12,true
+ZCRSY-AS-S-RR,ZavaCore Field Pro,R,Shorts,Youth,AS,S,Small,RR,Deep Red/Red,Pro Youth Shorts Small Deep Red/Red,B2C,13.42,31.95,true
+ZCRSY-AS-S-T0,ZavaCore Field Pro,R,Shorts,Youth,AS,S,Small,T0,Teal/Orange,Pro Youth Shorts Small Teal/Orange,B2C,14.1,33.58,true
+ZCRSY-AS-M-B0,ZavaCore Field Pro,R,Shorts,Youth,AS,M,Medium,B0,Black/Orange,Pro Youth Shorts Medium Black/Orange,B2C,13.92,33.14,true
+ZCRSY-AS-M-CS,ZavaCore Field Pro,R,Shorts,Youth,AS,M,Medium,CS,Charcoal/Silver,Pro Youth Shorts Medium Charcoal/Silver,B2C,13.77,32.79,true
+ZCRSY-AS-M-RR,ZavaCore Field Pro,R,Shorts,Youth,AS,M,Medium,RR,Deep Red/Red,Pro Youth Shorts Medium Deep Red/Red,B2C,13.86,32.99,true
+ZCRSY-AS-M-T0,ZavaCore Field Pro,R,Shorts,Youth,AS,M,Medium,T0,Teal/Orange,Pro Youth Shorts Medium Teal/Orange,B2C,13.44,32.01,true
+ZCRSY-AS-L-B0,ZavaCore Field Pro,R,Shorts,Youth,AS,L,Large,B0,Black/Orange,Pro Youth Shorts Large Black/Orange,B2C,13.68,32.56,true
+ZCRSY-AS-L-CS,ZavaCore Field Pro,R,Shorts,Youth,AS,L,Large,CS,Charcoal/Silver,Pro Youth Shorts Large Charcoal/Silver,B2C,14.46,34.44,true
+ZCRSY-AS-L-RR,ZavaCore Field Pro,R,Shorts,Youth,AS,L,Large,RR,Deep Red/Red,Pro Youth Shorts Large Deep Red/Red,B2C,14.89,35.45,true
+ZCRSY-AS-L-T0,ZavaCore Field Pro,R,Shorts,Youth,AS,L,Large,T0,Teal/Orange,Pro Youth Shorts Large Teal/Orange,B2C,13.38,31.85,true
+ZCRSY-AS-XL-B0,ZavaCore Field Pro,R,Shorts,Youth,AS,XL,XL,B0,Black/Orange,Pro Youth Shorts XL Black/Orange,B2C,14.69,34.98,true
+ZCRSY-AS-XL-CS,ZavaCore Field Pro,R,Shorts,Youth,AS,XL,XL,CS,Charcoal/Silver,Pro Youth Shorts XL Charcoal/Silver,B2C,13.71,32.64,true
+ZCRSY-AS-XL-RR,ZavaCore Field Pro,R,Shorts,Youth,AS,XL,XL,RR,Deep Red/Red,Pro Youth Shorts XL Deep Red/Red,B2C,13.53,32.22,true
+ZCRSY-AS-XL-T0,ZavaCore Field Pro,R,Shorts,Youth,AS,XL,XL,T0,Teal/Orange,Pro Youth Shorts XL Teal/Orange,B2C,14.14,33.67,true
+ZCRPM-AP-S-B0,ZavaCore Field Pro,R,Pants,Mens,AP,S,Small,B0,Black/Orange,Pro Mens Pants Small Black/Orange,B2C,24.37,58.03,true
+ZCRPM-AP-S-CS,ZavaCore Field Pro,R,Pants,Mens,AP,S,Small,CS,Charcoal/Silver,Pro Mens Pants Small Charcoal/Silver,B2C,24.63,58.64,true
+ZCRPM-AP-S-RR,ZavaCore Field Pro,R,Pants,Mens,AP,S,Small,RR,Deep Red/Red,Pro Mens Pants Small Deep Red/Red,B2C,23.97,57.07,true
+ZCRPM-AP-S-T0,ZavaCore Field Pro,R,Pants,Mens,AP,S,Small,T0,Teal/Orange,Pro Mens Pants Small Teal/Orange,B2C,24.04,57.25,true
+ZCRPM-AP-M-B0,ZavaCore Field Pro,R,Pants,Mens,AP,M,Medium,B0,Black/Orange,Pro Mens Pants Medium Black/Orange,B2C,25.77,61.35,true
+ZCRPM-AP-M-CS,ZavaCore Field Pro,R,Pants,Mens,AP,M,Medium,CS,Charcoal/Silver,Pro Mens Pants Medium Charcoal/Silver,B2C,24.65,58.69,true
+ZCRPM-AP-M-RR,ZavaCore Field Pro,R,Pants,Mens,AP,M,Medium,RR,Deep Red/Red,Pro Mens Pants Medium Deep Red/Red,B2C,24.56,58.48,true
+ZCRPM-AP-M-T0,ZavaCore Field Pro,R,Pants,Mens,AP,M,Medium,T0,Teal/Orange,Pro Mens Pants Medium Teal/Orange,B2C,24.75,58.93,true
+ZCRPM-AP-L-B0,ZavaCore Field Pro,R,Pants,Mens,AP,L,Large,B0,Black/Orange,Pro Mens Pants Large Black/Orange,B2C,25.44,60.57,true
+ZCRPM-AP-L-CS,ZavaCore Field Pro,R,Pants,Mens,AP,L,Large,CS,Charcoal/Silver,Pro Mens Pants Large Charcoal/Silver,B2C,24.72,58.86,true
+ZCRPM-AP-L-RR,ZavaCore Field Pro,R,Pants,Mens,AP,L,Large,RR,Deep Red/Red,Pro Mens Pants Large Deep Red/Red,B2C,26.01,61.93,true
+ZCRPM-AP-L-T0,ZavaCore Field Pro,R,Pants,Mens,AP,L,Large,T0,Teal/Orange,Pro Mens Pants Large Teal/Orange,B2C,24.19,57.6,true
+ZCRPM-AP-XL-B0,ZavaCore Field Pro,R,Pants,Mens,AP,XL,XL,B0,Black/Orange,Pro Mens Pants XL Black/Orange,B2C,24.18,57.58,true
+ZCRPM-AP-XL-CS,ZavaCore Field Pro,R,Pants,Mens,AP,XL,XL,CS,Charcoal/Silver,Pro Mens Pants XL Charcoal/Silver,B2C,25.34,60.34,true
+ZCRPM-AP-XL-RR,ZavaCore Field Pro,R,Pants,Mens,AP,XL,XL,RR,Deep Red/Red,Pro Mens Pants XL Deep Red/Red,B2C,24.4,58.1,true
+ZCRPM-AP-XL-T0,ZavaCore Field Pro,R,Pants,Mens,AP,XL,XL,T0,Teal/Orange,Pro Mens Pants XL Teal/Orange,B2C,25.13,59.84,true
+ZCRPW-AP-S-B0,ZavaCore Field Pro,R,Pants,Womens,AP,S,Small,B0,Black/Orange,Pro Womens Pants Small Black/Orange,B2C,24.2,57.61,true
+ZCRPW-AP-S-CS,ZavaCore Field Pro,R,Pants,Womens,AP,S,Small,CS,Charcoal/Silver,Pro Womens Pants Small Charcoal/Silver,B2C,24.81,59.06,true
+ZCRPW-AP-S-RR,ZavaCore Field Pro,R,Pants,Womens,AP,S,Small,RR,Deep Red/Red,Pro Womens Pants Small Deep Red/Red,B2C,24.62,58.61,true
+ZCRPW-AP-S-T0,ZavaCore Field Pro,R,Pants,Womens,AP,S,Small,T0,Teal/Orange,Pro Womens Pants Small Teal/Orange,B2C,25.63,61.02,true
+ZCRPW-AP-M-B0,ZavaCore Field Pro,R,Pants,Womens,AP,M,Medium,B0,Black/Orange,Pro Womens Pants Medium Black/Orange,B2C,24.42,58.14,true
+ZCRPW-AP-M-CS,ZavaCore Field Pro,R,Pants,Womens,AP,M,Medium,CS,Charcoal/Silver,Pro Womens Pants Medium Charcoal/Silver,B2C,26.24,62.48,true
+ZCRPW-AP-M-RR,ZavaCore Field Pro,R,Pants,Womens,AP,M,Medium,RR,Deep Red/Red,Pro Womens Pants Medium Deep Red/Red,B2C,24.99,59.5,true
+ZCRPW-AP-M-T0,ZavaCore Field Pro,R,Pants,Womens,AP,M,Medium,T0,Teal/Orange,Pro Womens Pants Medium Teal/Orange,B2C,24.46,58.25,true
+ZCRPW-AP-L-B0,ZavaCore Field Pro,R,Pants,Womens,AP,L,Large,B0,Black/Orange,Pro Womens Pants Large Black/Orange,B2C,23.53,56.03,true
+ZCRPW-AP-L-CS,ZavaCore Field Pro,R,Pants,Womens,AP,L,Large,CS,Charcoal/Silver,Pro Womens Pants Large Charcoal/Silver,B2C,25.65,61.08,true
+ZCRPW-AP-L-RR,ZavaCore Field Pro,R,Pants,Womens,AP,L,Large,RR,Deep Red/Red,Pro Womens Pants Large Deep Red/Red,B2C,24.2,57.61,true
+ZCRPW-AP-L-T0,ZavaCore Field Pro,R,Pants,Womens,AP,L,Large,T0,Teal/Orange,Pro Womens Pants Large Teal/Orange,B2C,23.76,56.57,true
+ZCRPW-AP-XL-B0,ZavaCore Field Pro,R,Pants,Womens,AP,XL,XL,B0,Black/Orange,Pro Womens Pants XL Black/Orange,B2C,25.4,60.48,true
+ZCRPW-AP-XL-CS,ZavaCore Field Pro,R,Pants,Womens,AP,XL,XL,CS,Charcoal/Silver,Pro Womens Pants XL Charcoal/Silver,B2C,26.0,61.91,true
+ZCRPW-AP-XL-RR,ZavaCore Field Pro,R,Pants,Womens,AP,XL,XL,RR,Deep Red/Red,Pro Womens Pants XL Deep Red/Red,B2C,26.06,62.05,true
+ZCRPW-AP-XL-T0,ZavaCore Field Pro,R,Pants,Womens,AP,XL,XL,T0,Teal/Orange,Pro Womens Pants XL Teal/Orange,B2C,24.42,58.15,true
+ZCRPY-AP-S-B0,ZavaCore Field Pro,R,Pants,Youth,AP,S,Small,B0,Black/Orange,Pro Youth Pants Small Black/Orange,B2C,21.89,52.13,true
+ZCRPY-AP-S-CS,ZavaCore Field Pro,R,Pants,Youth,AP,S,Small,CS,Charcoal/Silver,Pro Youth Pants Small Charcoal/Silver,B2C,21.63,51.51,true
+ZCRPY-AP-S-RR,ZavaCore Field Pro,R,Pants,Youth,AP,S,Small,RR,Deep Red/Red,Pro Youth Pants Small Deep Red/Red,B2C,20.73,49.35,true
+ZCRPY-AP-S-T0,ZavaCore Field Pro,R,Pants,Youth,AP,S,Small,T0,Teal/Orange,Pro Youth Pants Small Teal/Orange,B2C,21.99,52.35,true
+ZCRPY-AP-M-B0,ZavaCore Field Pro,R,Pants,Youth,AP,M,Medium,B0,Black/Orange,Pro Youth Pants Medium Black/Orange,B2C,20.59,49.03,true
+ZCRPY-AP-M-CS,ZavaCore Field Pro,R,Pants,Youth,AP,M,Medium,CS,Charcoal/Silver,Pro Youth Pants Medium Charcoal/Silver,B2C,20.05,47.75,true
+ZCRPY-AP-M-RR,ZavaCore Field Pro,R,Pants,Youth,AP,M,Medium,RR,Deep Red/Red,Pro Youth Pants Medium Deep Red/Red,B2C,21.3,50.72,true
+ZCRPY-AP-M-T0,ZavaCore Field Pro,R,Pants,Youth,AP,M,Medium,T0,Teal/Orange,Pro Youth Pants Medium Teal/Orange,B2C,22.51,53.59,true
+ZCRPY-AP-L-B0,ZavaCore Field Pro,R,Pants,Youth,AP,L,Large,B0,Black/Orange,Pro Youth Pants Large Black/Orange,B2C,20.74,49.37,true
+ZCRPY-AP-L-CS,ZavaCore Field Pro,R,Pants,Youth,AP,L,Large,CS,Charcoal/Silver,Pro Youth Pants Large Charcoal/Silver,B2C,22.4,53.34,true
+ZCRPY-AP-L-RR,ZavaCore Field Pro,R,Pants,Youth,AP,L,Large,RR,Deep Red/Red,Pro Youth Pants Large Deep Red/Red,B2C,21.49,51.16,true
+ZCRPY-AP-L-T0,ZavaCore Field Pro,R,Pants,Youth,AP,L,Large,T0,Teal/Orange,Pro Youth Pants Large Teal/Orange,B2C,21.76,51.8,true
+ZCRPY-AP-XL-B0,ZavaCore Field Pro,R,Pants,Youth,AP,XL,XL,B0,Black/Orange,Pro Youth Pants XL Black/Orange,B2C,21.38,50.91,true
+ZCRPY-AP-XL-CS,ZavaCore Field Pro,R,Pants,Youth,AP,XL,XL,CS,Charcoal/Silver,Pro Youth Pants XL Charcoal/Silver,B2C,21.69,51.64,true
+ZCRPY-AP-XL-RR,ZavaCore Field Pro,R,Pants,Youth,AP,XL,XL,RR,Deep Red/Red,Pro Youth Pants XL Deep Red/Red,B2C,20.2,48.1,true
+ZCRPY-AP-XL-T0,ZavaCore Field Pro,R,Pants,Youth,AP,XL,XL,T0,Teal/Orange,Pro Youth Pants XL Teal/Orange,B2C,20.58,48.99,true
+ZCPTM-SS-S-B0,ZavaCore Field Premium,P,Top,Mens,SS,S,Small,B0,Black/Orange,Premium Mens SS Top Small Black/Orange,B2C,23.89,56.87,true
+ZCPTM-SS-S-CS,ZavaCore Field Premium,P,Top,Mens,SS,S,Small,CS,Charcoal/Silver,Premium Mens SS Top Small Charcoal/Silver,B2C,26.12,62.2,true
+ZCPTM-LS-S-RR,ZavaCore Field Premium,P,Top,Mens,LS,S,Small,RR,Deep Red/Red,Premium Mens LS Top Small Deep Red/Red,B2C,26.95,64.17,true
+ZCPTM-LS-S-T0,ZavaCore Field Premium,P,Top,Mens,LS,S,Small,T0,Teal/Orange,Premium Mens LS Top Small Teal/Orange,B2C,25.88,61.61,true
+ZCPTM-SS-M-B0,ZavaCore Field Premium,P,Top,Mens,SS,M,Medium,B0,Black/Orange,Premium Mens SS Top Medium Black/Orange,B2C,24.86,59.18,true
+ZCPTM-SS-M-CS,ZavaCore Field Premium,P,Top,Mens,SS,M,Medium,CS,Charcoal/Silver,Premium Mens SS Top Medium Charcoal/Silver,B2C,25.71,61.22,true
+ZCPTM-LS-M-RR,ZavaCore Field Premium,P,Top,Mens,LS,M,Medium,RR,Deep Red/Red,Premium Mens LS Top Medium Deep Red/Red,B2C,25.33,60.3,true
+ZCPTM-LS-M-T0,ZavaCore Field Premium,P,Top,Mens,LS,M,Medium,T0,Teal/Orange,Premium Mens LS Top Medium Teal/Orange,B2C,26.46,63.01,true
+ZCPTM-SS-L-B0,ZavaCore Field Premium,P,Top,Mens,SS,L,Large,B0,Black/Orange,Premium Mens SS Top Large Black/Orange,B2C,25.83,61.5,true
+ZCPTM-SS-L-CS,ZavaCore Field Premium,P,Top,Mens,SS,L,Large,CS,Charcoal/Silver,Premium Mens SS Top Large Charcoal/Silver,B2C,23.81,56.69,true
+ZCPTM-LS-L-RR,ZavaCore Field Premium,P,Top,Mens,LS,L,Large,RR,Deep Red/Red,Premium Mens LS Top Large Deep Red/Red,B2C,24.57,58.49,true
+ZCPTM-LS-L-T0,ZavaCore Field Premium,P,Top,Mens,LS,L,Large,T0,Teal/Orange,Premium Mens LS Top Large Teal/Orange,B2C,24.39,58.06,true
+ZCPTM-SS-XL-B0,ZavaCore Field Premium,P,Top,Mens,SS,XL,XL,B0,Black/Orange,Premium Mens SS Top XL Black/Orange,B2C,25.41,60.49,true
+ZCPTM-SS-XL-CS,ZavaCore Field Premium,P,Top,Mens,SS,XL,XL,CS,Charcoal/Silver,Premium Mens SS Top XL Charcoal/Silver,B2C,24.73,58.88,true
+ZCPTM-LS-XL-RR,ZavaCore Field Premium,P,Top,Mens,LS,XL,XL,RR,Deep Red/Red,Premium Mens LS Top XL Deep Red/Red,B2C,23.91,56.94,true
+ZCPTM-LS-XL-T0,ZavaCore Field Premium,P,Top,Mens,LS,XL,XL,T0,Teal/Orange,Premium Mens LS Top XL Teal/Orange,B2C,26.54,63.2,true
+ZCPTW-SS-S-B0,ZavaCore Field Premium,P,Top,Womens,SS,S,Small,B0,Black/Orange,Premium Womens SS Top Small Black/Orange,B2C,25.96,61.8,true
+ZCPTW-SS-S-CS,ZavaCore Field Premium,P,Top,Womens,SS,S,Small,CS,Charcoal/Silver,Premium Womens SS Top Small Charcoal/Silver,B2C,26.93,64.11,true
+ZCPTW-LS-S-RR,ZavaCore Field Premium,P,Top,Womens,LS,S,Small,RR,Deep Red/Red,Premium Womens LS Top Small Deep Red/Red,B2C,24.04,57.23,true
+ZCPTW-LS-S-T0,ZavaCore Field Premium,P,Top,Womens,LS,S,Small,T0,Teal/Orange,Premium Womens LS Top Small Teal/Orange,B2C,26.91,64.06,true
+ZCPTW-SS-M-B0,ZavaCore Field Premium,P,Top,Womens,SS,M,Medium,B0,Black/Orange,Premium Womens SS Top Medium Black/Orange,B2C,24.8,59.04,true
+ZCPTW-SS-M-CS,ZavaCore Field Premium,P,Top,Womens,SS,M,Medium,CS,Charcoal/Silver,Premium Womens SS Top Medium Charcoal/Silver,B2C,25.88,61.63,true
+ZCPTW-LS-M-RR,ZavaCore Field Premium,P,Top,Womens,LS,M,Medium,RR,Deep Red/Red,Premium Womens LS Top Medium Deep Red/Red,B2C,24.33,57.93,true
+ZCPTW-LS-M-T0,ZavaCore Field Premium,P,Top,Womens,LS,M,Medium,T0,Teal/Orange,Premium Womens LS Top Medium Teal/Orange,B2C,26.54,63.2,true
+ZCPTW-SS-L-B0,ZavaCore Field Premium,P,Top,Womens,SS,L,Large,B0,Black/Orange,Premium Womens SS Top Large Black/Orange,B2C,26.21,62.4,true
+ZCPTW-SS-L-CS,ZavaCore Field Premium,P,Top,Womens,SS,L,Large,CS,Charcoal/Silver,Premium Womens SS Top Large Charcoal/Silver,B2C,25.43,60.55,true
+ZCPTW-LS-L-RR,ZavaCore Field Premium,P,Top,Womens,LS,L,Large,RR,Deep Red/Red,Premium Womens LS Top Large Deep Red/Red,B2C,25.79,61.4,true
+ZCPTW-LS-L-T0,ZavaCore Field Premium,P,Top,Womens,LS,L,Large,T0,Teal/Orange,Premium Womens LS Top Large Teal/Orange,B2C,26.92,64.1,true
+ZCPTW-SS-XL-B0,ZavaCore Field Premium,P,Top,Womens,SS,XL,XL,B0,Black/Orange,Premium Womens SS Top XL Black/Orange,B2C,25.25,60.11,true
+ZCPTW-SS-XL-CS,ZavaCore Field Premium,P,Top,Womens,SS,XL,XL,CS,Charcoal/Silver,Premium Womens SS Top XL Charcoal/Silver,B2C,25.13,59.84,true
+ZCPTW-LS-XL-RR,ZavaCore Field Premium,P,Top,Womens,LS,XL,XL,RR,Deep Red/Red,Premium Womens LS Top XL Deep Red/Red,B2C,24.15,57.5,true
+ZCPTW-LS-XL-T0,ZavaCore Field Premium,P,Top,Womens,LS,XL,XL,T0,Teal/Orange,Premium Womens LS Top XL Teal/Orange,B2C,26.31,62.65,true
+ZCPTY-SS-S-B0,ZavaCore Field Premium,P,Top,Youth,SS,S,Small,B0,Black/Orange,Premium Youth SS Top Small Black/Orange,B2C,22.32,53.15,true
+ZCPTY-SS-S-CS,ZavaCore Field Premium,P,Top,Youth,SS,S,Small,CS,Charcoal/Silver,Premium Youth SS Top Small Charcoal/Silver,B2C,20.56,48.95,true
+ZCPTY-LS-S-RR,ZavaCore Field Premium,P,Top,Youth,LS,S,Small,RR,Deep Red/Red,Premium Youth LS Top Small Deep Red/Red,B2C,21.18,50.44,true
+ZCPTY-LS-S-T0,ZavaCore Field Premium,P,Top,Youth,LS,S,Small,T0,Teal/Orange,Premium Youth LS Top Small Teal/Orange,B2C,21.65,51.55,true
+ZCPTY-SS-M-B0,ZavaCore Field Premium,P,Top,Youth,SS,M,Medium,B0,Black/Orange,Premium Youth SS Top Medium Black/Orange,B2C,20.7,49.29,true
+ZCPTY-SS-M-CS,ZavaCore Field Premium,P,Top,Youth,SS,M,Medium,CS,Charcoal/Silver,Premium Youth SS Top Medium Charcoal/Silver,B2C,21.7,51.67,true
+ZCPTY-LS-M-RR,ZavaCore Field Premium,P,Top,Youth,LS,M,Medium,RR,Deep Red/Red,Premium Youth LS Top Medium Deep Red/Red,B2C,22.19,52.84,true
+ZCPTY-LS-M-T0,ZavaCore Field Premium,P,Top,Youth,LS,M,Medium,T0,Teal/Orange,Premium Youth LS Top Medium Teal/Orange,B2C,22.38,53.29,true
+ZCPTY-SS-L-B0,ZavaCore Field Premium,P,Top,Youth,SS,L,Large,B0,Black/Orange,Premium Youth SS Top Large Black/Orange,B2C,20.35,48.45,true
+ZCPTY-SS-L-CS,ZavaCore Field Premium,P,Top,Youth,SS,L,Large,CS,Charcoal/Silver,Premium Youth SS Top Large Charcoal/Silver,B2C,20.95,49.89,true
+ZCPTY-LS-L-RR,ZavaCore Field Premium,P,Top,Youth,LS,L,Large,RR,Deep Red/Red,Premium Youth LS Top Large Deep Red/Red,B2C,22.78,54.23,true
+ZCPTY-LS-L-T0,ZavaCore Field Premium,P,Top,Youth,LS,L,Large,T0,Teal/Orange,Premium Youth LS Top Large Teal/Orange,B2C,20.56,48.96,true
+ZCPTY-SS-XL-B0,ZavaCore Field Premium,P,Top,Youth,SS,XL,XL,B0,Black/Orange,Premium Youth SS Top XL Black/Orange,B2C,22.09,52.6,true
+ZCPTY-SS-XL-CS,ZavaCore Field Premium,P,Top,Youth,SS,XL,XL,CS,Charcoal/Silver,Premium Youth SS Top XL Charcoal/Silver,B2C,21.44,51.05,true
+ZCPTY-LS-XL-RR,ZavaCore Field Premium,P,Top,Youth,LS,XL,XL,RR,Deep Red/Red,Premium Youth LS Top XL Deep Red/Red,B2C,22.09,52.6,true
+ZCPTY-LS-XL-T0,ZavaCore Field Premium,P,Top,Youth,LS,XL,XL,T0,Teal/Orange,Premium Youth LS Top XL Teal/Orange,B2C,22.06,52.52,true
+ZCPSM-AS-S-B0,ZavaCore Field Premium,P,Shorts,Mens,AS,S,Small,B0,Black/Orange,Premium Mens Shorts Small Black/Orange,B2C,22.13,52.7,true
+ZCPSM-AS-S-CS,ZavaCore Field Premium,P,Shorts,Mens,AS,S,Small,CS,Charcoal/Silver,Premium Mens Shorts Small Charcoal/Silver,B2C,22.89,54.5,true
+ZCPSM-AS-S-RR,ZavaCore Field Premium,P,Shorts,Mens,AS,S,Small,RR,Deep Red/Red,Premium Mens Shorts Small Deep Red/Red,B2C,21.18,50.44,true
+ZCPSM-AS-S-T0,ZavaCore Field Premium,P,Shorts,Mens,AS,S,Small,T0,Teal/Orange,Premium Mens Shorts Small Teal/Orange,B2C,21.36,50.86,true
+ZCPSM-AS-M-B0,ZavaCore Field Premium,P,Shorts,Mens,AS,M,Medium,B0,Black/Orange,Premium Mens Shorts Medium Black/Orange,B2C,20.61,49.06,true
+ZCPSM-AS-M-CS,ZavaCore Field Premium,P,Shorts,Mens,AS,M,Medium,CS,Charcoal/Silver,Premium Mens Shorts Medium Charcoal/Silver,B2C,20.78,49.48,true
+ZCPSM-AS-M-RR,ZavaCore Field Premium,P,Shorts,Mens,AS,M,Medium,RR,Deep Red/Red,Premium Mens Shorts Medium Deep Red/Red,B2C,20.76,49.42,true
+ZCPSM-AS-M-T0,ZavaCore Field Premium,P,Shorts,Mens,AS,M,Medium,T0,Teal/Orange,Premium Mens Shorts Medium Teal/Orange,B2C,20.46,48.72,true
+ZCPSM-AS-L-B0,ZavaCore Field Premium,P,Shorts,Mens,AS,L,Large,B0,Black/Orange,Premium Mens Shorts Large Black/Orange,B2C,20.51,48.84,true
+ZCPSM-AS-L-CS,ZavaCore Field Premium,P,Shorts,Mens,AS,L,Large,CS,Charcoal/Silver,Premium Mens Shorts Large Charcoal/Silver,B2C,21.98,52.34,true
+ZCPSM-AS-L-RR,ZavaCore Field Premium,P,Shorts,Mens,AS,L,Large,RR,Deep Red/Red,Premium Mens Shorts Large Deep Red/Red,B2C,21.26,50.63,true
+ZCPSM-AS-L-T0,ZavaCore Field Premium,P,Shorts,Mens,AS,L,Large,T0,Teal/Orange,Premium Mens Shorts Large Teal/Orange,B2C,20.81,49.54,true
+ZCPSM-AS-XL-B0,ZavaCore Field Premium,P,Shorts,Mens,AS,XL,XL,B0,Black/Orange,Premium Mens Shorts XL Black/Orange,B2C,22.77,54.21,true
+ZCPSM-AS-XL-CS,ZavaCore Field Premium,P,Shorts,Mens,AS,XL,XL,CS,Charcoal/Silver,Premium Mens Shorts XL Charcoal/Silver,B2C,21.52,51.25,true
+ZCPSM-AS-XL-RR,ZavaCore Field Premium,P,Shorts,Mens,AS,XL,XL,RR,Deep Red/Red,Premium Mens Shorts XL Deep Red/Red,B2C,20.9,49.77,true
+ZCPSM-AS-XL-T0,ZavaCore Field Premium,P,Shorts,Mens,AS,XL,XL,T0,Teal/Orange,Premium Mens Shorts XL Teal/Orange,B2C,21.02,50.05,true
+ZCPSW-AS-S-B0,ZavaCore Field Premium,P,Shorts,Womens,AS,S,Small,B0,Black/Orange,Premium Womens Shorts Small Black/Orange,B2C,20.94,49.86,true
+ZCPSW-AS-S-CS,ZavaCore Field Premium,P,Shorts,Womens,AS,S,Small,CS,Charcoal/Silver,Premium Womens Shorts Small Charcoal/Silver,B2C,21.84,52.0,true
+ZCPSW-AS-S-RR,ZavaCore Field Premium,P,Shorts,Womens,AS,S,Small,RR,Deep Red/Red,Premium Womens Shorts Small Deep Red/Red,B2C,22.36,53.23,true
+ZCPSW-AS-S-T0,ZavaCore Field Premium,P,Shorts,Womens,AS,S,Small,T0,Teal/Orange,Premium Womens Shorts Small Teal/Orange,B2C,22.73,54.13,true
+ZCPSW-AS-M-B0,ZavaCore Field Premium,P,Shorts,Womens,AS,M,Medium,B0,Black/Orange,Premium Womens Shorts Medium Black/Orange,B2C,23.05,54.87,true
+ZCPSW-AS-M-CS,ZavaCore Field Premium,P,Shorts,Womens,AS,M,Medium,CS,Charcoal/Silver,Premium Womens Shorts Medium Charcoal/Silver,B2C,22.95,54.65,true
+ZCPSW-AS-M-RR,ZavaCore Field Premium,P,Shorts,Womens,AS,M,Medium,RR,Deep Red/Red,Premium Womens Shorts Medium Deep Red/Red,B2C,22.04,52.47,true
+ZCPSW-AS-M-T0,ZavaCore Field Premium,P,Shorts,Womens,AS,M,Medium,T0,Teal/Orange,Premium Womens Shorts Medium Teal/Orange,B2C,22.8,54.28,true
+ZCPSW-AS-L-B0,ZavaCore Field Premium,P,Shorts,Womens,AS,L,Large,B0,Black/Orange,Premium Womens Shorts Large Black/Orange,B2C,22.41,53.35,true
+ZCPSW-AS-L-CS,ZavaCore Field Premium,P,Shorts,Womens,AS,L,Large,CS,Charcoal/Silver,Premium Womens Shorts Large Charcoal/Silver,B2C,22.45,53.46,true
+ZCPSW-AS-L-RR,ZavaCore Field Premium,P,Shorts,Womens,AS,L,Large,RR,Deep Red/Red,Premium Womens Shorts Large Deep Red/Red,B2C,22.34,53.19,true
+ZCPSW-AS-L-T0,ZavaCore Field Premium,P,Shorts,Womens,AS,L,Large,T0,Teal/Orange,Premium Womens Shorts Large Teal/Orange,B2C,22.26,53.01,true
+ZCPSW-AS-XL-B0,ZavaCore Field Premium,P,Shorts,Womens,AS,XL,XL,B0,Black/Orange,Premium Womens Shorts XL Black/Orange,B2C,20.83,49.59,true
+ZCPSW-AS-XL-CS,ZavaCore Field Premium,P,Shorts,Womens,AS,XL,XL,CS,Charcoal/Silver,Premium Womens Shorts XL Charcoal/Silver,B2C,20.88,49.71,true
+ZCPSW-AS-XL-RR,ZavaCore Field Premium,P,Shorts,Womens,AS,XL,XL,RR,Deep Red/Red,Premium Womens Shorts XL Deep Red/Red,B2C,20.43,48.65,true
+ZCPSW-AS-XL-T0,ZavaCore Field Premium,P,Shorts,Womens,AS,XL,XL,T0,Teal/Orange,Premium Womens Shorts XL Teal/Orange,B2C,22.15,52.75,true
+ZCPSY-AS-S-B0,ZavaCore Field Premium,P,Shorts,Youth,AS,S,Small,B0,Black/Orange,Premium Youth Shorts Small Black/Orange,B2C,17.98,42.8,true
+ZCPSY-AS-S-CS,ZavaCore Field Premium,P,Shorts,Youth,AS,S,Small,CS,Charcoal/Silver,Premium Youth Shorts Small Charcoal/Silver,B2C,18.24,43.43,true
+ZCPSY-AS-S-RR,ZavaCore Field Premium,P,Shorts,Youth,AS,S,Small,RR,Deep Red/Red,Premium Youth Shorts Small Deep Red/Red,B2C,18.53,44.12,true
+ZCPSY-AS-S-T0,ZavaCore Field Premium,P,Shorts,Youth,AS,S,Small,T0,Teal/Orange,Premium Youth Shorts Small Teal/Orange,B2C,19.29,45.92,true
+ZCPSY-AS-M-B0,ZavaCore Field Premium,P,Shorts,Youth,AS,M,Medium,B0,Black/Orange,Premium Youth Shorts Medium Black/Orange,B2C,19.63,46.73,true
+ZCPSY-AS-M-CS,ZavaCore Field Premium,P,Shorts,Youth,AS,M,Medium,CS,Charcoal/Silver,Premium Youth Shorts Medium Charcoal/Silver,B2C,19.17,45.65,true
+ZCPSY-AS-M-RR,ZavaCore Field Premium,P,Shorts,Youth,AS,M,Medium,RR,Deep Red/Red,Premium Youth Shorts Medium Deep Red/Red,B2C,17.82,42.44,true
+ZCPSY-AS-M-T0,ZavaCore Field Premium,P,Shorts,Youth,AS,M,Medium,T0,Teal/Orange,Premium Youth Shorts Medium Teal/Orange,B2C,18.38,43.75,true
+ZCPSY-AS-L-B0,ZavaCore Field Premium,P,Shorts,Youth,AS,L,Large,B0,Black/Orange,Premium Youth Shorts Large Black/Orange,B2C,18.79,44.75,true
+ZCPSY-AS-L-CS,ZavaCore Field Premium,P,Shorts,Youth,AS,L,Large,CS,Charcoal/Silver,Premium Youth Shorts Large Charcoal/Silver,B2C,19.5,46.43,true
+ZCPSY-AS-L-RR,ZavaCore Field Premium,P,Shorts,Youth,AS,L,Large,RR,Deep Red/Red,Premium Youth Shorts Large Deep Red/Red,B2C,18.07,43.02,true
+ZCPSY-AS-L-T0,ZavaCore Field Premium,P,Shorts,Youth,AS,L,Large,T0,Teal/Orange,Premium Youth Shorts Large Teal/Orange,B2C,19.58,46.63,true
+ZCPSY-AS-XL-B0,ZavaCore Field Premium,P,Shorts,Youth,AS,XL,XL,B0,Black/Orange,Premium Youth Shorts XL Black/Orange,B2C,18.39,43.78,true
+ZCPSY-AS-XL-CS,ZavaCore Field Premium,P,Shorts,Youth,AS,XL,XL,CS,Charcoal/Silver,Premium Youth Shorts XL Charcoal/Silver,B2C,18.59,44.26,true
+ZCPSY-AS-XL-RR,ZavaCore Field Premium,P,Shorts,Youth,AS,XL,XL,RR,Deep Red/Red,Premium Youth Shorts XL Deep Red/Red,B2C,19.24,45.81,true
+ZCPSY-AS-XL-T0,ZavaCore Field Premium,P,Shorts,Youth,AS,XL,XL,T0,Teal/Orange,Premium Youth Shorts XL Teal/Orange,B2C,19.22,45.77,true
+ZCPPM-AP-S-B0,ZavaCore Field Premium,P,Pants,Mens,AP,S,Small,B0,Black/Orange,Premium Mens Pants Small Black/Orange,B2C,30.68,73.05,true
+ZCPPM-AP-S-CS,ZavaCore Field Premium,P,Pants,Mens,AP,S,Small,CS,Charcoal/Silver,Premium Mens Pants Small Charcoal/Silver,B2C,30.7,73.09,true
+ZCPPM-AP-S-RR,ZavaCore Field Premium,P,Pants,Mens,AP,S,Small,RR,Deep Red/Red,Premium Mens Pants Small Deep Red/Red,B2C,34.38,81.85,true
+ZCPPM-AP-S-T0,ZavaCore Field Premium,P,Pants,Mens,AP,S,Small,T0,Teal/Orange,Premium Mens Pants Small Teal/Orange,B2C,30.98,73.76,true
+ZCPPM-AP-M-B0,ZavaCore Field Premium,P,Pants,Mens,AP,M,Medium,B0,Black/Orange,Premium Mens Pants Medium Black/Orange,B2C,34.53,82.22,true
+ZCPPM-AP-M-CS,ZavaCore Field Premium,P,Pants,Mens,AP,M,Medium,CS,Charcoal/Silver,Premium Mens Pants Medium Charcoal/Silver,B2C,32.52,77.43,true
+ZCPPM-AP-M-RR,ZavaCore Field Premium,P,Pants,Mens,AP,M,Medium,RR,Deep Red/Red,Premium Mens Pants Medium Deep Red/Red,B2C,31.16,74.2,true
+ZCPPM-AP-M-T0,ZavaCore Field Premium,P,Pants,Mens,AP,M,Medium,T0,Teal/Orange,Premium Mens Pants Medium Teal/Orange,B2C,31.08,74.01,true
+ZCPPM-AP-L-B0,ZavaCore Field Premium,P,Pants,Mens,AP,L,Large,B0,Black/Orange,Premium Mens Pants Large Black/Orange,B2C,32.16,76.57,true
+ZCPPM-AP-L-CS,ZavaCore Field Premium,P,Pants,Mens,AP,L,Large,CS,Charcoal/Silver,Premium Mens Pants Large Charcoal/Silver,B2C,32.76,77.99,true
+ZCPPM-AP-L-RR,ZavaCore Field Premium,P,Pants,Mens,AP,L,Large,RR,Deep Red/Red,Premium Mens Pants Large Deep Red/Red,B2C,30.6,72.86,true
+ZCPPM-AP-L-T0,ZavaCore Field Premium,P,Pants,Mens,AP,L,Large,T0,Teal/Orange,Premium Mens Pants Large Teal/Orange,B2C,33.65,80.12,true
+ZCPPM-AP-XL-B0,ZavaCore Field Premium,P,Pants,Mens,AP,XL,XL,B0,Black/Orange,Premium Mens Pants XL Black/Orange,B2C,33.67,80.16,true
+ZCPPM-AP-XL-CS,ZavaCore Field Premium,P,Pants,Mens,AP,XL,XL,CS,Charcoal/Silver,Premium Mens Pants XL Charcoal/Silver,B2C,31.03,73.87,true
+ZCPPM-AP-XL-RR,ZavaCore Field Premium,P,Pants,Mens,AP,XL,XL,RR,Deep Red/Red,Premium Mens Pants XL Deep Red/Red,B2C,33.52,79.81,true
+ZCPPM-AP-XL-T0,ZavaCore Field Premium,P,Pants,Mens,AP,XL,XL,T0,Teal/Orange,Premium Mens Pants XL Teal/Orange,B2C,34.52,82.2,true
+ZCPPW-AP-S-B0,ZavaCore Field Premium,P,Pants,Womens,AP,S,Small,B0,Black/Orange,Premium Womens Pants Small Black/Orange,B2C,31.87,75.88,true
+ZCPPW-AP-S-CS,ZavaCore Field Premium,P,Pants,Womens,AP,S,Small,CS,Charcoal/Silver,Premium Womens Pants Small Charcoal/Silver,B2C,33.41,79.54,true
+ZCPPW-AP-S-RR,ZavaCore Field Premium,P,Pants,Womens,AP,S,Small,RR,Deep Red/Red,Premium Womens Pants Small Deep Red/Red,B2C,31.52,75.05,true
+ZCPPW-AP-S-T0,ZavaCore Field Premium,P,Pants,Womens,AP,S,Small,T0,Teal/Orange,Premium Womens Pants Small Teal/Orange,B2C,32.27,76.84,true
+ZCPPW-AP-M-B0,ZavaCore Field Premium,P,Pants,Womens,AP,M,Medium,B0,Black/Orange,Premium Womens Pants Medium Black/Orange,B2C,31.56,75.15,true
+ZCPPW-AP-M-CS,ZavaCore Field Premium,P,Pants,Womens,AP,M,Medium,CS,Charcoal/Silver,Premium Womens Pants Medium Charcoal/Silver,B2C,32.36,77.04,true
+ZCPPW-AP-M-RR,ZavaCore Field Premium,P,Pants,Womens,AP,M,Medium,RR,Deep Red/Red,Premium Womens Pants Medium Deep Red/Red,B2C,32.98,78.53,true
+ZCPPW-AP-M-T0,ZavaCore Field Premium,P,Pants,Womens,AP,M,Medium,T0,Teal/Orange,Premium Womens Pants Medium Teal/Orange,B2C,32.12,76.47,true
+ZCPPW-AP-L-B0,ZavaCore Field Premium,P,Pants,Womens,AP,L,Large,B0,Black/Orange,Premium Womens Pants Large Black/Orange,B2C,30.59,72.84,true
+ZCPPW-AP-L-CS,ZavaCore Field Premium,P,Pants,Womens,AP,L,Large,CS,Charcoal/Silver,Premium Womens Pants Large Charcoal/Silver,B2C,32.13,76.5,true
+ZCPPW-AP-L-RR,ZavaCore Field Premium,P,Pants,Womens,AP,L,Large,RR,Deep Red/Red,Premium Womens Pants Large Deep Red/Red,B2C,32.73,77.94,true
+ZCPPW-AP-L-T0,ZavaCore Field Premium,P,Pants,Womens,AP,L,Large,T0,Teal/Orange,Premium Womens Pants Large Teal/Orange,B2C,31.76,75.61,true
+ZCPPW-AP-XL-B0,ZavaCore Field Premium,P,Pants,Womens,AP,XL,XL,B0,Black/Orange,Premium Womens Pants XL Black/Orange,B2C,31.84,75.8,true
+ZCPPW-AP-XL-CS,ZavaCore Field Premium,P,Pants,Womens,AP,XL,XL,CS,Charcoal/Silver,Premium Womens Pants XL Charcoal/Silver,B2C,34.13,81.26,true
+ZCPPW-AP-XL-RR,ZavaCore Field Premium,P,Pants,Womens,AP,XL,XL,RR,Deep Red/Red,Premium Womens Pants XL Deep Red/Red,B2C,30.63,72.94,true
+ZCPPW-AP-XL-T0,ZavaCore Field Premium,P,Pants,Womens,AP,XL,XL,T0,Teal/Orange,Premium Womens Pants XL Teal/Orange,B2C,34.15,81.32,true
+ZCPPY-AP-S-B0,ZavaCore Field Premium,P,Pants,Youth,AP,S,Small,B0,Black/Orange,Premium Youth Pants Small Black/Orange,B2C,29.33,69.83,true
+ZCPPY-AP-S-CS,ZavaCore Field Premium,P,Pants,Youth,AP,S,Small,CS,Charcoal/Silver,Premium Youth Pants Small Charcoal/Silver,B2C,27.94,66.53,true
+ZCPPY-AP-S-RR,ZavaCore Field Premium,P,Pants,Youth,AP,S,Small,RR,Deep Red/Red,Premium Youth Pants Small Deep Red/Red,B2C,28.03,66.73,true
+ZCPPY-AP-S-T0,ZavaCore Field Premium,P,Pants,Youth,AP,S,Small,T0,Teal/Orange,Premium Youth Pants Small Teal/Orange,B2C,26.55,63.21,true
+ZCPPY-AP-M-B0,ZavaCore Field Premium,P,Pants,Youth,AP,M,Medium,B0,Black/Orange,Premium Youth Pants Medium Black/Orange,B2C,28.81,68.6,true
+ZCPPY-AP-M-CS,ZavaCore Field Premium,P,Pants,Youth,AP,M,Medium,CS,Charcoal/Silver,Premium Youth Pants Medium Charcoal/Silver,B2C,28.8,68.58,true
+ZCPPY-AP-M-RR,ZavaCore Field Premium,P,Pants,Youth,AP,M,Medium,RR,Deep Red/Red,Premium Youth Pants Medium Deep Red/Red,B2C,27.37,65.16,true
+ZCPPY-AP-M-T0,ZavaCore Field Premium,P,Pants,Youth,AP,M,Medium,T0,Teal/Orange,Premium Youth Pants Medium Teal/Orange,B2C,26.81,63.84,true
+ZCPPY-AP-L-B0,ZavaCore Field Premium,P,Pants,Youth,AP,L,Large,B0,Black/Orange,Premium Youth Pants Large Black/Orange,B2C,26.88,63.99,true
+ZCPPY-AP-L-CS,ZavaCore Field Premium,P,Pants,Youth,AP,L,Large,CS,Charcoal/Silver,Premium Youth Pants Large Charcoal/Silver,B2C,27.81,66.21,true
+ZCPPY-AP-L-RR,ZavaCore Field Premium,P,Pants,Youth,AP,L,Large,RR,Deep Red/Red,Premium Youth Pants Large Deep Red/Red,B2C,26.25,62.49,true
+ZCPPY-AP-L-T0,ZavaCore Field Premium,P,Pants,Youth,AP,L,Large,T0,Teal/Orange,Premium Youth Pants Large Teal/Orange,B2C,29.27,69.69,true
+ZCPPY-AP-XL-B0,ZavaCore Field Premium,P,Pants,Youth,AP,XL,XL,B0,Black/Orange,Premium Youth Pants XL Black/Orange,B2C,26.72,63.62,true
+ZCPPY-AP-XL-CS,ZavaCore Field Premium,P,Pants,Youth,AP,XL,XL,CS,Charcoal/Silver,Premium Youth Pants XL Charcoal/Silver,B2C,26.36,62.75,true
+ZCPPY-AP-XL-RR,ZavaCore Field Premium,P,Pants,Youth,AP,XL,XL,RR,Deep Red/Red,Premium Youth Pants XL Deep Red/Red,B2C,27.9,66.42,true
+ZCPPY-AP-XL-T0,ZavaCore Field Premium,P,Pants,Youth,AP,XL,XL,T0,Teal/Orange,Premium Youth Pants XL Teal/Orange,B2C,27.21,64.78,true
+ZCETM-SS-S-B0,ZavaCore Field Elite,E,Top,Mens,SS,S,Small,B0,Black/Orange,Elite Mens SS Tee Small Black/Orange,B2C,34.26,81.57,true
+ZCETM-SS-S-CS,ZavaCore Field Elite,E,Top,Mens,SS,S,Small,CS,Charcoal/Silver,Elite Mens SS Tee Small Charcoal/Silver,B2C,33.37,79.46,true
+ZCETM-LS-S-RR,ZavaCore Field Elite,E,Top,Mens,LS,S,Small,RR,Deep Red/Red,Elite Mens LS Tee Small Deep Red/Red,B2C,34.75,82.73,true
+ZCETM-LS-S-T0,ZavaCore Field Elite,E,Top,Mens,LS,S,Small,T0,Teal/Orange,Elite Mens LS Tee Small Teal/Orange,B2C,33.46,79.66,true
+ZCETM-SS-M-B0,ZavaCore Field Elite,E,Top,Mens,SS,M,Medium,B0,Black/Orange,Elite Mens SS Tee Medium Black/Orange,B2C,30.92,73.62,true
+ZCETM-SS-M-CS,ZavaCore Field Elite,E,Top,Mens,SS,M,Medium,CS,Charcoal/Silver,Elite Mens SS Tee Medium Charcoal/Silver,B2C,31.43,74.84,true
+ZCETM-LS-M-RR,ZavaCore Field Elite,E,Top,Mens,LS,M,Medium,RR,Deep Red/Red,Elite Mens LS Tee Medium Deep Red/Red,B2C,31.89,75.94,true
+ZCETM-LS-M-T0,ZavaCore Field Elite,E,Top,Mens,LS,M,Medium,T0,Teal/Orange,Elite Mens LS Tee Medium Teal/Orange,B2C,31.93,76.02,true
+ZCETM-SS-L-B0,ZavaCore Field Elite,E,Top,Mens,SS,L,Large,B0,Black/Orange,Elite Mens SS Tee Large Black/Orange,B2C,32.71,77.87,true
+ZCETM-SS-L-CS,ZavaCore Field Elite,E,Top,Mens,SS,L,Large,CS,Charcoal/Silver,Elite Mens SS Tee Large Charcoal/Silver,B2C,31.02,73.86,true
+ZCETM-LS-L-RR,ZavaCore Field Elite,E,Top,Mens,LS,L,Large,RR,Deep Red/Red,Elite Mens LS Tee Large Deep Red/Red,B2C,31.43,74.83,true
+ZCETM-LS-L-T0,ZavaCore Field Elite,E,Top,Mens,LS,L,Large,T0,Teal/Orange,Elite Mens LS Tee Large Teal/Orange,B2C,33.18,78.99,true
+ZCETM-SS-XL-B0,ZavaCore Field Elite,E,Top,Mens,SS,XL,XL,B0,Black/Orange,Elite Mens SS Tee XL Black/Orange,B2C,32.81,78.11,true
+ZCETM-SS-XL-CS,ZavaCore Field Elite,E,Top,Mens,SS,XL,XL,CS,Charcoal/Silver,Elite Mens SS Tee XL Charcoal/Silver,B2C,33.0,78.57,true
+ZCETM-LS-XL-RR,ZavaCore Field Elite,E,Top,Mens,LS,XL,XL,RR,Deep Red/Red,Elite Mens LS Tee XL Deep Red/Red,B2C,32.98,78.52,true
+ZCETM-LS-XL-T0,ZavaCore Field Elite,E,Top,Mens,LS,XL,XL,T0,Teal/Orange,Elite Mens LS Tee XL Teal/Orange,B2C,31.09,74.03,true
+ZCETW-SS-S-B0,ZavaCore Field Elite,E,Top,Womens,SS,S,Small,B0,Black/Orange,Elite Womens SS Tee Small Black/Orange,B2C,30.79,73.3,true
+ZCETW-SS-S-CS,ZavaCore Field Elite,E,Top,Womens,SS,S,Small,CS,Charcoal/Silver,Elite Womens SS Tee Small Charcoal/Silver,B2C,33.06,78.71,true
+ZCETW-LS-S-RR,ZavaCore Field Elite,E,Top,Womens,LS,S,Small,RR,Deep Red/Red,Elite Womens LS Tee Small Deep Red/Red,B2C,33.56,79.91,true
+ZCETW-LS-S-T0,ZavaCore Field Elite,E,Top,Womens,LS,S,Small,T0,Teal/Orange,Elite Womens LS Tee Small Teal/Orange,B2C,31.45,74.87,true
+ZCETW-SS-M-B0,ZavaCore Field Elite,E,Top,Womens,SS,M,Medium,B0,Black/Orange,Elite Womens SS Tee Medium Black/Orange,B2C,33.07,78.75,true
+ZCETW-SS-M-CS,ZavaCore Field Elite,E,Top,Womens,SS,M,Medium,CS,Charcoal/Silver,Elite Womens SS Tee Medium Charcoal/Silver,B2C,33.9,80.72,true
+ZCETW-LS-M-RR,ZavaCore Field Elite,E,Top,Womens,LS,M,Medium,RR,Deep Red/Red,Elite Womens LS Tee Medium Deep Red/Red,B2C,31.89,75.94,true
+ZCETW-LS-M-T0,ZavaCore Field Elite,E,Top,Womens,LS,M,Medium,T0,Teal/Orange,Elite Womens LS Tee Medium Teal/Orange,B2C,32.69,77.84,true
+ZCETW-SS-L-B0,ZavaCore Field Elite,E,Top,Womens,SS,L,Large,B0,Black/Orange,Elite Womens SS Tee Large Black/Orange,B2C,32.17,76.6,true
+ZCETW-SS-L-CS,ZavaCore Field Elite,E,Top,Womens,SS,L,Large,CS,Charcoal/Silver,Elite Womens SS Tee Large Charcoal/Silver,B2C,34.85,82.97,true
+ZCETW-LS-L-RR,ZavaCore Field Elite,E,Top,Womens,LS,L,Large,RR,Deep Red/Red,Elite Womens LS Tee Large Deep Red/Red,B2C,34.35,81.79,true
+ZCETW-LS-L-T0,ZavaCore Field Elite,E,Top,Womens,LS,L,Large,T0,Teal/Orange,Elite Womens LS Tee Large Teal/Orange,B2C,34.18,81.39,true
+ZCETW-SS-XL-B0,ZavaCore Field Elite,E,Top,Womens,SS,XL,XL,B0,Black/Orange,Elite Womens SS Tee XL Black/Orange,B2C,34.38,81.86,true
+ZCETW-SS-XL-CS,ZavaCore Field Elite,E,Top,Womens,SS,XL,XL,CS,Charcoal/Silver,Elite Womens SS Tee XL Charcoal/Silver,B2C,33.61,80.02,true
+ZCETW-LS-XL-RR,ZavaCore Field Elite,E,Top,Womens,LS,XL,XL,RR,Deep Red/Red,Elite Womens LS Tee XL Deep Red/Red,B2C,31.46,74.91,true
+ZCETW-LS-XL-T0,ZavaCore Field Elite,E,Top,Womens,LS,XL,XL,T0,Teal/Orange,Elite Womens LS Tee XL Teal/Orange,B2C,31.21,74.3,true
+ZCETY-SS-S-B0,ZavaCore Field Elite,E,Top,Youth,SS,S,Small,B0,Black/Orange,Elite Youth SS Tee Small Black/Orange,B2C,29.03,69.11,true
+ZCETY-SS-S-CS,ZavaCore Field Elite,E,Top,Youth,SS,S,Small,CS,Charcoal/Silver,Elite Youth SS Tee Small Charcoal/Silver,B2C,29.56,70.39,true
+ZCETY-LS-S-RR,ZavaCore Field Elite,E,Top,Youth,LS,S,Small,RR,Deep Red/Red,Elite Youth LS Tee Small Deep Red/Red,B2C,28.36,67.53,true
+ZCETY-LS-S-T0,ZavaCore Field Elite,E,Top,Youth,LS,S,Small,T0,Teal/Orange,Elite Youth LS Tee Small Teal/Orange,B2C,27.33,65.06,true
+ZCETY-SS-M-B0,ZavaCore Field Elite,E,Top,Youth,SS,M,Medium,B0,Black/Orange,Elite Youth SS Tee Medium Black/Orange,B2C,26.41,62.89,true
+ZCETY-SS-M-CS,ZavaCore Field Elite,E,Top,Youth,SS,M,Medium,CS,Charcoal/Silver,Elite Youth SS Tee Medium Charcoal/Silver,B2C,26.19,62.36,true
+ZCETY-LS-M-RR,ZavaCore Field Elite,E,Top,Youth,LS,M,Medium,RR,Deep Red/Red,Elite Youth LS Tee Medium Deep Red/Red,B2C,26.96,64.2,true
+ZCETY-LS-M-T0,ZavaCore Field Elite,E,Top,Youth,LS,M,Medium,T0,Teal/Orange,Elite Youth LS Tee Medium Teal/Orange,B2C,29.25,69.65,true
+ZCETY-SS-L-B0,ZavaCore Field Elite,E,Top,Youth,SS,L,Large,B0,Black/Orange,Elite Youth SS Tee Large Black/Orange,B2C,28.24,67.24,true
+ZCETY-SS-L-CS,ZavaCore Field Elite,E,Top,Youth,SS,L,Large,CS,Charcoal/Silver,Elite Youth SS Tee Large Charcoal/Silver,B2C,28.54,67.96,true
+ZCETY-LS-L-RR,ZavaCore Field Elite,E,Top,Youth,LS,L,Large,RR,Deep Red/Red,Elite Youth LS Tee Large Deep Red/Red,B2C,26.76,63.71,true
+ZCETY-LS-L-T0,ZavaCore Field Elite,E,Top,Youth,LS,L,Large,T0,Teal/Orange,Elite Youth LS Tee Large Teal/Orange,B2C,26.15,62.27,true
+ZCETY-SS-XL-B0,ZavaCore Field Elite,E,Top,Youth,SS,XL,XL,B0,Black/Orange,Elite Youth SS Tee XL Black/Orange,B2C,27.34,65.09,true
+ZCETY-SS-XL-CS,ZavaCore Field Elite,E,Top,Youth,SS,XL,XL,CS,Charcoal/Silver,Elite Youth SS Tee XL Charcoal/Silver,B2C,28.67,68.26,true
+ZCETY-LS-XL-RR,ZavaCore Field Elite,E,Top,Youth,LS,XL,XL,RR,Deep Red/Red,Elite Youth LS Tee XL Deep Red/Red,B2C,26.46,63.0,true
+ZCETY-LS-XL-T0,ZavaCore Field Elite,E,Top,Youth,LS,XL,XL,T0,Teal/Orange,Elite Youth LS Tee XL Teal/Orange,B2C,28.8,68.56,true
+ZCESM-AS-S-B0,ZavaCore Field Elite,E,Shorts,Mens,AS,S,Small,B0,Black/Orange,Elite Mens Shorts Small Black/Orange,B2C,28.52,67.91,true
+ZCESM-AS-S-CS,ZavaCore Field Elite,E,Shorts,Mens,AS,S,Small,CS,Charcoal/Silver,Elite Mens Shorts Small Charcoal/Silver,B2C,29.69,70.7,true
+ZCESM-AS-S-RR,ZavaCore Field Elite,E,Shorts,Mens,AS,S,Small,RR,Deep Red/Red,Elite Mens Shorts Small Deep Red/Red,B2C,26.74,63.67,true
+ZCESM-AS-S-T0,ZavaCore Field Elite,E,Shorts,Mens,AS,S,Small,T0,Teal/Orange,Elite Mens Shorts Small Teal/Orange,B2C,26.35,62.73,true
+ZCESM-AS-M-B0,ZavaCore Field Elite,E,Shorts,Mens,AS,M,Medium,B0,Black/Orange,Elite Mens Shorts Medium Black/Orange,B2C,27.46,65.37,true
+ZCESM-AS-M-CS,ZavaCore Field Elite,E,Shorts,Mens,AS,M,Medium,CS,Charcoal/Silver,Elite Mens Shorts Medium Charcoal/Silver,B2C,29.72,70.77,true
+ZCESM-AS-M-RR,ZavaCore Field Elite,E,Shorts,Mens,AS,M,Medium,RR,Deep Red/Red,Elite Mens Shorts Medium Deep Red/Red,B2C,27.93,66.51,true
+ZCESM-AS-M-T0,ZavaCore Field Elite,E,Shorts,Mens,AS,M,Medium,T0,Teal/Orange,Elite Mens Shorts Medium Teal/Orange,B2C,29.75,70.84,true
+ZCESM-AS-L-B0,ZavaCore Field Elite,E,Shorts,Mens,AS,L,Large,B0,Black/Orange,Elite Mens Shorts Large Black/Orange,B2C,28.62,68.14,true
+ZCESM-AS-L-CS,ZavaCore Field Elite,E,Shorts,Mens,AS,L,Large,CS,Charcoal/Silver,Elite Mens Shorts Large Charcoal/Silver,B2C,27.93,66.51,true
+ZCESM-AS-L-RR,ZavaCore Field Elite,E,Shorts,Mens,AS,L,Large,RR,Deep Red/Red,Elite Mens Shorts Large Deep Red/Red,B2C,26.68,63.53,true
+ZCESM-AS-L-T0,ZavaCore Field Elite,E,Shorts,Mens,AS,L,Large,T0,Teal/Orange,Elite Mens Shorts Large Teal/Orange,B2C,27.93,66.51,true
+ZCESM-AS-XL-B0,ZavaCore Field Elite,E,Shorts,Mens,AS,XL,XL,B0,Black/Orange,Elite Mens Shorts XL Black/Orange,B2C,29.38,69.96,true
+ZCESM-AS-XL-CS,ZavaCore Field Elite,E,Shorts,Mens,AS,XL,XL,CS,Charcoal/Silver,Elite Mens Shorts XL Charcoal/Silver,B2C,27.91,66.46,true
+ZCESM-AS-XL-RR,ZavaCore Field Elite,E,Shorts,Mens,AS,XL,XL,RR,Deep Red/Red,Elite Mens Shorts XL Deep Red/Red,B2C,28.96,68.95,true
+ZCESM-AS-XL-T0,ZavaCore Field Elite,E,Shorts,Mens,AS,XL,XL,T0,Teal/Orange,Elite Mens Shorts XL Teal/Orange,B2C,27.24,64.85,true
+ZCESW-AS-S-B0,ZavaCore Field Elite,E,Shorts,Womens,AS,S,Small,B0,Black/Orange,Elite Womens Shorts Small Black/Orange,B2C,27.81,66.22,true
+ZCESW-AS-S-CS,ZavaCore Field Elite,E,Shorts,Womens,AS,S,Small,CS,Charcoal/Silver,Elite Womens Shorts Small Charcoal/Silver,B2C,29.43,70.08,true
+ZCESW-AS-S-RR,ZavaCore Field Elite,E,Shorts,Womens,AS,S,Small,RR,Deep Red/Red,Elite Womens Shorts Small Deep Red/Red,B2C,26.7,63.57,true
+ZCESW-AS-S-T0,ZavaCore Field Elite,E,Shorts,Womens,AS,S,Small,T0,Teal/Orange,Elite Womens Shorts Small Teal/Orange,B2C,26.44,62.96,true
+ZCESW-AS-M-B0,ZavaCore Field Elite,E,Shorts,Womens,AS,M,Medium,B0,Black/Orange,Elite Womens Shorts Medium Black/Orange,B2C,29.9,71.18,true
+ZCESW-AS-M-CS,ZavaCore Field Elite,E,Shorts,Womens,AS,M,Medium,CS,Charcoal/Silver,Elite Womens Shorts Medium Charcoal/Silver,B2C,28.9,68.81,true
+ZCESW-AS-M-RR,ZavaCore Field Elite,E,Shorts,Womens,AS,M,Medium,RR,Deep Red/Red,Elite Womens Shorts Medium Deep Red/Red,B2C,27.14,64.63,true
+ZCESW-AS-M-T0,ZavaCore Field Elite,E,Shorts,Womens,AS,M,Medium,T0,Teal/Orange,Elite Womens Shorts Medium Teal/Orange,B2C,26.93,64.12,true
+ZCESW-AS-L-B0,ZavaCore Field Elite,E,Shorts,Womens,AS,L,Large,B0,Black/Orange,Elite Womens Shorts Large Black/Orange,B2C,27.16,64.67,true
+ZCESW-AS-L-CS,ZavaCore Field Elite,E,Shorts,Womens,AS,L,Large,CS,Charcoal/Silver,Elite Womens Shorts Large Charcoal/Silver,B2C,28.5,67.86,true
+ZCESW-AS-L-RR,ZavaCore Field Elite,E,Shorts,Womens,AS,L,Large,RR,Deep Red/Red,Elite Womens Shorts Large Deep Red/Red,B2C,27.76,66.09,true
+ZCESW-AS-L-T0,ZavaCore Field Elite,E,Shorts,Womens,AS,L,Large,T0,Teal/Orange,Elite Womens Shorts Large Teal/Orange,B2C,28.31,67.41,true
+ZCESW-AS-XL-B0,ZavaCore Field Elite,E,Shorts,Womens,AS,XL,XL,B0,Black/Orange,Elite Womens Shorts XL Black/Orange,B2C,28.27,67.32,true
+ZCESW-AS-XL-CS,ZavaCore Field Elite,E,Shorts,Womens,AS,XL,XL,CS,Charcoal/Silver,Elite Womens Shorts XL Charcoal/Silver,B2C,28.83,68.65,true
+ZCESW-AS-XL-RR,ZavaCore Field Elite,E,Shorts,Womens,AS,XL,XL,RR,Deep Red/Red,Elite Womens Shorts XL Deep Red/Red,B2C,29.45,70.13,true
+ZCESW-AS-XL-T0,ZavaCore Field Elite,E,Shorts,Womens,AS,XL,XL,T0,Teal/Orange,Elite Womens Shorts XL Teal/Orange,B2C,27.21,64.78,true
+ZCESY-AS-S-B0,ZavaCore Field Elite,E,Shorts,Youth,AS,S,Small,B0,Black/Orange,Elite Youth Shorts Small Black/Orange,B2C,23.31,55.5,true
+ZCESY-AS-S-CS,ZavaCore Field Elite,E,Shorts,Youth,AS,S,Small,CS,Charcoal/Silver,Elite Youth Shorts Small Charcoal/Silver,B2C,24.91,59.31,true
+ZCESY-AS-S-RR,ZavaCore Field Elite,E,Shorts,Youth,AS,S,Small,RR,Deep Red/Red,Elite Youth Shorts Small Deep Red/Red,B2C,22.9,54.53,true
+ZCESY-AS-S-T0,ZavaCore Field Elite,E,Shorts,Youth,AS,S,Small,T0,Teal/Orange,Elite Youth Shorts Small Teal/Orange,B2C,24.44,58.18,true
+ZCESY-AS-M-B0,ZavaCore Field Elite,E,Shorts,Youth,AS,M,Medium,B0,Black/Orange,Elite Youth Shorts Medium Black/Orange,B2C,23.75,56.54,true
+ZCESY-AS-M-CS,ZavaCore Field Elite,E,Shorts,Youth,AS,M,Medium,CS,Charcoal/Silver,Elite Youth Shorts Medium Charcoal/Silver,B2C,24.33,57.94,true
+ZCESY-AS-M-RR,ZavaCore Field Elite,E,Shorts,Youth,AS,M,Medium,RR,Deep Red/Red,Elite Youth Shorts Medium Deep Red/Red,B2C,24.26,57.76,true
+ZCESY-AS-M-T0,ZavaCore Field Elite,E,Shorts,Youth,AS,M,Medium,T0,Teal/Orange,Elite Youth Shorts Medium Teal/Orange,B2C,24.83,59.13,true
+ZCESY-AS-L-B0,ZavaCore Field Elite,E,Shorts,Youth,AS,L,Large,B0,Black/Orange,Elite Youth Shorts Large Black/Orange,B2C,23.42,55.76,true
+ZCESY-AS-L-CS,ZavaCore Field Elite,E,Shorts,Youth,AS,L,Large,CS,Charcoal/Silver,Elite Youth Shorts Large Charcoal/Silver,B2C,24.94,59.39,true
+ZCESY-AS-L-RR,ZavaCore Field Elite,E,Shorts,Youth,AS,L,Large,RR,Deep Red/Red,Elite Youth Shorts Large Deep Red/Red,B2C,25.4,60.47,true
+ZCESY-AS-L-T0,ZavaCore Field Elite,E,Shorts,Youth,AS,L,Large,T0,Teal/Orange,Elite Youth Shorts Large Teal/Orange,B2C,25.09,59.73,true
+ZCESY-AS-XL-B0,ZavaCore Field Elite,E,Shorts,Youth,AS,XL,XL,B0,Black/Orange,Elite Youth Shorts XL Black/Orange,B2C,23.26,55.38,true
+ZCESY-AS-XL-CS,ZavaCore Field Elite,E,Shorts,Youth,AS,XL,XL,CS,Charcoal/Silver,Elite Youth Shorts XL Charcoal/Silver,B2C,23.94,56.99,true
+ZCESY-AS-XL-RR,ZavaCore Field Elite,E,Shorts,Youth,AS,XL,XL,RR,Deep Red/Red,Elite Youth Shorts XL Deep Red/Red,B2C,24.68,58.77,true
+ZCESY-AS-XL-T0,ZavaCore Field Elite,E,Shorts,Youth,AS,XL,XL,T0,Teal/Orange,Elite Youth Shorts XL Teal/Orange,B2C,23.06,54.9,true
+ZCEPM-AP-S-B0,ZavaCore Field Elite,E,Pants,Mens,AP,S,Small,B0,Black/Orange,Elite Mens Pants Small Black/Orange,B2C,42.34,100.82,true
+ZCEPM-AP-S-CS,ZavaCore Field Elite,E,Pants,Mens,AP,S,Small,CS,Charcoal/Silver,Elite Mens Pants Small Charcoal/Silver,B2C,42.87,102.07,true
+ZCEPM-AP-S-RR,ZavaCore Field Elite,E,Pants,Mens,AP,S,Small,RR,Deep Red/Red,Elite Mens Pants Small Deep Red/Red,B2C,44.12,105.04,true
+ZCEPM-AP-S-T0,ZavaCore Field Elite,E,Pants,Mens,AP,S,Small,T0,Teal/Orange,Elite Mens Pants Small Teal/Orange,B2C,42.52,101.25,true
+ZCEPM-AP-M-B0,ZavaCore Field Elite,E,Pants,Mens,AP,M,Medium,B0,Black/Orange,Elite Mens Pants Medium Black/Orange,B2C,41.42,98.63,true
+ZCEPM-AP-M-CS,ZavaCore Field Elite,E,Pants,Mens,AP,M,Medium,CS,Charcoal/Silver,Elite Mens Pants Medium Charcoal/Silver,B2C,40.08,95.43,true
+ZCEPM-AP-M-RR,ZavaCore Field Elite,E,Pants,Mens,AP,M,Medium,RR,Deep Red/Red,Elite Mens Pants Medium Deep Red/Red,B2C,40.45,96.3,true
+ZCEPM-AP-M-T0,ZavaCore Field Elite,E,Pants,Mens,AP,M,Medium,T0,Teal/Orange,Elite Mens Pants Medium Teal/Orange,B2C,41.63,99.12,true
+ZCEPM-AP-L-B0,ZavaCore Field Elite,E,Pants,Mens,AP,L,Large,B0,Black/Orange,Elite Mens Pants Large Black/Orange,B2C,41.85,99.65,true
+ZCEPM-AP-L-CS,ZavaCore Field Elite,E,Pants,Mens,AP,L,Large,CS,Charcoal/Silver,Elite Mens Pants Large Charcoal/Silver,B2C,41.52,98.86,true
+ZCEPM-AP-L-RR,ZavaCore Field Elite,E,Pants,Mens,AP,L,Large,RR,Deep Red/Red,Elite Mens Pants Large Deep Red/Red,B2C,39.96,95.14,true
+ZCEPM-AP-L-T0,ZavaCore Field Elite,E,Pants,Mens,AP,L,Large,T0,Teal/Orange,Elite Mens Pants Large Teal/Orange,B2C,40.13,95.55,true
+ZCEPM-AP-XL-B0,ZavaCore Field Elite,E,Pants,Mens,AP,XL,XL,B0,Black/Orange,Elite Mens Pants XL Black/Orange,B2C,40.16,95.63,true
+ZCEPM-AP-XL-CS,ZavaCore Field Elite,E,Pants,Mens,AP,XL,XL,CS,Charcoal/Silver,Elite Mens Pants XL Charcoal/Silver,B2C,41.38,98.52,true
+ZCEPM-AP-XL-RR,ZavaCore Field Elite,E,Pants,Mens,AP,XL,XL,RR,Deep Red/Red,Elite Mens Pants XL Deep Red/Red,B2C,44.87,106.84,true
+ZCEPM-AP-XL-T0,ZavaCore Field Elite,E,Pants,Mens,AP,XL,XL,T0,Teal/Orange,Elite Mens Pants XL Teal/Orange,B2C,41.75,99.41,true
+ZCEPW-AP-S-B0,ZavaCore Field Elite,E,Pants,Womens,AP,S,Small,B0,Black/Orange,Elite Womens Pants Small Black/Orange,B2C,41.18,98.05,true
+ZCEPW-AP-S-CS,ZavaCore Field Elite,E,Pants,Womens,AP,S,Small,CS,Charcoal/Silver,Elite Womens Pants Small Charcoal/Silver,B2C,40.02,95.29,true
+ZCEPW-AP-S-RR,ZavaCore Field Elite,E,Pants,Womens,AP,S,Small,RR,Deep Red/Red,Elite Womens Pants Small Deep Red/Red,B2C,43.62,103.85,true
+ZCEPW-AP-S-T0,ZavaCore Field Elite,E,Pants,Womens,AP,S,Small,T0,Teal/Orange,Elite Womens Pants Small Teal/Orange,B2C,41.99,99.98,true
+ZCEPW-AP-M-B0,ZavaCore Field Elite,E,Pants,Womens,AP,M,Medium,B0,Black/Orange,Elite Womens Pants Medium Black/Orange,B2C,40.04,95.33,true
+ZCEPW-AP-M-CS,ZavaCore Field Elite,E,Pants,Womens,AP,M,Medium,CS,Charcoal/Silver,Elite Womens Pants Medium Charcoal/Silver,B2C,43.97,104.69,true
+ZCEPW-AP-M-RR,ZavaCore Field Elite,E,Pants,Womens,AP,M,Medium,RR,Deep Red/Red,Elite Womens Pants Medium Deep Red/Red,B2C,44.23,105.3,true
+ZCEPW-AP-M-T0,ZavaCore Field Elite,E,Pants,Womens,AP,M,Medium,T0,Teal/Orange,Elite Womens Pants Medium Teal/Orange,B2C,44.15,105.12,true
+ZCEPW-AP-L-B0,ZavaCore Field Elite,E,Pants,Womens,AP,L,Large,B0,Black/Orange,Elite Womens Pants Large Black/Orange,B2C,42.71,101.7,true
+ZCEPW-AP-L-CS,ZavaCore Field Elite,E,Pants,Womens,AP,L,Large,CS,Charcoal/Silver,Elite Womens Pants Large Charcoal/Silver,B2C,39.97,95.16,true
+ZCEPW-AP-L-RR,ZavaCore Field Elite,E,Pants,Womens,AP,L,Large,RR,Deep Red/Red,Elite Womens Pants Large Deep Red/Red,B2C,40.31,95.97,true
+ZCEPW-AP-L-T0,ZavaCore Field Elite,E,Pants,Womens,AP,L,Large,T0,Teal/Orange,Elite Womens Pants Large Teal/Orange,B2C,44.64,106.28,true
+ZCEPW-AP-XL-B0,ZavaCore Field Elite,E,Pants,Womens,AP,XL,XL,B0,Black/Orange,Elite Womens Pants XL Black/Orange,B2C,44.47,105.87,true
+ZCEPW-AP-XL-CS,ZavaCore Field Elite,E,Pants,Womens,AP,XL,XL,CS,Charcoal/Silver,Elite Womens Pants XL Charcoal/Silver,B2C,43.8,104.29,true
+ZCEPW-AP-XL-RR,ZavaCore Field Elite,E,Pants,Womens,AP,XL,XL,RR,Deep Red/Red,Elite Womens Pants XL Deep Red/Red,B2C,43.57,103.75,true
+ZCEPW-AP-XL-T0,ZavaCore Field Elite,E,Pants,Womens,AP,XL,XL,T0,Teal/Orange,Elite Womens Pants XL Teal/Orange,B2C,39.99,95.22,true
+ZCEPY-AP-S-B0,ZavaCore Field Elite,E,Pants,Youth,AP,S,Small,B0,Black/Orange,Elite Youth Pants Small Black/Orange,B2C,35.52,84.57,true
+ZCEPY-AP-S-CS,ZavaCore Field Elite,E,Pants,Youth,AP,S,Small,CS,Charcoal/Silver,Elite Youth Pants Small Charcoal/Silver,B2C,35.61,84.78,true
+ZCEPY-AP-S-RR,ZavaCore Field Elite,E,Pants,Youth,AP,S,Small,RR,Deep Red/Red,Elite Youth Pants Small Deep Red/Red,B2C,35.64,84.85,true
+ZCEPY-AP-S-T0,ZavaCore Field Elite,E,Pants,Youth,AP,S,Small,T0,Teal/Orange,Elite Youth Pants Small Teal/Orange,B2C,37.01,88.12,true
+ZCEPY-AP-M-B0,ZavaCore Field Elite,E,Pants,Youth,AP,M,Medium,B0,Black/Orange,Elite Youth Pants Medium Black/Orange,B2C,35.45,84.4,true
+ZCEPY-AP-M-CS,ZavaCore Field Elite,E,Pants,Youth,AP,M,Medium,CS,Charcoal/Silver,Elite Youth Pants Medium Charcoal/Silver,B2C,36.52,86.95,true
+ZCEPY-AP-M-RR,ZavaCore Field Elite,E,Pants,Youth,AP,M,Medium,RR,Deep Red/Red,Elite Youth Pants Medium Deep Red/Red,B2C,36.85,87.74,true
+ZCEPY-AP-M-T0,ZavaCore Field Elite,E,Pants,Youth,AP,M,Medium,T0,Teal/Orange,Elite Youth Pants Medium Teal/Orange,B2C,34.72,82.66,true
+ZCEPY-AP-L-B0,ZavaCore Field Elite,E,Pants,Youth,AP,L,Large,B0,Black/Orange,Elite Youth Pants Large Black/Orange,B2C,35.18,83.77,true
+ZCEPY-AP-L-CS,ZavaCore Field Elite,E,Pants,Youth,AP,L,Large,CS,Charcoal/Silver,Elite Youth Pants Large Charcoal/Silver,B2C,33.63,80.06,true
+ZCEPY-AP-L-RR,ZavaCore Field Elite,E,Pants,Youth,AP,L,Large,RR,Deep Red/Red,Elite Youth Pants Large Deep Red/Red,B2C,36.34,86.53,true
+ZCEPY-AP-L-T0,ZavaCore Field Elite,E,Pants,Youth,AP,L,Large,T0,Teal/Orange,Elite Youth Pants Large Teal/Orange,B2C,34.76,82.77,true
+ZCEPY-AP-XL-B0,ZavaCore Field Elite,E,Pants,Youth,AP,XL,XL,B0,Black/Orange,Elite Youth Pants XL Black/Orange,B2C,37.19,88.54,true
+ZCEPY-AP-XL-CS,ZavaCore Field Elite,E,Pants,Youth,AP,XL,XL,CS,Charcoal/Silver,Elite Youth Pants XL Charcoal/Silver,B2C,35.25,83.93,true
+ZCEPY-AP-XL-RR,ZavaCore Field Elite,E,Pants,Youth,AP,XL,XL,RR,Deep Red/Red,Elite Youth Pants XL Deep Red/Red,B2C,35.46,84.43,true
+ZCEPY-AP-XL-T0,ZavaCore Field Elite,E,Pants,Youth,AP,XL,XL,T0,Teal/Orange,Elite Youth Pants XL Teal/Orange,B2C,36.23,86.26,true

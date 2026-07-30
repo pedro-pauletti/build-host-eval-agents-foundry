@@ -1,0 +1,45 @@
+# Evaluation suite for the Zava InventoryAgent (Foundry prompt agent).
+#
+# Executed as a **cloud evaluation** by agents/inventory-agent/run_eval.py — results land in the
+# Foundry project (portal -> Evaluations) and in the web app's Evaluations tab.
+#
+#   .venv\Scripts\python.exe agents/inventory-agent/run_eval.py
+#   .venv\Scripts\python.exe agents/inventory-agent/run_eval.py --limit 3
+name: inventory-agent-quality
+
+agent:
+  name: InventoryAgent
+  target: azure_ai_agent      # Foundry calls the live agent for every dataset row
+
+dataset:
+  local_uri: evals/inventory_eval.jsonl
+  fields: [query, ground_truth, must_include, expected_tool]
+
+# All three Foundry evaluator flavours in one run.
+evaluators:
+  builtin:
+    - builtin.relevance
+    - builtin.intent_resolution
+    - builtin.task_adherence
+    - builtin.violence          # service-based safety evaluator (no judge model)
+  custom:
+    - name: zava_answer_grounding   # code-based: fraction of required Zava facts present
+      type: code
+      pass_threshold: 0.99
+    - name: zava_ops_briefing       # prompt-based: LLM judge, ordinal 1-5
+      type: prompt
+      threshold: 4
+  rubric:
+    - name: zava_inventory_rubric   # weighted dimensions, judged 1-5 each, normalised to 0-1
+      pass_threshold: 0.6
+      dimensions:
+        - source_routing            # weight 9
+        - numeric_fidelity          # weight 8
+        - operational_completeness  # weight 5
+        - citation_discipline       # weight 4
+        - briefing_clarity          # weight 3
+        - general_quality           # weight 5, always applicable
+
+options:
+  eval_model: gpt-4.1           # LLM judge (FOUNDRY_MODEL_DEPLOYMENT_NAME / EVAL_JUDGE_MODEL)
+  results: .foundry/results/eval_result.json

@@ -1,0 +1,191 @@
+order_id,sku,name,quantity,unit_price,line_total
+23518,ZCPTM-SS-M-B0,Premium Mens SS Top Medium Black/Orange,2,59.18,118.36
+23518,ZCESM-AS-M-RR,Elite Mens Shorts Medium Deep Red/Red,3,66.51,199.53
+23544,ZCETM-LS-L-RR,Elite Mens LS Tee Large Deep Red/Red,1,74.83,74.83
+23544,ZCEPM-AP-L-B0,Elite Mens Pants Large Black/Orange,3,99.65,298.95
+23561,ZCRTW-SS-S-CS,Pro Womens SS Top Small Charcoal/Silver,1,47.06,47.06
+23575,ZCCTY-SS-M-B0,Core Youth SS Top Medium Black/Orange,2,30.87,61.74
+23575,ZCPSW-AS-L-CS,Premium Womens Shorts Large Charcoal/Silver,1,53.46,53.46
+23590,ZCPTM-SS-L-B0,Premium Mens SS Top Large Black/Orange,2,61.5,123.0
+23590,ZCPPY-AP-S-CS,Premium Youth Pants Small Charcoal/Silver,3,66.53,199.59
+23600,ZCCTW-SS-M-B0,Core Womens SS Top Medium Black/Orange,3,34.9,104.7
+23600,ZCEPY-AP-L-T0,Elite Youth Pants Large Teal/Orange,1,82.77,82.77
+23601,ZCESM-AS-L-B0,Elite Mens Shorts Large Black/Orange,3,68.14,204.42
+23601,ZCPTW-LS-S-T0,Premium Womens LS Top Small Teal/Orange,2,64.06,128.12
+23601,ZCESY-AS-XL-B0,Elite Youth Shorts XL Black/Orange,1,55.38,55.38
+23602,ZCETW-SS-L-B0,Elite Womens SS Tee Large Black/Orange,3,76.6,229.8
+23602,ZCPSY-AS-S-B0,Premium Youth Shorts Small Black/Orange,2,42.8,85.6
+23603,ZCETY-LS-XL-RR,Elite Youth LS Tee XL Deep Red/Red,1,63.0,63.0
+23603,ZCRPY-AP-L-CS,Pro Youth Pants Large Charcoal/Silver,3,53.34,160.02
+23604,ZCRPM-AP-L-B0,Pro Mens Pants Large Black/Orange,3,60.57,181.71
+23605,ZCPSY-AS-L-RR,Premium Youth Shorts Large Deep Red/Red,3,43.02,129.06
+23605,ZCRPW-AP-S-T0,Pro Womens Pants Small Teal/Orange,1,61.02,61.02
+23606,ZCEPW-AP-XL-CS,Elite Womens Pants XL Charcoal/Silver,1,104.29,104.29
+23606,ZCETM-LS-L-T0,Elite Mens LS Tee Large Teal/Orange,3,78.99,236.97
+23606,ZCCTY-LS-S-T0,Core Youth LS Top Small Teal/Orange,3,30.69,92.07
+23607,ZCCTY-LS-XL-T0,Core Youth LS Top XL Teal/Orange,2,30.94,61.88
+23607,ZCRSY-AS-XL-B0,Pro Youth Shorts XL Black/Orange,2,34.98,69.96
+23607,ZCETW-LS-S-T0,Elite Womens LS Tee Small Teal/Orange,2,74.87,149.74
+23608,ZCPSW-AS-S-RR,Premium Womens Shorts Small Deep Red/Red,3,53.23,159.69
+23609,ZCRPY-AP-S-CS,Pro Youth Pants Small Charcoal/Silver,3,51.51,154.53
+23609,ZCPPM-AP-S-CS,Premium Mens Pants Small Charcoal/Silver,1,73.09,73.09
+23610,ZCCTY-SS-L-CS,Core Youth SS Top Large Charcoal/Silver,1,29.94,29.94
+23610,ZCCPM-AP-XL-CS,Core Mens Pants XL Charcoal/Silver,3,45.35,136.05
+23610,ZCRTM-LS-M-RR,Pro Mens LS Top Medium Deep Red/Red,3,48.42,145.26
+23611,ZCCTM-LS-M-RR,Core Mens LS Top Medium Deep Red/Red,2,36.67,73.34
+23611,ZCRPW-AP-L-B0,Pro Womens Pants Large Black/Orange,2,56.03,112.06
+23611,ZCPTY-SS-S-CS,Premium Youth SS Top Small Charcoal/Silver,1,48.95,48.95
+23612,ZCEPW-AP-S-T0,Elite Womens Pants Small Teal/Orange,2,99.98,199.96
+23612,ZCRTM-LS-S-RR,Pro Mens LS Top Small Deep Red/Red,1,47.29,47.29
+23613,ZCETW-LS-S-RR,Elite Womens LS Tee Small Deep Red/Red,1,79.91,79.91
+23614,ZCEPM-AP-S-CS,Elite Mens Pants Small Charcoal/Silver,3,102.07,306.21
+23614,ZCCSW-AS-S-RR,Core Womens Shorts Small Deep Red/Red,2,29.1,58.2
+23614,ZCRSY-AS-S-B0,Pro Youth Shorts Small Black/Orange,1,33.79,33.79
+23615,ZCESY-AS-XL-T0,Elite Youth Shorts XL Teal/Orange,2,54.9,109.8
+23616,ZCRSW-AS-S-RR,Pro Womens Shorts Small Deep Red/Red,2,37.87,75.74
+23617,ZCETW-SS-XL-CS,Elite Womens SS Tee XL Charcoal/Silver,1,80.02,80.02
+23618,ZCETW-LS-L-T0,Elite Womens LS Tee Large Teal/Orange,3,81.39,244.17
+23618,ZCESM-AS-L-B0,Elite Mens Shorts Large Black/Orange,1,68.14,68.14
+23618,ZCRPM-AP-S-RR,Pro Mens Pants Small Deep Red/Red,2,57.07,114.14
+23619,ZCESW-AS-M-T0,Elite Womens Shorts Medium Teal/Orange,3,64.12,192.36
+23620,ZCEPY-AP-M-RR,Elite Youth Pants Medium Deep Red/Red,1,87.74,87.74
+23620,ZCRTM-LS-S-T0,Pro Mens LS Top Small Teal/Orange,2,47.26,94.52
+23621,ZCRPY-AP-L-T0,Pro Youth Pants Large Teal/Orange,3,51.8,155.4
+23621,ZCRSM-AS-S-B0,Pro Mens Shorts Small Black/Orange,1,39.51,39.51
+23621,ZCRTW-LS-M-T0,Pro Womens LS Top Medium Teal/Orange,1,46.44,46.44
+23622,ZCCPM-AP-M-B0,Core Mens Pants Medium Black/Orange,2,47.98,95.96
+23623,ZCEPY-AP-XL-B0,Elite Youth Pants XL Black/Orange,1,88.54,88.54
+23623,ZCRTM-LS-S-T0,Pro Mens LS Top Small Teal/Orange,3,47.26,141.78
+23623,ZCRSW-AS-L-T0,Pro Womens Shorts Large Teal/Orange,2,39.78,79.56
+23624,ZCRTM-SS-S-CS,Pro Mens SS Top Small Charcoal/Silver,1,49.02,49.02
+23625,ZCPPM-AP-S-T0,Premium Mens Pants Small Teal/Orange,3,73.76,221.28
+23626,ZCPPY-AP-S-CS,Premium Youth Pants Small Charcoal/Silver,2,66.53,133.06
+23626,ZCETW-LS-S-RR,Elite Womens LS Tee Small Deep Red/Red,2,79.91,159.82
+23626,ZCPTW-LS-S-RR,Premium Womens LS Top Small Deep Red/Red,2,57.23,114.46
+23627,ZCCPW-AP-M-T0,Core Womens Pants Medium Teal/Orange,2,43.39,86.78
+23628,ZCCTW-SS-M-CS,Core Womens SS Top Medium Charcoal/Silver,2,33.66,67.32
+23628,ZCCPY-AP-S-T0,Core Youth Pants Small Teal/Orange,3,37.78,113.34
+23629,ZCPPW-AP-M-CS,Premium Womens Pants Medium Charcoal/Silver,2,77.04,154.08
+23629,ZCPTW-SS-XL-CS,Premium Womens SS Top XL Charcoal/Silver,3,59.84,179.52
+23630,ZCPSW-AS-S-CS,Premium Womens Shorts Small Charcoal/Silver,2,52.0,104.0
+23631,ZCCTM-LS-S-RR,Core Mens LS Top Small Deep Red/Red,3,37.27,111.81
+23631,ZCRTY-LS-S-RR,Pro Youth LS Top Small Deep Red/Red,1,37.02,37.02
+23632,ZCCSY-AS-XL-CS,Core Youth Shorts XL Charcoal/Silver,3,24.87,74.61
+23633,ZCRTM-LS-S-T0,Pro Mens LS Top Small Teal/Orange,3,47.26,141.78
+23633,ZCETM-SS-S-B0,Elite Mens SS Tee Small Black/Orange,1,81.57,81.57
+23633,ZCESW-AS-M-B0,Elite Womens Shorts Medium Black/Orange,2,71.18,142.36
+23634,ZCCPW-AP-M-T0,Core Womens Pants Medium Teal/Orange,1,43.39,43.39
+23634,ZCPTY-SS-M-B0,Premium Youth SS Top Medium Black/Orange,2,49.29,98.58
+23635,ZCRSM-AS-XL-RR,Pro Mens Shorts XL Deep Red/Red,2,37.48,74.96
+23635,ZCETM-LS-M-T0,Elite Mens LS Tee Medium Teal/Orange,2,76.02,152.04
+23635,ZCEPM-AP-S-RR,Elite Mens Pants Small Deep Red/Red,1,105.04,105.04
+23636,ZCRSM-AS-XL-T0,Pro Mens Shorts XL Teal/Orange,1,38.74,38.74
+23636,ZCEPY-AP-S-B0,Elite Youth Pants Small Black/Orange,2,84.57,169.14
+23636,ZCPTM-LS-M-T0,Premium Mens LS Top Medium Teal/Orange,3,63.01,189.03
+23637,ZCCTW-LS-S-T0,Core Womens LS Top Small Teal/Orange,1,34.66,34.66
+23637,ZCCPM-AP-M-T0,Core Mens Pants Medium Teal/Orange,2,45.87,91.74
+23637,ZCPPM-AP-S-T0,Premium Mens Pants Small Teal/Orange,1,73.76,73.76
+23638,ZCETM-SS-M-CS,Elite Mens SS Tee Medium Charcoal/Silver,2,74.84,149.68
+23638,ZCRSW-AS-L-RR,Pro Womens Shorts Large Deep Red/Red,1,37.2,37.2
+23638,ZCRPM-AP-S-RR,Pro Mens Pants Small Deep Red/Red,2,57.07,114.14
+23639,ZCPPY-AP-L-RR,Premium Youth Pants Large Deep Red/Red,3,62.49,187.47
+23639,ZCPTM-SS-M-B0,Premium Mens SS Top Medium Black/Orange,3,59.18,177.54
+23639,ZCPTY-SS-S-B0,Premium Youth SS Top Small Black/Orange,3,53.15,159.45
+23640,ZCCPM-AP-S-T0,Core Mens Pants Small Teal/Orange,3,44.03,132.09
+23640,ZCCPW-AP-XL-B0,Core Womens Pants XL Black/Orange,1,43.34,43.34
+23640,ZCCTY-SS-L-B0,Core Youth SS Top Large Black/Orange,1,30.96,30.96
+23641,ZCPTW-LS-M-RR,Premium Womens LS Top Medium Deep Red/Red,3,57.93,173.79
+23642,ZCCSW-AS-L-CS,Core Womens Shorts Large Charcoal/Silver,3,29.63,88.89
+23642,ZCRPY-AP-M-T0,Pro Youth Pants Medium Teal/Orange,1,53.59,53.59
+23643,ZCCTW-LS-S-RR,Core Womens LS Top Small Deep Red/Red,1,33.89,33.89
+23644,ZCETY-LS-S-RR,Elite Youth LS Tee Small Deep Red/Red,2,67.53,135.06
+23644,ZCESY-AS-XL-CS,Elite Youth Shorts XL Charcoal/Silver,2,56.99,113.98
+23645,ZCRPW-AP-M-RR,Pro Womens Pants Medium Deep Red/Red,2,59.5,119.0
+23645,ZCCSM-AS-S-B0,Core Mens Shorts Small Black/Orange,2,30.49,60.98
+23645,ZCCSW-AS-M-CS,Core Womens Shorts Medium Charcoal/Silver,2,31.19,62.38
+23646,ZCPSM-AS-XL-T0,Premium Mens Shorts XL Teal/Orange,1,50.05,50.05
+23646,ZCCTM-SS-L-B0,Core Mens SS Top Large Black/Orange,1,36.04,36.04
+23647,ZCETY-SS-XL-CS,Elite Youth SS Tee XL Charcoal/Silver,1,68.26,68.26
+23647,ZCPTW-LS-L-T0,Premium Womens LS Top Large Teal/Orange,2,64.1,128.2
+23647,ZCCSW-AS-XL-RR,Core Womens Shorts XL Deep Red/Red,3,30.53,91.59
+23648,ZCESW-AS-M-B0,Elite Womens Shorts Medium Black/Orange,3,71.18,213.54
+23648,ZCETM-LS-S-T0,Elite Mens LS Tee Small Teal/Orange,2,79.66,159.32
+23648,ZCPPW-AP-XL-RR,Premium Womens Pants XL Deep Red/Red,3,72.94,218.82
+23649,ZCPPW-AP-XL-RR,Premium Womens Pants XL Deep Red/Red,1,72.94,72.94
+23649,ZCESY-AS-L-RR,Elite Youth Shorts Large Deep Red/Red,3,60.47,181.41
+23649,ZCPPY-AP-M-B0,Premium Youth Pants Medium Black/Orange,2,68.6,137.2
+23650,ZCRPM-AP-XL-T0,Pro Mens Pants XL Teal/Orange,1,59.84,59.84
+23650,ZCCPW-AP-M-RR,Core Womens Pants Medium Deep Red/Red,2,47.38,94.76
+23651,ZCPPW-AP-S-B0,Premium Womens Pants Small Black/Orange,2,75.88,151.76
+23651,ZCPTM-SS-XL-CS,Premium Mens SS Top XL Charcoal/Silver,1,58.88,58.88
+23652,ZCRTY-SS-S-B0,Pro Youth SS Top Small Black/Orange,1,40.86,40.86
+23652,ZCRSW-AS-XL-RR,Pro Womens Shorts XL Deep Red/Red,1,41.32,41.32
+23653,ZCCPM-AP-M-T0,Core Mens Pants Medium Teal/Orange,3,45.87,137.61
+23654,ZCCTW-LS-L-T0,Core Womens LS Top Large Teal/Orange,1,37.46,37.46
+23654,ZCCTM-SS-XL-CS,Core Mens SS Top XL Charcoal/Silver,3,37.71,113.13
+23655,ZCCTY-SS-S-B0,Core Youth SS Top Small Black/Orange,2,31.04,62.08
+23655,ZCCTW-SS-L-CS,Core Womens SS Top Large Charcoal/Silver,2,37.42,74.84
+23655,ZCRTW-LS-XL-T0,Pro Womens LS Top XL Teal/Orange,2,46.5,93.0
+23656,ZCCTW-SS-L-CS,Core Womens SS Top Large Charcoal/Silver,3,37.42,112.26
+23656,ZCRTM-SS-L-CS,Pro Mens SS Top Large Charcoal/Silver,2,44.98,89.96
+23657,ZCEPM-AP-XL-CS,Elite Mens Pants XL Charcoal/Silver,1,98.52,98.52
+23657,ZCESW-AS-S-T0,Elite Womens Shorts Small Teal/Orange,1,62.96,62.96
+23657,ZCPTY-LS-S-T0,Premium Youth LS Top Small Teal/Orange,1,51.55,51.55
+23658,ZCPTW-SS-L-B0,Premium Womens SS Top Large Black/Orange,2,62.4,124.8
+23658,ZCPPW-AP-L-B0,Premium Womens Pants Large Black/Orange,2,72.84,145.68
+23658,ZCCPY-AP-S-CS,Core Youth Pants Small Charcoal/Silver,2,38.86,77.72
+23659,ZCCPM-AP-L-CS,Core Mens Pants Large Charcoal/Silver,3,44.76,134.28
+23659,ZCRSY-AS-M-T0,Pro Youth Shorts Medium Teal/Orange,3,32.01,96.03
+23659,ZCCPY-AP-M-B0,Core Youth Pants Medium Black/Orange,3,37.14,111.42
+23660,ZCRSY-AS-XL-CS,Pro Youth Shorts XL Charcoal/Silver,3,32.64,97.92
+23660,ZCPTM-LS-M-RR,Premium Mens LS Top Medium Deep Red/Red,3,60.3,180.9
+23661,ZCRPW-AP-S-B0,Pro Womens Pants Small Black/Orange,3,57.61,172.83
+23661,ZCRTM-SS-XL-B0,Pro Mens SS Top XL Black/Orange,2,44.39,88.78
+23662,ZCCPW-AP-S-RR,Core Womens Pants Small Deep Red/Red,1,45.14,45.14
+23662,ZCPPY-AP-S-CS,Premium Youth Pants Small Charcoal/Silver,3,66.53,199.59
+23663,ZCRTM-SS-S-CS,Pro Mens SS Top Small Charcoal/Silver,3,49.02,147.06
+23663,ZCESW-AS-M-B0,Elite Womens Shorts Medium Black/Orange,3,71.18,213.54
+23664,ZCEPW-AP-L-B0,Elite Womens Pants Large Black/Orange,2,101.7,203.4
+23665,ZCPPM-AP-L-B0,Premium Mens Pants Large Black/Orange,1,76.57,76.57
+23666,ZCRPY-AP-M-RR,Pro Youth Pants Medium Deep Red/Red,3,50.72,152.16
+23667,ZCCSM-AS-XL-CS,Core Mens Shorts XL Charcoal/Silver,3,30.76,92.28
+23667,ZCCTM-SS-L-B0,Core Mens SS Top Large Black/Orange,3,36.04,108.12
+23667,ZCEPM-AP-XL-B0,Elite Mens Pants XL Black/Orange,2,95.63,191.26
+23668,ZCEPM-AP-S-B0,Elite Mens Pants Small Black/Orange,3,100.82,302.46
+23668,ZCPSW-AS-S-B0,Premium Womens Shorts Small Black/Orange,3,49.86,149.58
+23668,ZCPSW-AS-S-CS,Premium Womens Shorts Small Charcoal/Silver,2,52.0,104.0
+23669,ZCRSW-AS-L-CS,Pro Womens Shorts Large Charcoal/Silver,1,37.92,37.92
+23669,ZCEPY-AP-XL-RR,Elite Youth Pants XL Deep Red/Red,3,84.43,253.29
+23669,ZCETM-LS-XL-RR,Elite Mens LS Tee XL Deep Red/Red,3,78.52,235.56
+23670,ZCPTY-SS-L-B0,Premium Youth SS Top Large Black/Orange,1,48.45,48.45
+23671,ZCRTM-LS-M-RR,Pro Mens LS Top Medium Deep Red/Red,2,48.42,96.84
+23671,ZCPTW-LS-S-RR,Premium Womens LS Top Small Deep Red/Red,3,57.23,171.69
+23671,ZCPTW-LS-L-RR,Premium Womens LS Top Large Deep Red/Red,3,61.4,184.2
+23672,ZCCSM-AS-L-T0,Core Mens Shorts Large Teal/Orange,2,29.07,58.14
+23672,ZCPTY-SS-XL-B0,Premium Youth SS Top XL Black/Orange,1,52.6,52.6
+23672,ZCCSM-AS-S-T0,Core Mens Shorts Small Teal/Orange,2,31.74,63.48
+23673,ZCESW-AS-S-CS,Elite Womens Shorts Small Charcoal/Silver,3,70.08,210.24
+23674,ZCCTW-SS-L-CS,Core Womens SS Top Large Charcoal/Silver,2,37.42,74.84
+23674,ZCCPM-AP-S-T0,Core Mens Pants Small Teal/Orange,3,44.03,132.09
+23675,ZCCTM-SS-L-B0,Core Mens SS Top Large Black/Orange,3,36.04,108.12
+23676,ZCCTW-LS-XL-T0,Core Womens LS Top XL Teal/Orange,3,37.29,111.87
+23676,ZCRPY-AP-M-RR,Pro Youth Pants Medium Deep Red/Red,3,50.72,152.16
+23676,ZCEPY-AP-M-CS,Elite Youth Pants Medium Charcoal/Silver,3,86.95,260.85
+23677,ZCESM-AS-L-T0,Elite Mens Shorts Large Teal/Orange,2,66.51,133.02
+23677,ZCPPY-AP-L-RR,Premium Youth Pants Large Deep Red/Red,3,62.49,187.47
+23678,ZCCTW-LS-L-RR,Core Womens LS Top Large Deep Red/Red,3,37.09,111.27
+23678,ZCRPY-AP-XL-RR,Pro Youth Pants XL Deep Red/Red,1,48.1,48.1
+23678,ZCESY-AS-M-T0,Elite Youth Shorts Medium Teal/Orange,1,59.13,59.13
+23679,ZCPTM-LS-L-T0,Premium Mens LS Top Large Teal/Orange,2,58.06,116.12
+23679,ZCPTW-LS-S-T0,Premium Womens LS Top Small Teal/Orange,3,64.06,192.18
+23679,ZCRPY-AP-L-CS,Pro Youth Pants Large Charcoal/Silver,3,53.34,160.02
+23680,ZCESW-AS-L-T0,Elite Womens Shorts Large Teal/Orange,3,67.41,202.23
+23680,ZCCSY-AS-S-T0,Core Youth Shorts Small Teal/Orange,3,24.31,72.93
+23680,ZCPTM-LS-S-T0,Premium Mens LS Top Small Teal/Orange,1,61.61,61.61
+23681,ZCPPM-AP-S-B0,Premium Mens Pants Small Black/Orange,2,73.05,146.1
+23682,ZCESW-AS-M-B0,Elite Womens Shorts Medium Black/Orange,3,71.18,213.54
+23682,ZCPPM-AP-S-CS,Premium Mens Pants Small Charcoal/Silver,1,73.09,73.09
+23683,ZCRTM-LS-L-T0,Pro Mens LS Top Large Teal/Orange,1,46.43,46.43
+23684,ZCPPW-AP-L-CS,Premium Womens Pants Large Charcoal/Silver,1,76.5,76.5
+23684,ZCEPM-AP-S-T0,Elite Mens Pants Small Teal/Orange,1,101.25,101.25
+23684,ZCEPW-AP-XL-B0,Elite Womens Pants XL Black/Orange,3,105.87,317.61

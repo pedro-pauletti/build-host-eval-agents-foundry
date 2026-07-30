@@ -1,0 +1,22 @@
+{
+  "name": "zava-toolbox",
+  "description": "Zava operations toolbox: live inventory/order tools + Foundry IQ knowledge base.",
+  "tools": [
+    {
+      "type": "mcp",
+      "server_label": "zava_tools",
+      "server_url": "<ZAVA_MCP_URL>",
+      "server_description": "Live Zava inventory, alerts, KPIs, product lookups.",
+      "require_approval": "never"
+    },
+    {
+      "type": "mcp",
+      "server_label": "zava_kb",
+      "server_url": "https://<search-service>.search.windows.net/knowledgeBases/zava-kb/mcp?api-version=2026-05-01-preview",
+      "server_description": "Foundry IQ knowledge base — the ONLY authoritative source for Zava policies, procedures, thresholds, SLAs, sizing/care guidance and product-line overviews.",
+      "allowed_tools": ["knowledge_base_retrieve"],
+      "require_approval": "never",
+      "project_connection_id": "zava-kb-mcp"
+    }
+  ]
+}

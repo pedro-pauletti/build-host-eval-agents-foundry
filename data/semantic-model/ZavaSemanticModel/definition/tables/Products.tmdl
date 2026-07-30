@@ -1,0 +1,96 @@
+/// Product (SKU) dimension: line, garment, gender, cut, size, colour and price.
+table Products
+
+	/// Distinct SKUs in the catalogue.
+	measure 'Product Count' = DISTINCTCOUNT(Products[SKU])
+		formatString: #,##0
+
+	measure 'Active Product Count' = CALCULATE(DISTINCTCOUNT(Products[SKU]), Products[Is Active] = TRUE())
+		formatString: #,##0
+
+	column SKU
+		dataType: string
+		isKey
+		isHidden
+		summarizeBy: none
+		sourceColumn: sku
+
+	column 'Product Line'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_line
+
+	column 'Line Code'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: line_code
+
+	column Garment
+		dataType: string
+		summarizeBy: none
+		sourceColumn: garment
+
+	column Gender
+		dataType: string
+		summarizeBy: none
+		sourceColumn: gender
+
+	column Cut
+		dataType: string
+		summarizeBy: none
+		sourceColumn: cut
+
+	column Size
+		dataType: string
+		summarizeBy: none
+		sourceColumn: size
+
+	column 'Size Label'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: size_label
+
+	column 'Color Code'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: color_code
+
+	column 'Color Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: color_name
+
+	column 'Product Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: name
+
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	column 'Unit Cost'
+		dataType: decimal
+		summarizeBy: none
+		sourceColumn: unit_cost
+		formatString: \$#,##0.00
+
+	column 'Unit Price'
+		dataType: decimal
+		summarizeBy: none
+		sourceColumn: unit_price
+		formatString: \$#,##0.00
+
+	column 'Is Active'
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: active
+
+	partition Products = entity
+		mode: directLake
+		source
+			entityName: products
+			expressionSource: DL_Zava

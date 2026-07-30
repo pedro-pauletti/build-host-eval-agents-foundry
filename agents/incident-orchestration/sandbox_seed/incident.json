@@ -1,0 +1,19 @@
+{
+  "incident_id": "ZAVA-INC-4821",
+  "title": "Nightly reorder job produced negative reorder quantities",
+  "reported_by": "ops-oncall@zava.example",
+  "severity_hint": "high",
+  "service": "reorder-service",
+  "component": "reorder.py",
+  "description": "The nightly reorder batch failed validation: several well-stocked SKUs were assigned NEGATIVE reorder quantities, and some genuine deficits were rounded DOWN below target_level. Purchase-order generation was aborted by the non-negative guard. Suspect the reorder_quantity() calculation in reorder.py. Please triage, fix in the sandbox, and confirm engineering-policy compliance before we re-run the batch.",
+  "symptoms": [
+    "SKU ZCPTM-SS-M-B0 (on_hand 200, target 150) was assigned reorder qty -72",
+    "Deficits were rounded down, leaving SKUs below target_level after reorder",
+    "PO generation aborted by the negative-quantity guard"
+  ],
+  "sandbox": {
+    "entry": "reorder.py",
+    "test": "test_reorder.py",
+    "run": "pytest -q"
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "tool_call_before_answer",
+    "description": "For every new order ID, tracking number, or explicit tracking request, the agent calls the appropriate tool (lookup_order or track_shipment) before giving any substantive answer. The tool call must use the requested order_id or tracking_number (or otherwise explain why not) and occur in the transcript prior to the agent reporting order/tracking details.",
+    "weight": 9
+  },
+  {
+    "id": "tool_error_and_ambiguity_handling",
+    "description": "When a tool returns an error, missing/incomplete data, or the user request is ambiguous, the agent asks a clarifying question or uses a defined fallback (e.g., alternative tool call or explicit statement of unavailability) rather than inventing facts; the handling must be visible in the transcript.",
+    "weight": 5
+  },
+  {
+    "id": "factual_integrity",
+    "description": "All factual claims about status, ETA, last location, destination, delay reason, action required, or other order details must be present in the tool output or session context shown in the transcript; the agent must not add, infer, or speculate about facts not in those sources.",
+    "weight": 6
+  },
+  {
+    "id": "required_field_completeness",
+    "description": "When the tool output includes the fields status label, ETA, last location, destination, or action required, the agent's response explicitly reports each available field; if a particular field is absent from tool output, the agent explicitly states it is unavailable.",
+    "weight": 5
+  },
+  {
+    "id": "context_and_preference_acknowledgment",
+    "description": "If session context contains customer identity or durable delivery preferences, the agent acknowledges them (for example, greeting by name or noting the saved delivery preference) and does not ask the user to re-provide information already present in session context.",
+    "weight": 4
+  },
+  {
+    "id": "concise_warm_useful_presentation",
+    "description": "The agent's reply is concise (no more than three sentences), uses warm, customer-oriented tone, and provides actionable information or next steps when relevant (e.g., what the customer should do or expect next).",
+    "weight": 3
+  },
+  {
+    "id": "delay_and_exception_explanation",
+    "description": "When the tool output indicates a delay or exception, the agent explains the cause and the next steps or expected resolution only using information present in the tool output or session context, and states when the cause is unknown or unavailable.",
+    "weight": 2
+  },
+  {
+    "id": "general_quality",
+    "description": "Other important quality factors not covered by listed criteria.",
+    "weight": 5,
+    "always_applicable": true
+  }
+]

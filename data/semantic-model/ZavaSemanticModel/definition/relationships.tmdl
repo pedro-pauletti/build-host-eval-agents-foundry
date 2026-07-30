@@ -1,0 +1,43 @@
+relationship rel_01_Sales_Products
+	fromColumn: Sales.SKU
+	toColumn: Products.SKU
+
+relationship rel_02_Sales_Stores
+	fromColumn: Sales.'Store Code'
+	toColumn: Stores.'Store Code'
+
+relationship rel_03_Sales_Calendar
+	fromColumn: Sales.'Sale Date'
+	toColumn: Calendar.Date
+
+relationship rel_04_Inventory_Products
+	fromColumn: Inventory.SKU
+	toColumn: Products.SKU
+
+relationship rel_05_Inventory_Facilities
+	fromColumn: Inventory.'Facility Code'
+	toColumn: Facilities.'Facility Code'
+
+relationship rel_06_Products_ProductLines
+	fromColumn: Products.'Line Code'
+	toColumn: 'Product Lines'.'Line Code'
+
+relationship rel_07_Orders_Customers
+	fromColumn: Orders.'Customer ID'
+	toColumn: Customers.'Customer ID'
+
+relationship rel_08_Orders_Facilities
+	fromColumn: Orders.'Ship From Facility'
+	toColumn: Facilities.'Facility Code'
+
+relationship rel_09_Orders_Calendar
+	fromColumn: Orders.'Order Date'
+	toColumn: Calendar.Date
+
+relationship rel_10_OrderItems_Orders
+	fromColumn: 'Order Items'.'Order ID'
+	toColumn: Orders.'Order ID'
+
+relationship rel_11_OrderItems_Products
+	fromColumn: 'Order Items'.SKU
+	toColumn: Products.SKU
