@@ -1062,23 +1062,32 @@ VOICE_TOOLS = [
                                                      "tracking_number": {"type": "string"}}}},
 ]
 
+# Locales the caller may speak. Feeds both speech recognition AND the multilingual VAD.
+VOICE_LOCALES = ["en-US", "pt-BR", "es-ES", "fr-FR", "de-DE", "it-IT"]
+
 SESSION_UPDATE = {
     "type": "session.update",
     "session": {
         "instructions": (
             "You are Zava DeliverySupport on a live voice call with a customer tracking a ZavaCore Field "
             "order. Always call lookup_order or track_shipment before answering — never invent order, "
-            "delay or ETA data. Be warm, concise and clear: this is spoken."
+            "delay or ETA data. Be warm, concise and clear: this is spoken. Detect the language the "
+            "customer speaks and reply in THAT language for the whole call."
         ),
         "modalities": ["text", "audio"],
         "input_audio_format": "pcm16",
         "output_audio_format": "pcm16",
-        "input_audio_transcription": {"model": "whisper-1"},
-        "turn_detection": {"type": "server_vad", "threshold": 0.5,
-                           "prefix_padding_ms": 300, "silence_duration_ms": 500},
+        # `azure-speech` (not `whisper-1`) is what accepts a list of locales.
+        "input_audio_transcription": {"model": "azure-speech", "language": ",".join(VOICE_LOCALES)},
+        # And `azure-speech` transcription requires an `azure_semantic_vad*` turn detector.
+        "turn_detection": {"type": "azure_semantic_vad_multilingual", "threshold": 0.3,
+                           "prefix_padding_ms": 200, "silence_duration_ms": 500,
+                           "languages": VOICE_LOCALES},
         "tools": VOICE_TOOLS,
         "tool_choice": "auto",
-        "voice": {"name": os.environ.get("VOICE_LIVE_VOICE", "en-US-AvaNeural"), "type": "azure-standard"},
+        # Must be a *Multilingual* voice: a single-locale voice speaks Portuguese with a US accent.
+        "voice": {"name": os.environ.get("VOICE_LIVE_VOICE", "en-US-AvaMultilingualNeural"),
+                  "type": "azure-standard"},
     },
 }
 

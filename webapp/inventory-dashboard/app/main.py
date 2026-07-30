@@ -469,6 +469,8 @@ async def voice_config() -> dict[str, Any]:
         "deployment": REALTIME_DEPLOYMENT,
         "agents": list(voicemod.AGENTS.keys()),
         "sample_rate": 24000,
+        "voice": voicemod.VOICE_NAME,
+        "locales": voicemod.VOICE_LOCALES,
     }
 
 

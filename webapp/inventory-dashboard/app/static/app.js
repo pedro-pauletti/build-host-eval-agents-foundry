@@ -580,8 +580,8 @@ async function startVoice() {
   state.voice = session; setVoiceActiveUI(true); setVoiceStatus('Connecting to Voice Live…', 'wait', 'loop');
 
   ws.onopen = () => {
-    setVoiceStatus('Listening — just speak. Click the button again to stop.', 'live', 'broadcast');
-    addTrace(group, { kind: 'voice', title: 'session opened', subtitle: 'gpt-realtime-mini · pcm16 24 kHz · server VAD', status: 'completed' });
+    setVoiceStatus('Listening — speak in any supported language. Click the button again to stop.', 'live', 'broadcast');
+    addTrace(group, { kind: 'voice', title: 'session opened', subtitle: 'gpt-realtime-mini · pcm16 24 kHz · multilingual VAD', status: 'completed' });
     const source = ctx.createMediaStreamSource(stream);
     const proc = ctx.createScriptProcessor(4096, 1, 1);
     const mute = ctx.createGain(); mute.gain.value = 0;
@@ -620,7 +620,7 @@ async function startVoice() {
     }
     else if (t === 'response.done') {
       setVoiceActiveUI(true, false);
-      if (state.voice === session) setVoiceStatus('Listening — just speak. Click the button again to stop.', 'live', 'broadcast');
+      if (state.voice === session) setVoiceStatus('Listening — speak in any supported language. Click the button again to stop.', 'live', 'broadcast');
       if (session.liveRow) {
         setBubbleHtml(session.liveRow, session.liveText);
         state.history[agent].push({ text: session.liveText, who: 'assistant' });

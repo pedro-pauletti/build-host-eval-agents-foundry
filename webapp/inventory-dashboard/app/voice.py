@@ -19,6 +19,18 @@ import httpx
 
 COGNITIVE_SCOPE = "https://cognitiveservices.azure.com/.default"
 
+# Locales the caller may speak. Drives both speech recognition and the multilingual VAD; the
+# reply is spoken back in whichever of these the caller used.
+VOICE_LOCALES = [
+    loc.strip()
+    for loc in os.getenv("VOICE_LIVE_LOCALES", "en-US,pt-BR,es-ES,fr-FR,de-DE,it-IT").split(",")
+    if loc.strip()
+]
+
+# Must be a *Multilingual* neural voice, otherwise non-English replies are spoken with a heavy
+# English accent. The locale prefix is only the voice's home locale, not a language restriction.
+VOICE_NAME = os.getenv("VOICE_LIVE_VOICE", "en-US-AvaMultilingualNeural")
+
 
 def _account_host() -> str:
     return os.getenv("AZURE_AI_ACCOUNT_ENDPOINT", "").rstrip("/").replace("https://", "")
@@ -84,10 +96,16 @@ _DELIVERY_INSTRUCTIONS = (
     "exceptions plainly."
 )
 
+_LANGUAGE_RULE = (
+    " Detect the language the customer speaks and reply in THAT language, matching it for the whole "
+    "call. Speak it naturally and fluently — do not leave English words in a non-English sentence. "
+    "Only SKUs, tracking numbers, order numbers, city names and product line names stay as-is."
+)
+
 AGENTS: dict[str, dict] = {
-    "inventory": {"instructions": _INVENTORY_INSTRUCTIONS, "tools": _INVENTORY_TOOLS,
+    "inventory": {"instructions": _INVENTORY_INSTRUCTIONS + _LANGUAGE_RULE, "tools": _INVENTORY_TOOLS,
                   "greeting": "Hi, this is the Zava inventory assistant. What would you like to check?"},
-    "delivery": {"instructions": _DELIVERY_INSTRUCTIONS, "tools": _DELIVERY_TOOLS,
+    "delivery": {"instructions": _DELIVERY_INSTRUCTIONS + _LANGUAGE_RULE, "tools": _DELIVERY_TOOLS,
                  "greeting": "Hi, this is Zava delivery support. Which order can I help you track?"},
 }
 
@@ -101,12 +119,15 @@ def session_update(agent: str) -> dict:
             "modalities": ["text", "audio"],
             "input_audio_format": "pcm16",
             "output_audio_format": "pcm16",
-            "input_audio_transcription": {"model": "whisper-1"},
-            "turn_detection": {"type": "server_vad", "threshold": 0.5,
-                               "prefix_padding_ms": 300, "silence_duration_ms": 500},
+            # azure-speech (not whisper-1) is what accepts a multi-locale list.
+            "input_audio_transcription": {"model": "azure-speech", "language": ",".join(VOICE_LOCALES)},
+            # azure-speech transcription requires an azure_semantic_vad* turn detector.
+            "turn_detection": {"type": "azure_semantic_vad_multilingual", "threshold": 0.3,
+                               "prefix_padding_ms": 200, "silence_duration_ms": 500,
+                               "languages": VOICE_LOCALES},
             "tools": cfg["tools"],
             "tool_choice": "auto",
-            "voice": {"name": os.getenv("VOICE_LIVE_VOICE", "en-US-AvaNeural"), "type": "azure-standard"},
+            "voice": {"name": VOICE_NAME, "type": "azure-standard"},
         },
     }
 

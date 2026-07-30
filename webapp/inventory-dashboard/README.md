@@ -129,9 +129,20 @@ browser  <—WS—>  FastAPI /api/voice/{agent}  <—WS (Entra token)—>  wss:/
 
 The broker binds the realtime `gpt-realtime-mini` model with each agent's **instructions + function tools**
 (`get_inventory_alerts`, `get_product_stock`, `lookup_order`, `track_shipment`, …), and **executes tool calls
-against the live Zava API**. Audio is PCM16 mono 24 kHz; turn-taking uses server VAD. The browser captures the
+against the live Zava API**. Audio is PCM16 mono 24 kHz. The browser captures the
 mic, streams `input_audio_buffer.append`, plays `response.audio.delta`, and renders live transcripts; for the
 Delivery agent, a `lookup_order` tool call also refreshes the order card.
+
+**Multilingual by default.** Speak Portuguese, Spanish, French, German or Italian and the agent answers in
+that language, with a native accent. Three settings have to line up:
+
+| Setting | Value | Why |
+|---|---|---|
+| `voice.name` | `en-US-AvaMultilingualNeural` | A single-locale voice such as `en-US-AvaNeural` speaks Portuguese with a heavy US accent. The locale prefix is the voice's home locale, not a restriction. |
+| `input_audio_transcription` | `{"model": "azure-speech", "language": "en-US,pt-BR,…"}` | `whisper-1` takes no locale list; `azure-speech` does. |
+| `turn_detection` | `azure_semantic_vad_multilingual` | `azure-speech` transcription is rejected with `server_vad` — it requires an `azure_semantic_vad*` detector. |
+
+Override with `VOICE_LIVE_VOICE` and `VOICE_LIVE_LOCALES`.
 
 **Button states:** idle = blue mic; **active = red with expanding rings + a stop icon**; while the agent is
 speaking back it turns green. Your transcription and the agent's reply are both appended to the chat history.
