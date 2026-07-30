@@ -80,8 +80,19 @@ default** (the chevron toggles it; the choice is remembered in `localStorage`):
 - **Past conversation** items — Foundry's rolling chat summaries.
 - **Learned behaviour** items — procedural memories, rendered from their `instruction` field.
 
-The 🗑 button calls `DELETE /api/memory` (`delete_scope`) so you can reset between demo runs. Because
-Foundry consolidates memories *asynchronously*, the panel re-reads ~8 s after each delivery turn.
+Two buttons sit in the panel header:
+
+| Button | Does | Use it to |
+|---|---|---|
+| ⟳ **Refresh** | `GET /api/memory` (uncached) and diffs the result against the snapshot you last acknowledged | Say a preference, wait a few seconds, click — the trace tells you **what** was added, and the panel flashes |
+| 🗑 **Clear** | `DELETE /api/memory` (`delete_scope`) | Reset between demo runs |
+
+The refresh diff is intentionally *not* reset by the automatic post-turn reload, so the delta still
+reflects everything since your last click. A failed read never becomes the baseline — otherwise the
+next refresh would report the whole store as new.
+
+Because Foundry consolidates memories *asynchronously* (typically 10–30 s), the panel also re-reads
+~8 s after each delivery turn; if the refresh says *"no change yet"*, just click again.
 The memory itself lives in the agent (`agents/delivery-support-agent/src/memory.py`); the web app is
 only an observer.
 

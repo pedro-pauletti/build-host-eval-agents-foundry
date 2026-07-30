@@ -446,6 +446,16 @@ function memoryText(item) {
 const MEM_OPEN_KEY = 'zava.memoryOpen';
 let memoryOpen = localStorage.getItem(MEM_OPEN_KEY) === '1';
 
+/* Foundry consolidates memories asynchronously, so "did it save?" needs an explicit re-read.
+   `memSeen` is the last snapshot the user acknowledged (first load, refresh click, or clear) —
+   automatic post-turn reloads deliberately leave it alone, so the next click still shows the delta. */
+const memSignature = (payload) => (payload?.items || []).map((m) => `${m.kind}:${memoryText(m)}`);
+/* A failed read returns `{enabled, error, items: []}` — never let that become the baseline, or the
+   next refresh reports the whole store as "new". */
+const memUsable = (payload) => Boolean(payload && payload.enabled && !payload.error);
+let memSeen = [];
+let memLoaded = false;
+
 function applyMemoryOpen() {
   const list = $('#memList');
   const btn = $('#memToggle');
@@ -488,7 +498,16 @@ async function loadMemory() {
     $('#memList').innerHTML = `<div class="mem-item skeleton"></div><div class="mem-item skeleton"></div><div class="mem-item skeleton"></div>`;
     applyMemoryOpen();
   }
-  try { const r = await fetch('/api/memory'); if (r.ok) renderMemory(await r.json()); } catch { /* */ }
+  try {
+    const r = await fetch('/api/memory');
+    if (r.ok) {
+      const payload = await r.json();
+      renderMemory(payload);
+      if (memUsable(payload) && !memLoaded) { memSeen = memSignature(payload); memLoaded = true; }
+      return payload;
+    }
+  } catch { /* */ }
+  return null;
 }
 $('#memToggle').onclick = () => {
   memoryOpen = !memoryOpen;
@@ -496,10 +515,56 @@ $('#memToggle').onclick = () => {
   applyMemoryOpen();
 };
 applyMemoryOpen();
+
+$('#refreshMemory').innerHTML = ico('loop');
+$('#refreshMemory').onclick = async () => {
+  const btn = $('#refreshMemory');
+  const before = memSeen;
+  const hadBaseline = memLoaded;          // first read still in flight? then there is nothing to diff
+  btn.disabled = true; btn.classList.add('spinning');
+  try {
+    const payload = await loadMemory();
+    if (!payload) return;
+    if (!memUsable(payload)) {
+      const g = beginTrace('brain', 'Foundry Memory refresh failed', payload.scope || '');
+      addTrace(g, { kind: 'error', title: 'could not read the store', subtitle: payload.error || 'memory disabled', status: 'error' });
+      return;
+    }
+    const after = memSignature(payload);
+    const added = hadBaseline ? after.filter((s) => !before.includes(s)) : [];
+    const removed = hadBaseline ? before.filter((s) => !after.includes(s)) : [];
+    memSeen = after;
+    memLoaded = true;
+
+    const g = beginTrace('brain', 'Foundry Memory refreshed',
+      hadBaseline ? `${after.length} in scope · ${added.length} new` : `${after.length} in scope`);
+    addTrace(g, {
+      kind: 'memory',
+      title: !hadBaseline
+        ? `${after.length} memor${after.length === 1 ? 'y' : 'ies'} loaded`
+        : added.length ? `${added.length} new memor${added.length === 1 ? 'y' : 'ies'}` : 'no change yet',
+      subtitle: added.length
+        ? added.map((s) => s.split(':').slice(1).join(':')).join(' · ').slice(0, 140)
+        : hadBaseline ? 'consolidation can take a few seconds — click again' : 'baseline for the next refresh',
+      status: 'completed',
+      detail: removed.length ? `removed: ${removed.length}` : null,
+    });
+    if (added.length || removed.length) {
+      const panel = $('#memoryPanel');
+      panel.classList.remove('mem-flash');
+      void panel.offsetWidth;  // restart the CSS animation
+      panel.classList.add('mem-flash');
+    }
+  } finally {
+    btn.disabled = false; btn.classList.remove('spinning');
+  }
+};
+
 $('#clearMemory').innerHTML = ico('trash');
 $('#clearMemory').onclick = async () => {
   try {
     await fetch('/api/memory', { method: 'DELETE' });
+    memSeen = []; memLoaded = false;
     await loadMemory();
     const g = beginTrace('brain', 'Foundry Memory cleared', 'demo reset — scope emptied');
     addTrace(g, { kind: 'memory', title: 'delete_scope', subtitle: 'all memories forgotten', status: 'completed' });

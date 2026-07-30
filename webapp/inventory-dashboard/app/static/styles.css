@@ -416,9 +416,18 @@ details.te[open] > summary { background: #172038; }
 .mem-title { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; color: #7b3f8f; }
 .mem-title .ico { width: 17px; height: 17px; color: #b356c9; }
 .mem-sub { font-size: 11.5px; font-weight: 700; color: #9c7fa8; }
-.mem-clear { margin-left: auto; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; border: 1px solid #ecd9f4; background: #fff; color: #b07cc0; cursor: pointer; transition: background .18s, color .18s; }
-.mem-clear:hover { background: #fdeef8; color: #8e3fa5; }
-.mem-clear .ico { width: 15px; height: 15px; }
+.mem-actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+.mem-btn { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; border: 1px solid #ecd9f4; background: #fff; color: #b07cc0; cursor: pointer; transition: background .18s, color .18s; }
+.mem-btn:hover { background: #fdeef8; color: #8e3fa5; }
+.mem-btn:disabled { opacity: .55; cursor: default; }
+.mem-btn .ico { width: 15px; height: 15px; }
+.mem-btn.spinning .ico { animation: spin 1s linear infinite; }
+/* Flash the panel when a refresh actually brought in something new. */
+.memory-panel.mem-flash { animation: memFlash 1.1s ease-out; }
+@keyframes memFlash {
+  0% { border-color: #b356c9; box-shadow: 0 0 0 4px rgba(179,86,201,.22); }
+  100% { border-color: #ecd9f4; box-shadow: 0 3px 14px rgba(17,24,39,.05); }
+}
 .mem-list { display: flex; flex-direction: column; gap: 7px; margin-top: 10px; }
 .mem-list[hidden] { display: none; }
 .mem-item { display: flex; gap: 10px; align-items: flex-start; border: 1px solid #f0e2f6; border-radius: 11px; background: #fff; padding: 9px 11px; }

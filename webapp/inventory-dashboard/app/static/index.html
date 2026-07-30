@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zava Console &mdash; Agents (text + voice)</title>
-  <link rel="stylesheet" href="/static/styles.css?v=3">
-  <link rel="stylesheet" href="/static/evals.css?v=3">
+  <link rel="stylesheet" href="/static/styles.css?v=7">
+  <link rel="stylesheet" href="/static/evals.css?v=7">
 </head>
 <body>
   <main class="shell" id="shell">
@@ -62,7 +62,10 @@
             <button class="mem-toggle" id="memToggle" title="Show / hide remembered facts" aria-expanded="false"></button>
             <span class="mem-title" id="memIcon"></span>
             <span class="mem-sub" id="memSub"></span>
-            <button class="mem-clear" id="clearMemory" title="Forget everything for this customer (demo reset)"></button>
+            <div class="mem-actions">
+              <button class="mem-btn" id="refreshMemory" title="Re-read the memory store now"></button>
+              <button class="mem-btn" id="clearMemory" title="Forget everything for this customer (demo reset)"></button>
+            </div>
           </header>
           <div class="mem-list" id="memList" hidden></div>
         </section>
@@ -99,7 +102,7 @@
       <div class="traces-list" id="tracesList"></div>
     </aside>
   </main>
-  <script src="/static/icons.js?v=3"></script>
-  <script src="/static/app.js?v=3"></script>
+  <script src="/static/icons.js?v=7"></script>
+  <script src="/static/app.js?v=7"></script>
 </body>
 </html>
