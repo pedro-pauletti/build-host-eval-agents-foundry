@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zava Console &mdash; Agents (text + voice)</title>
-  <link rel="stylesheet" href="/static/styles.css?v=7">
-  <link rel="stylesheet" href="/static/evals.css?v=7">
+  <link rel="stylesheet" href="/static/styles.css?v=11">
+  <link rel="stylesheet" href="/static/evals.css?v=11">
+  <link rel="stylesheet" href="/static/finops.css?v=11">
 </head>
 <body>
   <main class="shell" id="shell">
@@ -26,6 +27,7 @@
         <button role="tab" data-view="delivery" data-icon="truck">Delivery</button>
         <button role="tab" data-view="orchestration" data-icon="workflow">Incident</button>
         <button role="tab" data-view="evals" data-icon="shield">Evaluations</button>
+        <button role="tab" data-view="finops" data-icon="chart">FinOps</button>
       </div>
 
       <section class="messages" id="messages" aria-live="polite"></section>
@@ -91,6 +93,22 @@
         <section class="eval-list" id="evalList"><div class="loading">Loading evaluations from Foundry&hellip;</div></section>
         <section class="eval-detail" id="evalDetail"></section>
       </div>
+
+      <!-- FinOps view: only possible because traffic goes through the AI Gateway -->
+      <div class="dashboard-scroll view" id="view-finops" hidden>
+        <section class="fin-toolbar">
+          <div class="fin-range" id="finRange">
+            <button type="button" data-hours="1">1h</button>
+            <button type="button" data-hours="6">6h</button>
+            <button type="button" class="active" data-hours="24">24h</button>
+            <button type="button" data-hours="168">7d</button>
+            <button type="button" data-hours="720">30d</button>
+          </div>
+          <span class="fin-src" id="finSource"></span>
+          <button class="eval-refresh" id="finRefresh" type="button">Refresh</button>
+        </section>
+        <section class="fin-body" id="finBody"><div class="loading">Reading AI Gateway telemetry&hellip;</div></section>
+      </div>
     </section>
 
     <aside class="traces-panel" id="tracesPanel">
@@ -102,7 +120,7 @@
       <div class="traces-list" id="tracesList"></div>
     </aside>
   </main>
-  <script src="/static/icons.js?v=7"></script>
-  <script src="/static/app.js?v=7"></script>
+  <script src="/static/icons.js?v=11"></script>
+  <script src="/static/app.js?v=11"></script>
 </body>
 </html>

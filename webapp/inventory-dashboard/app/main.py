@@ -20,6 +20,8 @@ from . import voice as voicemod
 from . import orchestration_api as orchmod
 from . import memory_api as memmod
 from . import evals_api as evalmod
+from . import finops_api as finopsmod
+from . import gateway as gwmod
 
 APP_DIR = Path(__file__).resolve().parent
 STATIC_DIR = APP_DIR / "static"
@@ -356,8 +358,11 @@ async def chat(payload: ChatRequest) -> dict[str, Any]:
     _require_config("AZURE_AI_PROJECT_ENDPOINT", PROJECT_ENDPOINT)
 
     def invoke_agent() -> Any:
-        project = AIProjectClient(endpoint=PROJECT_ENDPOINT, credential=credential)
-        client = project.get_openai_client()
+        # Through the AI Gateway when configured, so the call is costed and attributed;
+        # otherwise straight at the project.
+        client = gwmod.openai_client(
+            lambda: AIProjectClient(endpoint=PROJECT_ENDPOINT, credential=credential).get_openai_client(),
+            caller="webapp", agent=AGENT_NAME)
         kwargs: dict[str, Any] = {
             "model": MODEL_DEPLOYMENT,
             "input": payload.message,
@@ -422,6 +427,19 @@ async def list_eval_runs(eval_id: str) -> dict[str, Any]:
 async def list_eval_items(eval_id: str, run_id: str) -> dict[str, Any]:
     """Per-row results: query, agent answer, and each evaluator's score/label/reason."""
     return await evalmod.list_items(eval_id, run_id)
+
+
+@app.get("/api/finops")
+async def finops(hours: int = 24) -> dict[str, Any]:
+    """Token and cost breakdown from the AI Gateway telemetry."""
+    hours = max(1, min(hours, 24 * 30))
+    return await asyncio.to_thread(finopsmod.summary, hours)
+
+
+@app.get("/api/finops/pricing")
+async def finops_pricing() -> dict[str, Any]:
+    """The price table the cost figures are derived from."""
+    return finopsmod.pricing()
 
 
 @app.get("/api/orchestration/scenario")

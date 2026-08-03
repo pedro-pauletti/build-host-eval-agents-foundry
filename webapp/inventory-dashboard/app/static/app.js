@@ -67,12 +67,17 @@ const AGENTS = {
     greeting: "**Foundry Evaluations.** 🛡️\n\nEvery run on the right was scored by the **Microsoft Foundry evaluation service** — the same results you see in *Foundry portal → Evaluations*. Three flavours of evaluator are used across the three demos:\n\n- **built-in** — Microsoft-curated (`relevance`, `intent_resolution`, `task_adherence`, `tool_call_success`, `violence`…)\n- **custom** — our own code-based `grade()` functions and prompt-based LLM judges\n- **rubric** — weighted, LLM-judged quality criteria per agent\n\nPick a run to see the per-row scores and the judge's reasoning.",
     suggestions: [],
   },
+  finops: {
+    title: 'FinOps', placeholder: '', icon: 'chart',
+    greeting: "**FinOps over the AI Gateway.** 📊\n\nEvery figure on the right comes from **Azure API Management** sitting in front of the Foundry project. Calling Foundry directly gives you a `usage` object per response and nothing else — nothing aggregates it, attributes it, or keeps it.\n\nThree things had to be true for this tab to exist:\n\n- a diagnostic **on the API**, not just on the service\n- an **outbound policy** that reads `usage` out of the body, because APIM's built-in LLM parser does not understand the Responses API and reports 0 tokens\n- `metrics: true` **and** an Application Insights logger, or `emit-metric` is silently dropped\n\nCost is derived from `pricing.json`, so treat it as a model of your bill rather than the bill.",
+    suggestions: [],
+  },
 };
 
 const state = {
   view: 'inventory',
-  history: { inventory: [], delivery: [], orchestration: [], evals: [] },
-  prevRespId: { inventory: null, delivery: null, orchestration: null, evals: null },
+  history: { inventory: [], delivery: [], orchestration: [], evals: [], finops: [] },
+  prevRespId: { inventory: null, delivery: null, orchestration: null, evals: null, finops: null },
   voice: null,
   traces: [],
   evals: { items: [], selectedRun: null },
@@ -245,13 +250,16 @@ function setView(view) {
   $('#view-delivery').hidden = view !== 'delivery';
   $('#view-orchestration').hidden = view !== 'orchestration';
   $('#view-evals').hidden = view !== 'evals';
+  $('#view-finops').hidden = view !== 'finops';
+  const report = view === 'evals' || view === 'finops';
   // Voice Live is configured for the inventory + delivery agents only.
-  $('#voiceBtn').style.display = (view === 'orchestration' || view === 'evals') ? 'none' : '';
-  // Evaluations is a read-only report view: there is nothing to chat with.
-  $('#chatForm').style.display = view === 'evals' ? 'none' : '';
+  $('#voiceBtn').style.display = (view === 'orchestration' || report) ? 'none' : '';
+  // Evaluations and FinOps are read-only report views: there is nothing to chat with.
+  $('#chatForm').style.display = report ? 'none' : '';
   if (view === 'orchestration') initOrchestration();
   if (view === 'delivery') loadMemory();
   if (view === 'evals') loadEvals();
+  if (view === 'finops') loadFinops();
   renderHistory();
   renderSuggestions();
 }
@@ -570,6 +578,132 @@ $('#clearMemory').onclick = async () => {
     addTrace(g, { kind: 'memory', title: 'delete_scope', subtitle: 'all memories forgotten', status: 'completed' });
   } catch { /* */ }
 };
+
+/* ---------------- FinOps (AI Gateway telemetry) ---------------- */
+let finHours = 24;
+
+const money = (v) => (v >= 1 ? `$${v.toFixed(2)}` : v >= 0.01 ? `$${v.toFixed(4)}` : `$${v.toFixed(6)}`);
+const compact = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${(n / 1e3).toFixed(1)}k` : `${n}`);
+
+function finRows(items, key, max) {
+  return items.map((it) => {
+    // One bar per row, split so the cheap half and the expensive half are visually distinct:
+    // output tokens usually cost 4x input, which is the whole point of showing them apart.
+    const w = (v) => (max ? Math.max((v / max) * 100, v ? 1.5 : 0) : 0);
+    const cached = it.cached || 0;
+    return `<div class="fin-row">
+      <div class="name">
+        <b>${escapeHtml(String(it[key] ?? 'unknown'))}</b>
+        <span>${it.calls} call${it.calls === 1 ? '' : 's'} · ${compact(it.total)} tokens${
+          it.models && it.models.length > 1 ? ` · ${it.models.length} models` : ''}</span>
+      </div>
+      <div class="fin-bar" title="${it.prompt} in / ${it.completion} out">
+        <i class="cache" style="width:${w(cached)}%"></i>
+        <i class="in" style="width:${w(it.prompt - cached)}%"></i>
+        <i class="out" style="width:${w(it.completion)}%"></i>
+      </div>
+      <div class="fin-cost"><b>${money(it.cost)}</b><span>${compact(it.prompt)} in · ${compact(it.completion)} out</span></div>
+    </div>`;
+  }).join('');
+}
+
+function finCard(title, hint, items, key) {
+  if (!items || !items.length) return '';
+  const max = Math.max(...items.map((i) => i.total || 0), 1);
+  return `<section class="fin-card">
+    <header><h3>${title}</h3><span class="hint">${hint}</span></header>
+    <div class="fin-rows">${finRows(items, key, max)}</div>
+    <div class="fin-legend">
+      <span><i class="in"></i>input</span><span><i class="out"></i>output</span><span><i class="cache"></i>cached</span>
+    </div>
+  </section>`;
+}
+
+function finSpark(timeline) {
+  if (!timeline || timeline.length < 2) return '';
+  const max = Math.max(...timeline.map((p) => p.cost || 0), 1e-9);
+  const bars = timeline.map((p) => {
+    const when = new Date(p.t);
+    const label = Number.isNaN(when.getTime()) ? '' : when.toLocaleString();
+    return `<div class="b" style="height:${Math.max((p.cost / max) * 100, 2)}%"
+      data-tip="${label} · ${money(p.cost)} · ${p.calls} calls"></div>`;
+  }).join('');
+  return `<section class="fin-card">
+    <header><h3>Spend over time</h3><span class="hint">cost per bucket</span></header>
+    <div class="fin-spark">${bars}</div>
+  </section>`;
+}
+
+function renderFinops(d) {
+  const body = $('#finBody');
+  $('#finSource').innerHTML = `via <b>${escapeHtml(d.gateway || 'AI Gateway')}</b>`;
+
+  if (!d.enabled) {
+    body.innerHTML = `<div class="fin-empty">
+      <h3>Gateway telemetry unavailable</h3>
+      <p>${escapeHtml(d.error || 'Log Analytics could not be reached.')}</p>
+    </div>`;
+    return;
+  }
+  const t = d.totals || {};
+  if (!t.calls) {
+    body.innerHTML = `<div class="fin-empty">
+      <h3>No gateway traffic in this window</h3>
+      <p>Nothing has gone through <code>${escapeHtml(d.gateway)}</code> in the last ${d.hours}h.
+      Only calls that use the gateway endpoint are costed here &mdash; traffic sent straight to the
+      Foundry endpoint is invisible to FinOps, which is rather the point.</p>
+    </div>`;
+    return;
+  }
+
+  const proj = d.projection || {};
+  body.innerHTML = `
+    <section class="fin-kpis">
+      <article class="fin-kpi accent"><span class="k">Spend</span><span class="v">${money(t.cost)}</span><span class="s">last ${d.hours}h</span></article>
+      <article class="fin-kpi"><span class="k">Run rate</span><span class="v">${proj.per_month ? money(proj.per_month) : '—'}</span><span class="s">projected / month</span></article>
+      <article class="fin-kpi"><span class="k">Calls</span><span class="v">${t.calls}</span><span class="s">${money(t.cost_per_call || 0)} each</span></article>
+      <article class="fin-kpi"><span class="k">Tokens</span><span class="v">${compact(t.total)}</span><span class="s">${compact(t.prompt)} in · ${compact(t.completion)} out</span></article>
+      <article class="fin-kpi"><span class="k">Cached</span><span class="v">${t.cached_pct}%</span><span class="s">of input tokens</span></article>
+    </section>
+    ${finCard('Cost by agent', 'which agent spends the money', d.by_agent, 'agent')}
+    ${finCard('Cost by caller', 'which surface originated it', d.by_caller, 'caller')}
+    ${finCard('Cost by model', 'rate applied per model', d.by_model, 'model')}
+    ${finSpark(d.timeline)}
+    <section class="fin-card">
+      <header><h3>Rates used</h3><span class="hint">${d.currency} per 1M tokens · app/pricing.json</span></header>
+      <table class="fin-price">
+        <thead><tr><th>Model</th><th>Input</th><th>Output</th><th>Tokens</th><th>Cost</th></tr></thead>
+        <tbody>${d.by_model.map((m) => `<tr>
+          <td>${escapeHtml(m.model)}</td><td>${m.rate_in}</td><td>${m.rate_out}</td>
+          <td>${compact(m.total)}</td><td>${money(m.cost)}</td></tr>`).join('')}</tbody>
+      </table>
+      <p class="fin-note">Token counts are measured at the gateway; prices come from a local table,
+      so this models your bill rather than reproducing it. Attribution uses the
+      <code>x-zava-caller</code> and <code>x-zava-agent</code> headers &mdash; callers that do not
+      send them show up as <code>unknown</code>.</p>
+    </section>`;
+}
+
+async function loadFinops() {
+  const body = $('#finBody');
+  body.innerHTML = `<div class="loading">Reading AI Gateway telemetry…</div>`;
+  try {
+    const r = await fetch(`/api/finops?hours=${finHours}`);
+    if (r.ok) renderFinops(await r.json());
+    else body.innerHTML = `<div class="fin-empty"><h3>Request failed</h3><p>HTTP ${r.status}</p></div>`;
+  } catch (e) {
+    body.innerHTML = `<div class="fin-empty"><h3>Request failed</h3><p>${escapeHtml(String(e))}</p></div>`;
+  }
+}
+
+$('#finRange').addEventListener('click', (ev) => {
+  const btn = ev.target.closest('button[data-hours]');
+  if (!btn) return;
+  finHours = Number(btn.dataset.hours);
+  $('#finRange').querySelectorAll('button').forEach((b) => b.classList.toggle('active', b === btn));
+  loadFinops();
+});
+$('#finRefresh').addEventListener('click', loadFinops);
 
 /* ---------------- text chat ---------------- */
 async function sendMessage() {

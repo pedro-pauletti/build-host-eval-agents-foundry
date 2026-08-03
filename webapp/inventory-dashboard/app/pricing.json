@@ -1,0 +1,17 @@
+{
+  "_comment": "Demo price table, USD per 1M tokens. Not billing-accurate: adjust to your agreement. Cached input is billed at a discount by most models; 'cached' is the rate applied to input_tokens_details.cached_tokens.",
+  "currency": "USD",
+  "per": 1000000,
+  "models": {
+    "gpt-4.1":                  { "input": 2.00,  "cached": 0.50,  "output": 8.00 },
+    "gpt-4.1-mini":             { "input": 0.40,  "cached": 0.10,  "output": 1.60 },
+    "gpt-4.1-nano":             { "input": 0.10,  "cached": 0.025, "output": 0.40 },
+    "gpt-4o":                   { "input": 2.50,  "cached": 1.25,  "output": 10.00 },
+    "gpt-4o-mini":              { "input": 0.15,  "cached": 0.075, "output": 0.60 },
+    "model-router":             { "input": 2.00,  "cached": 0.50,  "output": 8.00 },
+    "gpt-realtime-mini":        { "input": 0.60,  "cached": 0.30,  "output": 2.40 },
+    "text-embedding-3-large":   { "input": 0.13,  "cached": 0.13,  "output": 0.00 },
+    "text-embedding-3-small":   { "input": 0.02,  "cached": 0.02,  "output": 0.00 }
+  },
+  "default": { "input": 2.00, "cached": 0.50, "output": 8.00 }
+}

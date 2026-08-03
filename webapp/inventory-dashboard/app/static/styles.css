@@ -50,9 +50,11 @@ body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, B
 @keyframes ripple { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.85); opacity: 0; } }
 @keyframes micbeat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.14); } }
 
-.agent-switch { display: flex; gap: 7px; padding: 13px 15px 5px; }
-.agent-switch button { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; height: 38px; border: 1px solid #33405a; background: #1a2233; color: #b9c4d8; border-radius: 10px; font-size: 13.5px; font-weight: 700; cursor: pointer; transition: background .16s, color .16s, border-color .16s; }
-.agent-switch button .ico { width: 16px; height: 16px; }
+.agent-switch { display: flex; flex-wrap: wrap; gap: 7px; padding: 13px 15px 5px; }
+/* Three per row, so five tabs wrap 3+2 and every label stays readable. */
+.agent-switch button { flex: 1 1 calc(33.333% - 5px); min-width: 0; display: flex; align-items: center; justify-content: center; gap: 6px; height: 38px; border: 1px solid #33405a; background: #1a2233; color: #b9c4d8; border-radius: 10px; font-size: 13px; font-weight: 700; cursor: pointer; transition: background .16s, color .16s, border-color .16s; }
+.agent-switch button .ico { width: 16px; height: 16px; flex: 0 0 16px; }
+.agent-switch button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .agent-switch button:hover { background: #222c42; color: #dbe4f4; }
 .agent-switch button.active { background: #2d58ba; color: #fff; border-color: #3a68d4; box-shadow: 0 3px 12px rgba(45,88,186,.4); }
 
